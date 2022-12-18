@@ -1,0 +1,625 @@
+Новости <https://g1.botva.ru/news.php> Вестник <#> Дневники
+<https://g1.botva.ru/link.php?id=blog> Форум
+<https://forum.theabyss.ru/index.php?act=external&project=botva&session=5142184_3617d3f4467e93a427b3f1c348b44f2b> - Чат Настройки <https://g1.botva.ru/options.php> Поддержка <https://support.destiny.games/> Другие игры <https://www.theabyss.ru/>
+
+Время:
+
+*21:54:09
+
+*
+
+* *
+<https://g1.botva.ru/event.php?a=nytree>
+<https://g1.botva.ru/event.php?a=nytree>
+** _StasLz42_
+<javascript:doPotions()>
+/100%
+
+/
+*
+
+*
+<javascript:doNewCage('cage',5802900)>
+** _Скелетон_
+/50%
+
+/ <javascript:doPetPotions()>
+*
+
+*
+
+слитки:
+
+958.582.870
+
+/
+
+/
+*
+
+*
+
+кристаллы:
+
+70.370
+
+/
+
+/
+*
+
+*
+
+<https://g1.botva.ru/harbour.php?a=change>
+
+пирашки:
+
+420.049
+<https://g1.botva.ru/kormushka.php>
+
+зелень:
+
+33
+<#>
+<https://g1.botva.ru/harbour.php?a=pier>
+<https://g1.botva.ru/castle.php?a=zoo&id=5>
+<https://g1.botva.ru/dungeon.php>
+<https://g1.botva.ru/castle.php?a=makeup&id=5>
+<https://g1.botva.ru/temple.php?a=shaman>
+<https://g1.botva.ru/house.php?info=cage>
+<https://g1.botva.ru/castle.php?a=foreign&id=1>
+<https://g1.botva.ru/dozor.php?m=arena>
+<https://g1.botva.ru/fort.php?a=place&type=18>
+<https://g1.botva.ru/trade.php>
+<https://g1.botva.ru/harbour.php?a=market>
+<https://g1.botva.ru/clan_mod.php?m=bmarket>
+<https://g1.botva.ru/history.php>
+<https://g1.botva.ru/fort.php?a=place&type=17>
+<https://g1.botva.ru/options.php?a=fast>
+_Ваши гильдии
+
+_
+<https://g1.botva.ru/castle.php?a=show2&id=1>
+<https://g1.botva.ru/conscription.php>
+<https://g1.botva.ru/castle.php?a=show2&id=23>
+<https://g1.botva.ru/castle.php?a=show2&id=5>
+<https://g1.botva.ru/castle.php?a=show2&id=31>
+_Ваш клан
+
+_
+
+** r31 <https://g1.botva.ru/clan_members.php?id=21148>
+
+Персонаж
+*
+
+* <https://g1.botva.ru/index.php> Почта
+*
+
+* <https://g1.botva.ru/post.php> Задания
+*
+
+* <https://g1.botva.ru/school.php?m=class1>
+Деревня
+*
+
+* <https://g1.botva.ru/village.php> Крепость
+*
+
+* <https://g1.botva.ru/fort.php> Клан
+*
+
+* <https://g1.botva.ru/clan.php> Школа
+*
+
+* <https://g1.botva.ru/school.php> Гавань
+*
+
+* <https://g1.botva.ru/harbour.php> Шахта
+*
+
+* <https://g1.botva.ru/mine.php> Бодалка
+*
+
+* <https://g1.botva.ru/dozor.php>
+Штаб
+*
+
+* <https://g1.botva.ru/shtab.php> Кормушка
+*
+
+* <https://g1.botva.ru/kormushka.php> Братва
+*
+
+* <https://g1.botva.ru/contacts.php> Ёлочка
+*
+
+* <https://g1.botva.ru/event.php?a=nytree> Ботвапедия
+*
+
+* <https://wiki.botva.ru/>
+Выход
+*
+
+* <https://g1.botva.ru/logout.php>
+0 0 2 0 2 0 5 5 1
+<https://g1.botva.ru/avatara.php?a=jump>
+*Подземное царство*
+Победа в бою у Пристанища!
+**T@nk <https://g1.botva.ru/player.php?id=412652>**100
++ 22 бойцов отряда
+**** 	
+*
+
+*
+/
+
+/ 	
+2.147.483.647
+**** 	
+*
+
+*
+/
+
+/ 	
+2.147.483.647
+**** 	
+*
+
+*
+/
+
+/ 	
+2.147.483.647
+**** 	
+*
+
+*
+/
+
+/ 	
+2.147.483.647
+**** 	
+*
+
+*
+/
+
+/ 	
+2.147.483.647
+
+Генералус тьмы Челюсти
++ 22 прислужников
+**** 	
+*
+
+*
+/
+
+/ 	
+2.147.483.647
+**** 	
+*
+
+*
+/
+
+/ 	
+2.147.483.647
+**** 	
+*
+
+*
+/
+
+/ 	
+2.147.483.647
+**** 	
+*
+
+*
+/
+
+/ 	
+2.147.483.647
+**** 	
+*
+
+*
+/
+
+/ 	
+2.147.483.647
+
+Результат боя
+  	Урон: 	Жизни:
+** T@nk <https://g1.botva.ru/player.php?id=412652>***100* + отряд
+2.147.483.647 ** 	2.147.483.647 **
+*Генералус тьмы Челюсти* + прислужники 	2.147.483.647 ** 	2.147.483.647 **
+
+Победитель: ** T@nk <https://g1.botva.ru/player.php?id=412652>***100* +
+отряд
+Выжившие в бою
+** DambLDoR
+** Fon Dorf
+** ASCENDANT
+** Димсонхре...
+** Бродвей
+** *Милка
+** T@nk
+** **SUPERHe...
+** DomInatoR.
+** Ice flame
+** бешка-беб...
+** GoldGirl.
+** barantya
+** *Kronos*
+** Ruslan)
+** BarDuck
+** StasLz42
+** -Brain-
+** NeXTY
+** Макыс
+** Kerberos
+** Pyrojok
+** Bape}||{ka
+Найденные сокровища
+Выжившие члены отряда получили по *7.216.911.633.499 ***
+**ASCENDANT**100 [Щит Мертвых Рыб]
+**Бродвей**100 [Плеть Покаяния]
+**GoldGirl.**100 [Доспех Прекрасной Девы]
+**StasLz42**100 [Двуручный Конь]
+**Макыс**100 [Двуручный Стальзонт]
+**Pyrojok**100 [Плеть Покаяния]
+**Bape}||{ka**77 [Майанка]
+смотреть лог боя <https://g1.botva.ru/[LOG_LINK]>
+------------------------------------------------------------------------
+*Глава отряда*
+Боевая слава: [BATTLE_POWER]
+Ступень в ордене: [GUILD_LEVEL]
+------------------------------------------------------------------------
+*
+
+* [STATKEY_1]
+*
+
+* [STATKEY_2]
+*
+
+* [STATKEY_3]
+*
+
+* [STATKEY_4]
+*
+
+* [STATKEY_5]
+------------------------------------------------------------------------
+** ** ** ** ** ** **
+------------------------------------------------------------------------
+Ссылки на результаты
+Прямая ссылка на результаты боя
+
+Код для выкладывания на форуме
+Таймеры
+*
+
+*
+Текущая работа Я свободен! <https://g1.botva.ru/> Защита от нападений: Я
+в опасности! До нападения: Пора в бой! <https://g1.botva.ru/dozor.php>
+Склад кулонов
+*
+
+* <https://g1.botva.ru/harbour.php?a=coulonpack>
+** ** ** ** ** **
+** ** ** ** ** **
+** ** ** ** ** **
+  <https://g1.botva.ru/options.php?a=menu>
+**
+**
+**
+**
+**
+**
+**
+
+
+      Ресурсы
+
+  * ** 5.747.396
+  * ** <https://g1.botva.ru/space.php?a=shop> 2.974
+  * ** <https://g1.botva.ru/space.php?a=shop> 22.261
+  * ** <https://g1.botva.ru/shop.php> 47
+  * ** <https://g1.botva.ru/smith.php?a=get&for=smith_7> 33
+  * ** <https://g1.botva.ru/smith.php?a=get&for=shaman> 17
+  * ** <https://g1.botva.ru/harbour.php?a=market> 40
+  * ** 15.529
+  * ** 50/50
+  * ** <https://g1.botva.ru/fort.php> 39.156
+  * ** <https://g1.botva.ru/castle.php?a=workshop_farm&id=4> 2.349
+  * ** <https://g1.botva.ru/atlantis.php?a=shop> 2.613
+
+  * ** <https://g1.botva.ru/harbour.php?a=market> 104
+  * ** <https://g1.botva.ru/dozor.php?m=arena> 6.876
+  * ** <https://g1.botva.ru/dozor.php?m=arena> 3.335
+  * ** <https://g1.botva.ru/harbour.php?a=market> 55/100
+  * ** <https://g1.botva.ru/harbour.php?a=market> 57/100
+  * ** <https://g1.botva.ru/castle.php?a=room&id=11> 1179
+  * ** <https://g1.botva.ru/smith.php?a=get&for=smith_4> 24
+  * ** <https://g1.botva.ru/dressingroom.php?type=pandora> 49/49
+  * ** <https://g1.botva.ru/dressingroom.php?type=pandora> 15/49
+  * ** <https://g1.botva.ru/shop.php?a=einstein> 87
+  * ** <https://g1.botva.ru/castle.php?a=workshop_mine&id=3> 1.209
+  * ** <https://g1.botva.ru/dozor.php?m=arena> 26
+
+
+      Напоминания
+
+Сразиться на арене ** <https://g1.botva.ru/dozor.php>
+**
+Открыть ** <https://g1.botva.ru/index.php?pandora=263511462&type=gold>
+**
+Открыть ** <https://g1.botva.ru/dressingroom.php?type=pandora>
+**
+Управляющий ** <https://g1.botva.ru/farm.php>
+**
+Взять поручение ** <https://g1.botva.ru/clan_mod.php?m=task>
+**
+Выпить ** <https://g1.botva.ru/index.php>
+**
+Выпить ** <https://g1.botva.ru/index.php>
+**
+Выпить ** <https://g1.botva.ru/index.php>
+**
+Приключение **
+<https://g1.botva.ru/castle.php?a=zoo&id=5&block=events&redirect=1>
+**
+Кар-Кар ждёт **
+<https://g1.botva.ru/castle.php?a=zoo&id=5&block=events&redirect=1>
+**
+Открыть ** <https://g1.botva.ru/castle.php?a=show2&id=23>
+**
+Приключения ** <https://g1.botva.ru/dungeon.php>
+**
+Приключения ** <https://g1.botva.ru/dungeon.php>
+**
+Выставить ** на ** <https://g1.botva.ru/harbour.php?a=market&type=sell>
+**
+Страшилка в бодалке ** <https://g1.botva.ru/dozor.php>
+**
+Продлить ** <https://g1.botva.ru/kormushka.php>
+**
+Время бодаться ** <https://g1.botva.ru/dozor.php>
+**
+Активировать ** <https://g1.botva.ru/fort.php?a=place&p=2&type=4>
+**
+Истек срок контракта ** <https://g1.botva.ru/fort.php?a=place&type=6>
+**
+Время рыть! ** <https://g1.botva.ru/mine.php?a=drillhall>
+**
+Отправить гладиаторов! ** <https://g1.botva.ru/fort.php?a=place&type=15>
+**
+Время колдунств! ** <https://g1.botva.ru/fort.php?a=place&type=4>
+**
+Воинская карьера! ** <https://g1.botva.ru/conscription.php>
+**
+Пора добывать ** <https://g1.botva.ru/fort.php?a=place&type=18>
+**
+
+
+      Эффекты
+
+
+            Временные эффекты
+
+  * ** > 278 дней
+  * ** > 257 дней
+  * ** > 269 дней
+  * ** > 311 дней
+  * ** > 263 дней
+  * ** 12:45:09
+  * ** 14:35:00
+  * ** 14:30:52
+  * ** > 18 дней
+  * ** > 18 дней
+  * ** 1:02:10:16
+  * ** 13:23:22
+  * ** 1:03:08:30
+  * ** 1:09:40:37
+  * ** 3:00:25:40
+  * ** 1:12:04:15
+  * ** 9:22:07:52
+  * ** > 7087 дней 
+
+
+            Эффекты Пандоры
+            <https://g1.botva.ru/dressingroom.php?type=pandora&tab=2>
+
+  * ** 12:45:09
+  * ** 12:45:09
+  * ** 12:45:09
+  * ** 1:02:31:55 
+
+
+      Инкубатор
+
+** <https://g1.botva.ru/castle.php?a=zoo&id=5&flying=89519&redirect=1>
+** 99%
+<https://g1.botva.ru/castle.php?a=zoo&id=5&block=feed&flying=89519&redirect=1> 	** 52% <https://g1.botva.ru/castle.php?a=zoo&id=5&block=heal&flying=89519&redirect=1>
+1.305.280.439 **
+<https://g1.botva.ru/castle.php?a=zoo&id=5&block=training&flying=89519&redirect=1>
+
+** <https://g1.botva.ru/castle.php?a=zoo&id=5&flying=89559&redirect=1>
+** 99%
+<https://g1.botva.ru/castle.php?a=zoo&id=5&block=feed&flying=89559&redirect=1> 	** 30% <https://g1.botva.ru/castle.php?a=zoo&id=5&block=heal&flying=89559&redirect=1>
+6.440.294.072 **
+<https://g1.botva.ru/castle.php?a=zoo&id=5&block=training&flying=89559&redirect=1>
+
+** <https://g1.botva.ru/castle.php?a=zoo&id=5&flying=89665&redirect=1>
+** 99%
+<https://g1.botva.ru/castle.php?a=zoo&id=5&block=feed&flying=89665&redirect=1> 	** 31% <https://g1.botva.ru/castle.php?a=zoo&id=5&block=heal&flying=89665&redirect=1>
+11.378.532.890 **
+<https://g1.botva.ru/castle.php?a=zoo&id=5&block=training&flying=89665&redirect=1>
+
+** <https://g1.botva.ru/castle.php?a=zoo&id=5&flying=89672&redirect=1>
+** 99%
+<https://g1.botva.ru/castle.php?a=zoo&id=5&block=feed&flying=89672&redirect=1> 	** 86% <https://g1.botva.ru/castle.php?a=zoo&id=5&block=heal&flying=89672&redirect=1>
+3.299.883.149 **
+<https://g1.botva.ru/castle.php?a=zoo&id=5&block=training&flying=89672&redirect=1>
+
+Управление статусами <#>
+
+
+      Счётчики
+
+  * ** <https://g1.botva.ru/house.php> 00:00:00
+  * ** <https://g1.botva.ru/house.php> 00:00:00
+  * ** <https://g1.botva.ru/house.php> 00:00:00
+  * ** <https://g1.botva.ru/house.php> 00:00:00
+  * ** <https://g1.botva.ru/house.php> 00:00:00
+  * ** <https://g1.botva.ru/house.php> 00:00:00
+  * ** <https://g1.botva.ru/house.php> 00:00:00
+  * ** <https://g1.botva.ru/house.php> 00:00:00
+  * ** <https://g1.botva.ru/kormushka.php> 00:00:00
+  * ** <https://g1.botva.ru/castle.php?a=sign&id=2> 00:00:00
+  * ** <https://g1.botva.ru/mine.php> 00:00:00
+  * ** <https://g1.botva.ru/farm.php> 00:00:00
+  * ** <https://g1.botva.ru/harbour.php?a=pier> 00:08:09
+  * ** <https://g1.botva.ru/clan.php> 00:00:00
+  * ** <https://g1.botva.ru/harbour.php?a=trade&item=1> 00:00:00
+  * ** <https://g1.botva.ru/harbour.php?a=market&type=license> > 10 дней
+  * ** <https://g1.botva.ru/trade.php?m=pack> > 15 дней
+  * ** <https://g1.botva.ru/trade.php?m=pack> > 48 дней
+  * ** <https://g1.botva.ru/trade.php?m=pack> > 99 дней
+  * ** <https://g1.botva.ru/trade.php?m=pack> > 126 дней
+  * ** <https://g1.botva.ru/trade.php?m=pack> > 26 дней
+  * ** <https://g1.botva.ru/castle.php?a=foreign&id=1> 00:49:50
+  * ** <https://g1.botva.ru/mine.php?a=shop2> 4:17:08:58
+  * ** <https://g1.botva.ru/mine.php?a=shop2> 4:17:08:58
+  * ** <https://g1.botva.ru/mine.php?a=shop2> 4:17:08:58
+  * ** <https://g1.botva.ru/mine.php?a=shop2> 4:17:08:58
+  * ** <https://g1.botva.ru/mine.php?a=shop2> 4:17:08:58
+  * ** <https://g1.botva.ru/mine.php?a=shop2> 4:17:08:58
+  * ** <https://g1.botva.ru/mine.php?a=shop2> 4:17:08:58
+  * ** <https://g1.botva.ru/mine.php?a=shop2> 4:17:08:58
+  * ** <https://g1.botva.ru/temple.php?a=services> > 12 дней
+  * ** <https://g1.botva.ru/temple.php?a=services> > 12 дней
+  * ** <https://g1.botva.ru/castle.php?a=workshop_farm&id=4> 00:00:00
+  * ** <https://g1.botva.ru/castle.php?a=workshop_mine&id=3> 00:00:00
+  * ** <https://g1.botva.ru/castle.php?a=myguild&id=31&m=lab> 00:00:00
+  * ** <https://g1.botva.ru/castle.php?a=myguild&id=31&m=lab> 00:00:00
+  * ** <https://g1.botva.ru/castle.php?a=myguild&id=31&m=shop> 00:00:00
+  * ** <https://g1.botva.ru/castle.php?a=myguild&id=31&m=shop> 00:00:00
+  * ** <https://g1.botva.ru/castle.php?a=myguild&id=31&m=shop> > 54 дней
+  * ** <https://g1.botva.ru/castle.php?a=myguild&id=31&m=shop> 00:00:00
+  * ** <https://g1.botva.ru/castle.php?a=myguild&id=31&m=potion_auto>
+    00:00:00
+  * ** <https://g1.botva.ru/castle.php?a=myguild&id=31&m=potion_auto>
+    00:00:00
+  * ** <https://g1.botva.ru/mine.php?a=open> 00:00:00
+  * ** <https://g1.botva.ru/castle.php> 16:49:07
+  * ** <https://g1.botva.ru/castle.php> 6:19:57:42
+  * ** <https://g1.botva.ru/house.php?info=cage> 00:00:00
+  * ** <https://g1.botva.ru/house.php?info=cage> 00:00:00
+  * ** <https://g1.botva.ru/house.php?info=cage> 00:00:00
+  * ** <https://g1.botva.ru/school.php?m=class3> 00:00:00
+  * ** <https://g1.botva.ru/school.php?m=class3> 00:00:00
+  * ** <https://g1.botva.ru/school.php?m=class3> 00:00:00
+  * ** <https://g1.botva.ru/school.php?m=class3> 19:06:39
+  * ** <https://g1.botva.ru/school.php?m=class3> 00:00:00
+  * ** <https://g1.botva.ru/school.php?m=class3> 2:05:12:18
+  * ** <https://g1.botva.ru/school.php?m=class3> 00:00:00
+  * ** <https://g1.botva.ru/school.php?m=class3> 00:00:00
+  * ** <https://g1.botva.ru/school.php?m=class3> 01:32:44
+  * ** <https://g1.botva.ru/battleground.php?m=palace> 00:00:00
+  * ** <https://g1.botva.ru/battleground.php?m=palace> 00:00:00
+  * ** <https://g1.botva.ru/battleground.php?m=palace> 00:00:00
+  * ** <https://g1.botva.ru/battleground.php?m=palace> 00:00:00
+  * ** <https://g1.botva.ru/battleground.php?m=palace> 00:00:00
+  * ** <https://g1.botva.ru/battleground.php?m=palace> 00:00:00
+  * ** <https://g1.botva.ru/atlantis.php> 00:00:00
+  * ** <https://g1.botva.ru/castle.php?a=makeup&id=5> 02:30:57
+  * ** <https://g1.botva.ru/space.php> 00:00:00
+  * ** <https://g1.botva.ru/castle.php?a=show2&id=caste> 00:00:00
+  * ** <https://g1.botva.ru/castle.php?a=show2&id=caste> 00:00:00
+  * ** <https://g1.botva.ru/castle.php?a=show2&id=caste> 00:00:00
+  * ** <https://g1.botva.ru/castle.php?a=show2&id=caste> 00:00:00
+  * ** <https://g1.botva.ru/castle.php?a=show2&id=caste> 00:00:00
+  * ** <https://g1.botva.ru/smith.php?a=owngame&start=1> 00:00:00
+  * ** <https://g1.botva.ru/smith.php?a=owngame&start=2> 00:00:00
+  * ** <https://g1.botva.ru/school.php?m=class3> 00:00:00
+  * ** <https://g1.botva.ru/school.php?m=class3> 00:00:00
+  * ** <https://g1.botva.ru/school.php?m=class3> 00:00:00
+  * ** <https://g1.botva.ru/school.php?m=class3> 02:45:25
+  * ** <https://g1.botva.ru/index.php?casket=1> 1:03:37:58
+  * ** <https://g1.botva.ru/event.php> 00:00:00
+  * ** <https://g1.botva.ru/index.php> 00:00:00
+  * ** <https://g1.botva.ru/school.php?m=class3> 15:22:12
+  * ** <https://g1.botva.ru/mine.php> 00:00:00
+
+
+      Рейтинг
+
+
+            Рейтинг сражалки:
+
+1. ** limp_men <https://g1.botva.ru/player.php?id=3405540>
+
+2. ** TILIP <https://g3.botva.ru/player.php?id=477382>
+
+3. ** 3oJIotoY <https://g1.botva.ru/player.php?id=897703>
+
+4. ** ~Хрюндак~ <https://g1.botva.ru/player.php?id=167489>
+
+5. ** - Ariete - <https://g2.botva.ru/player.php?id=173344>
+
+
+            Рейтинг игроков: <https://g1.botva.ru/top.php?type=me#me>
+
+1. ** 3oJIotoY <https://g1.botva.ru/player.php?id=897703>
+
+2. ** Волкофф <https://g1.botva.ru/player.php?id=850243>
+
+3. ** ~Arton~ <https://g1.botva.ru/player.php?id=228859>
+
+342. ** StasLz42 <https://g1.botva.ru/player.php?id=5142184>
+
+
+            Рейтинг кланов: <https://g1.botva.ru/top.php?type=as>
+
+1. ** ~Авалон~ <https://g1.botva.ru/clan.php?id=31481>
+
+2. ** ГопнадзорЪ <https://g1.botva.ru/clan.php?id=137411>
+
+3. ** Клан Свободы <https://g1.botva.ru/clan.php?id=8290>
+
+4. ** r31 <https://g1.botva.ru/clan.php?id=21148>
+
+
+      Царь горы
+
+
+      ** Синулька
+
+<https://g1.botva.ru/player.php?id=3897401>
+
+Борьба за трон <https://g1.botva.ru/king.php>
+
+** Волкофф <https://g1.botva.ru/player.php?id=850243>
+
+** Indino <https://g1.botva.ru/player.php?id=1145158>
+
+** ~Sada~ <https://g1.botva.ru/player.php?id=767164>
+
+<http://destiny.games/>
+Лицензионное соглашение <https://g1.botva.ru/page.php?page=legal>  
+Договор?оферта <https://g1.botva.ru/page.php?page=offer>   Правила игры
+<https://g1.botva.ru/page.php?page=rules>   Политика конфиденциальности
+<https://g1.botva.ru/page.php?page=privacy>
+© Destiny.Games 2008-2022 г.
+Все права защищены.
+<https://vk.com/botvaru> <https://discord.gg/Y29EMfSTbt>
+<https://forum.theabyss.ru/index.php?act=external&project=botva&session=5142184_3617d3f4467e93a427b3f1c348b44f2b> <https://www.liveinternet.ru/click>
+наверх
+Защита
+
