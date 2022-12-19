@@ -335,9 +335,16 @@ begin
         QinsVoin.Execsql;
     end;
  ShowMessage('Данные записаны!');
- FillCombo12;
 end;
+{
+   вырост БМ
+  select v1.nik, v1.bm bm1, v2.bm bm2,v2.bm-v1.bm bm3
+from voin v1, voin v2
+where v1.id=v2.id
+and v1.tm<v2.tm
+and v2.bm-v1.bm >0
 
+ }
 
 procedure TForm1.Button5Click(Sender: TObject);
 var
@@ -368,13 +375,8 @@ var
  i:integer;
 begin
  ClearSGR;
- Stringgrid1.colcount:=5;
+ Stringgrid1.colcount:=p;
  Stringgrid1.RowCount:=2;
- Stringgrid1.cells[0,0]:='Ник';
- Stringgrid1.cells[1,0]:='БМ начало';
- Stringgrid1.cells[2,0]:='БМ конец';
- Stringgrid1.cells[3,0]:='Рост БМ';
- Stringgrid1.cells[4,0]:='Рост %';
  s1:=ComboBox1.Text;
  s2:=ComboBox2.Text;
  delete(s1,pos('-',s1),length(s1));
@@ -402,11 +404,11 @@ begin
  While not QTemp.Eof do
   begin
    Stringgrid1.cells[0,i]:=QTemp.FieldByName('nik').Asstring;
-   Stringgrid1.cells[1,i]:=QTemp.FieldByName('bm1').Asstring;
-   Stringgrid1.cells[2,i]:=QTemp.FieldByName('bm2').Asstring;
-   Stringgrid1.cells[3,i]:=QTemp.FieldByName('delta').Asstring;
-   Stringgrid1.cells[4,i]:=QTemp.FieldByName('deltap').Asstring;
-   stringgrid1.Rowcount:=Stringgrid1.Rowcount+1;
+   Stringgrid1.cells[0,i]:=QTemp.FieldByName('bm1').Asstring;
+   Stringgrid1.cells[0,i]:=QTemp.FieldByName('bm2').Asstring;
+   Stringgrid1.cells[0,i]:=QTemp.FieldByName('delta').Asstring;
+   Stringgrid1.cells[0,i]:=QTemp.FieldByName('deltap').Asstring;
+   stringgrid1,Rowcount:=Stringgrid1.Rowcount+1;
    QTemp.Next;
    i:=i+1;
   end;
