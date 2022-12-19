@@ -1,6 +1,0 @@
--1;https://g1.botva.ru/monster.php?a=monsterpve&do_cmd=log&raid=890546&id=2601962
--2;2601962
-0;StasLz42
-1;T@nk
-2;StasLz42
-3;-Brain-
