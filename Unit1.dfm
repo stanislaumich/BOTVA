@@ -11,6 +11,7 @@ object Form1: TForm1
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnCreate = FormCreate
   DesignSize = (
     961
     676)
@@ -196,9 +197,9 @@ object Form1: TForm1
     Top = 24
     Width = 133
     Height = 25
-    Caption = #1047#1072#1087#1080#1089#1072#1090#1100
+    Caption = #1047#1072#1087#1080#1089#1072#1090#1100' '#1074' '#1073#1072#1079#1091
     TabOrder = 10
-    Visible = False
+    OnClick = Button4Click
   end
   object Button5: TButton
     Left = 756
@@ -216,5 +217,71 @@ object Form1: TForm1
   object SaveDialog1: TSaveDialog
     Left = 128
     Top = 324
+  end
+  object FDC: TFDConnection
+    Params.Strings = (
+      'DriverID=SQLite')
+    LoginPrompt = False
+    Left = 808
+    Top = 84
+  end
+  object QinsVoin: TFDQuery
+    Connection = FDC
+    SQL.Strings = (
+      'INSERT INTO voin ('
+      '                     id,'
+      '                     nik,'
+      '                     url,'
+      '                     BM,'
+      '                     SLAVA,'
+      '                     Lev,'
+      '                     dt,'
+      '                     tm'
+      '                 )'
+      '                 VALUES ('
+      '                     :id,'
+      '                     :nik,'
+      '                     :url,'
+      '                     :BM,'
+      '                     :SLAVA,'
+      '                     :Lev,'
+      '                     :dt,'
+      '                     :tm'
+      '                 )')
+    Left = 848
+    Top = 84
+    ParamData = <
+      item
+        Name = 'ID'
+        ParamType = ptInput
+      end
+      item
+        Name = 'NIK'
+        ParamType = ptInput
+      end
+      item
+        Name = 'URL'
+        ParamType = ptInput
+      end
+      item
+        Name = 'BM'
+        ParamType = ptInput
+      end
+      item
+        Name = 'SLAVA'
+        ParamType = ptInput
+      end
+      item
+        Name = 'LEV'
+        ParamType = ptInput
+      end
+      item
+        Name = 'DT'
+        ParamType = ptInput
+      end
+      item
+        Name = 'TM'
+        ParamType = ptInput
+      end>
   end
 end
