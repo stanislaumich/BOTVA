@@ -1,0 +1,70 @@
+<b class="icon2 guild11" title="Устрашатель"></b><a href='/player.php?id=412652' class='profile '  >T@nk</a><b class='icon ulevel' title='Уровень'></b>100<div class='members'>
+<div data-player='1079588' class='member round3'>
+<b class="icon2 guild11_3"  title='Устрашатель'></b> DambLDoR
+</div>
+<div data-player='1009164' class='member round3'>
+<b class="icon2 guild11_3"  title='Устрашатель'></b> Fon Dorf
+</div>
+<div data-player='668808' class='member round3 central_in_row'>
+<b class="icon2 guild11_3"  title='Устрашатель'></b> ASCENDANT
+</div>
+<div data-player='640294' class='member round3'>
+<b class="icon2 guild11_3"  title='Устрашатель'></b> Димсонхре...
+</div>
+<div data-player='5116484' class='member round3 last_in_row'>
+<b class="icon2 guild11_3"  title='Устрашатель'></b> Бродвей
+</div>
+<div data-player='5086764' class='member round3'>
+<b class="icon2 guild11_3"  title='Устрашатель'></b> *Милка
+</div>
+<div data-player='402652' class='member round3'>
+<b class="icon2 guild11_3"  title='Устрашатель'></b> T@nk
+</div>
+<div data-player='1692199' class='member round3 central_in_row'>
+<b class="icon2 guild11_3"  title='Устрашатель'></b> **SUPERHe...
+</div>
+<div data-player='491099' class='member round3'>
+<b class="icon2 guild11_3"  title='Устрашатель'></b> DomInatoR.
+</div>
+<div data-player='453886' class='member round3 last_in_row'>
+<b class="icon2 guild11_3"  title='Устрашатель'></b> Ice flame
+</div>
+<div data-player='278026' class='member round3'>
+<b class="icon2 guild11_3"  title='Устрашатель'></b> бешка-беб...
+</div>
+<div data-player='1171977' class='member round3'>
+<b class="icon2 guild11_3"  title='Устрашатель'></b> GoldGirl.
+</div>
+<div data-player='282168' class='member round3 central_in_row'>
+<b class="icon2 guild11_2"  title='Устрашатель'></b> barantya
+</div>
+<div data-player='1241877' class='member round3'>
+<b class="icon2 guild11_3"  title='Устрашатель'></b> *Kronos*
+</div>
+<div data-player='624550' class='member round3 last_in_row'>
+<b class="icon2 guild11_3"  title='Устрашатель'></b> Ruslan)
+</div>
+<div data-player='1091368' class='member round3'>
+<b class="icon2 guild11_3"  title='Устрашатель'></b> BarDuck
+</div>
+<div data-player='5132184' class='member round3'>
+<b class="icon2 guild11_3"  title='Устрашатель'></b> StasLz42
+</div>
+<div data-player='971' class='member round3 central_in_row'>
+<b class="icon2 guild11_3"  title='Устрашатель'></b> -Brain-
+</div>
+<div data-player='2961427' class='member round3'>
+<b class="icon2 guild11_3"  title='Устрашатель'></b> NeXTY
+</div>
+<div data-player='424737' class='member round3 last_in_row'>
+<b class="icon2 guild11_3"  title='Устрашатель'></b> Макыс
+</div>
+<div data-player='5154887' class='member round3'>
+<b class="icon2 guild11_3"  title='Устрашатель'></b> Kerberos
+</div>
+<div data-player='5159343' class='member round3'>
+<b class="icon2 guild11_3"  title='Устрашатель'></b> Pyrojok
+</div>
+<div data-player='5161235' class='member round3 central_in_row'>
+<b class="icon2 guild11_3"  title='Устрашатель'></b> Bape}||{ka
+</div>

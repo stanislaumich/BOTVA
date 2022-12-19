@@ -78,7 +78,7 @@ object Form1: TForm1
   end
   object Label7: TLabel
     Left = 8
-    Top = 304
+    Top = 26
     Width = 419
     Height = 13
     Caption = 
@@ -87,7 +87,7 @@ object Form1: TForm1
   end
   object Label8: TLabel
     Left = 8
-    Top = 244
+    Top = 7
     Width = 514
     Height = 13
     Caption = 
@@ -95,7 +95,7 @@ object Form1: TForm1
       #1077#1088#1089#1072', '#1041#1052', '#1091#1088#1086#1074#1077#1085#1100', '#1089#1083#1072#1074#1072', '#1088#1072#1085#1075
   end
   object Button1: TButton
-    Left = 569
+    Left = 572
     Top = 74
     Width = 185
     Height = 25
@@ -129,20 +129,21 @@ object Form1: TForm1
     TabOrder = 3
   end
   object Edit3: TEdit
-    Left = 4
-    Top = 320
+    Left = 8
+    Top = 45
     Width = 562
     Height = 21
     TabOrder = 4
-    Text = 'Edit3'
+    Text = 'http://lz42.ru/clan.php'
   end
   object Button3: TButton
-    Left = 569
-    Top = 318
+    Left = 576
+    Top = 43
     Width = 185
     Height = 25
     Caption = #1054#1073#1088#1072#1073#1086#1090#1072#1090#1100' '#1074#1086#1080#1085#1086#1074' '#1082#1083#1072#1085#1072
     TabOrder = 5
+    OnClick = Button3Click
   end
   object Edit4: TEdit
     Left = 528
@@ -152,21 +153,35 @@ object Form1: TForm1
     TabOrder = 6
   end
   object Button4: TButton
-    Left = 648
-    Top = 468
+    Left = 868
+    Top = 224
     Width = 75
     Height = 25
     Caption = #1055#1065'!'
     TabOrder = 7
   end
   object Memo1: TMemo
-    Left = 12
-    Top = 352
+    Left = 348
+    Top = 336
     Width = 569
     Height = 249
     Lines.Strings = (
       'Memo1')
     TabOrder = 8
+  end
+  object WB: TWebBrowser
+    Left = 8
+    Top = 336
+    Width = 333
+    Height = 245
+    TabOrder = 9
+    OnDocumentComplete = WBDocumentComplete
+    ControlData = {
+      4C0000006B220000521900000000000000000000000000000000000000000000
+      000000004C000000000000000000000001000000E0D057007335CF11AE690800
+      2B2E126208000000000000004C0000000114020000000000C000000000000046
+      8000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000100000000000000000000000000000000000000}
   end
   object OpenDialog1: TOpenDialog
     Left = 856

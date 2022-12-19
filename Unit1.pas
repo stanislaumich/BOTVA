@@ -5,8 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, WebView2, Winapi.ActiveX, Vcl.StdCtrls,
-  Vcl.Edge, Vcl.OleCtrls, SHDocVw, ustr, uCEFWinControl,
-  uCEFLinkedWinControlBase, uCEFChromiumWindow, uCEFChromiumCore, uCEFChromium;
+  Vcl.Edge, Vcl.OleCtrls, SHDocVw, ustr;
 
 type
   TForm1 = class(TForm)
@@ -28,8 +27,12 @@ type
     Label8: TLabel;
     Button4: TButton;
     Memo1: TMemo;
+    WB: TWebBrowser;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure WBDocumentComplete(ASender: TObject; const pDisp: IDispatch;
+      const URL: OleVariant);
 
   private
     { Private declarations }
@@ -170,5 +173,24 @@ end;
 end;
 
 
+
+procedure TForm1.Button3Click(Sender: TObject);
+
+begin
+ WB.Navigate2(Edit3.Text);
+// pause(5000);
+
+end;
+
+procedure TForm1.WBDocumentComplete(ASender: TObject; const pDisp: IDispatch;
+  const URL: OleVariant);
+var Doc: variant;
+    S: string;
+begin
+//pause();
+Doc:= WB.Document;
+s:=Doc.body.outerHTML;
+Memo1.Text:=s;
+end;
 
 end.
