@@ -2,7 +2,7 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = #1056#1086#1075#1072#1090#1072#1103' '#1075#1074#1072#1088#1076#1080#1103
-  ClientHeight = 676
+  ClientHeight = 571
   ClientWidth = 961
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -14,7 +14,7 @@ object Form1: TForm1
   OnCreate = FormCreate
   DesignSize = (
     961
-    676)
+    571)
   PixelsPerInch = 96
   TextHeight = 13
   object Label5: TLabel
@@ -128,8 +128,8 @@ object Form1: TForm1
     Left = 8
     Top = 486
     Width = 949
-    Height = 182
-    Anchors = [akLeft, akTop, akRight]
+    Height = 83
+    Anchors = [akLeft, akRight, akBottom]
     Lines.Strings = (
       'Memo1')
     ScrollBars = ssBoth
@@ -141,6 +141,7 @@ object Form1: TForm1
     Top = 235
     Width = 232
     Height = 245
+    Anchors = [akLeft, akTop, akBottom]
     TabOrder = 8
     OnDocumentComplete = WBDocumentComplete
     ControlData = {
@@ -151,11 +152,11 @@ object Form1: TForm1
       00000000000000000100000000000000000000000000000000000000}
   end
   object StringGrid1: TStringGrid
-    Left = 252
+    Left = 247
     Top = 232
-    Width = 705
+    Width = 710
     Height = 249
-    Anchors = [akLeft, akTop, akRight]
+    Anchors = [akLeft, akTop, akRight, akBottom]
     ColCount = 10
     DefaultColWidth = 120
     RowCount = 2
@@ -171,10 +172,11 @@ object Form1: TForm1
     OnClick = Button4Click
   end
   object Button5: TButton
-    Left = 756
+    Left = 800
     Top = 206
     Width = 157
     Height = 25
+    Anchors = [akTop, akRight]
     Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100' '#1090#1072#1073#1083#1080#1094#1091' '#1074' Excel'
     TabOrder = 11
     OnClick = Button5Click

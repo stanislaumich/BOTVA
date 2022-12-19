@@ -418,6 +418,19 @@ begin
     FDC.Params.Database := extractfilepath(Application.Exename) +
       'botva.sqlite';
     FDC.Connected := true;
+    QTemp.SQL.Add('CREATE TABLE IF NOT EXISTS "VOIN" ( ');
+    QTemp.SQL.Add('id    INTEGER, ');
+    QTemp.SQL.Add('nik   VARCHAR (50)   DEFAULT NULL, ');
+    QTemp.SQL.Add('url   VARCHAR (5000) DEFAULT NULL, ');
+    QTemp.SQL.Add('BM    INTEGER, ');
+    QTemp.SQL.Add('SLAVA INTEGER, ');
+    QTemp.SQL.Add('Lev   INTEGER, ');
+    QTemp.SQL.Add('dt    VARCHAR (50)   DEFAULT NULL, ');
+    QTemp.SQL.Add('tm    VARCHAR (50))');
+    QTEMP.ExecSQL;
+
+
+
     FillCombo12;
 end;
 
