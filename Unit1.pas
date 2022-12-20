@@ -41,6 +41,7 @@ type
     ComboBox2: TComboBox;
     QTemp: TFDQuery;
     Button6: TButton;
+    Button7: TButton;
         procedure Button1Click(Sender: TObject);
         procedure Button2Click(Sender: TObject);
         procedure Button3Click(Sender: TObject);
@@ -50,6 +51,7 @@ type
         procedure Button4Click(Sender: TObject);
         procedure FormCreate(Sender: TObject);
     procedure Button6Click(Sender: TObject);
+    procedure Button7Click(Sender: TObject);
 
     private
         { Private declarations }
@@ -345,6 +347,8 @@ var
     f: textfile;
     s: string;
 begin
+ Savedialog1.filename:=datetostr(Date)+'-'+StringReplace(TimeTostr(Time), ':', '.',
+                          [rfReplaceAll, rfIgnoreCase]);
     if SaveDialog1.Execute() then
     begin
         Assignfile(f, SaveDialog1.Filename + '.csv');
@@ -413,17 +417,65 @@ begin
 
 end;
 
+procedure TForm1.Button7Click(Sender: TObject);
+var
+ d1,d2, t1,t2, s1,s2:string;
+ i:integer;
+begin
+ ClearSGR;
+ Stringgrid1.colcount:=5;
+ Stringgrid1.RowCount:=2;
+ Stringgrid1.cells[0,0]:='Ник';
+ Stringgrid1.cells[1,0]:='Уров';
+ Stringgrid1.cells[2,0]:='БМ';
+ Stringgrid1.cells[3,0]:='Слава';
+ Stringgrid1.cells[4,0]:='Дата';
+ s1:=ComboBox1.Text;
+ //s2:=ComboBox2.Text;
+ delete(s1,pos('-',s1),length(s1));
+ //delete(s2,pos('-',s2),length(s2));
+ d1:=s1;
+ //d2:=s2;
+ s1:=ComboBox1.Text;
+ //s2:=ComboBox2.Text;
+ delete(s1,1,pos('-',s1));
+ //delete(s2,1,pos('-',s2));
+ t1:=s1;
+ //t2:=s2;
+
+ QTemp.Close;
+ QTemp.SQL.Clear;
+ QTEmp.SQL.Add('select *');
+ QTEmp.SQL.Add(' from voin  where ');
+ QTEmp.SQL.Add(' tm='+Quotedstr(t1));
+ QTEmp.SQL.Add(' and dt='+Quotedstr(d1));
+ QTemp.Open;
+ i:=1;
+ While not QTemp.Eof do
+  begin
+   Stringgrid1.cells[0,i]:=QTemp.FieldByName('nik').Asstring;
+   Stringgrid1.cells[1,i]:=QTemp.FieldByName('lev').Asstring;
+   Stringgrid1.cells[2,i]:=QTemp.FieldByName('bm').AsString;
+   Stringgrid1.cells[3,i]:=QTemp.FieldByName('slava').AsVariant;
+   Stringgrid1.cells[4,i]:=QTemp.FieldByName('dt').Asstring;
+   stringgrid1.Rowcount:=Stringgrid1.Rowcount+1;
+   QTemp.Next;
+   i:=i+1;
+  end;
+
+end;
+
 procedure TForm1.FormCreate(Sender: TObject);
 begin
     FDC.Params.Database := extractfilepath(Application.Exename) +
       'botva.sqlite';
     FDC.Connected := true;
     QTemp.SQL.Add('CREATE TABLE IF NOT EXISTS "VOIN" ( ');
-    QTemp.SQL.Add('id    INTEGER, ');
+    QTemp.SQL.Add('id    BIGINT, ');
     QTemp.SQL.Add('nik   VARCHAR (50)   DEFAULT NULL, ');
     QTemp.SQL.Add('url   VARCHAR (5000) DEFAULT NULL, ');
-    QTemp.SQL.Add('BM    INTEGER, ');
-    QTemp.SQL.Add('SLAVA INTEGER, ');
+    QTemp.SQL.Add('BM    BIGINT, ');
+    QTemp.SQL.Add('SLAVA BIGINT, ');
     QTemp.SQL.Add('Lev   INTEGER, ');
     QTemp.SQL.Add('dt    VARCHAR (50)   DEFAULT NULL, ');
     QTemp.SQL.Add('tm    VARCHAR (50))');
