@@ -13,7 +13,7 @@ uses
     FireDAC.VCLUI.Wait, Data.DB, FireDAC.Comp.Client, FireDAC.Phys.SQLite,
     FireDAC.Phys.SQLiteDef, FireDAC.Stan.ExprFuncs,
     FireDAC.Phys.SQLiteWrapper.Stat, FireDAC.Stan.Param, FireDAC.DatS,
-    FireDAC.DApt.Intf, FireDAC.DApt, FireDAC.Comp.DataSet;
+    FireDAC.DApt.Intf, FireDAC.DApt, FireDAC.Comp.DataSet, Vcl.ComCtrls;
 
 type
     TForm1 = class(TForm)
@@ -44,6 +44,16 @@ type
     Button7: TButton;
     CheckBox1: TCheckBox;
     Label2: TLabel;
+    Button8: TButton;
+    Label3: TLabel;
+    DateTimePicker1: TDateTimePicker;
+    Label4: TLabel;
+    GroupBox1: TGroupBox;
+    GroupBox2: TGroupBox;
+    Label7: TLabel;
+    DateTimePicker2: TDateTimePicker;
+    DateTimePicker3: TDateTimePicker;
+    Button9: TButton;
         procedure Button1Click(Sender: TObject);
         procedure Button2Click(Sender: TObject);
         procedure Button3Click(Sender: TObject);
@@ -54,11 +64,13 @@ type
         procedure FormCreate(Sender: TObject);
     procedure Button6Click(Sender: TObject);
     procedure Button7Click(Sender: TObject);
+    procedure Button8Click(Sender: TObject);
 
     private
         { Private declarations }
     public
         procedure parseclan;
+        procedure parsepodzem;
         procedure fillcombo12;
         procedure ClearSGR;
     end;
@@ -82,6 +94,25 @@ implementation
 // http://www.proghouse.ru/programming/146-chromium-delphi
 
 {$R *.dfm}
+
+procedure TForm1.parsepodzem;
+ var
+  s,ts:string;
+ begin
+    StringGrid1.colcount := 8;
+    StringGrid1.rowcount := 2;
+    StringGrid1.cells[1, 0] := 'ИД';
+    StringGrid1.cells[2, 0] := 'Ник';
+    StringGrid1.cells[3, 0] := 'Уров';
+    StringGrid1.cells[4, 0] := 'БМ';
+    StringGrid1.cells[5, 0] := 'Слава';
+    StringGrid1.cells[6, 0] := 'Дата';
+    StringGrid1.cells[7, 0] := 'Время';
+
+
+
+ end;
+
 
 procedure TForm1.ClearSGR;
 var i,j:integer;
@@ -254,60 +285,59 @@ begin
     If (Edit4.text = '') or (Edit2.text = '') then
     begin
         ShowMessage
-          ('Нужно указать ссылку на лог подзема и указать первый(1), или последний(2) это был поход');
+          ('Нужно указать ссылку на лог подзема и указать первый(1), или второй(2) это был поход');
         exit;
     end;
+
+
+
     If OpenDialog1.Execute() then
     begin
         Assignfile(fi, OpenDialog1.Filename);
         Reset(fi);
-
         repeat
             ReadLn(fi, s);
+            s:=trim(s);
         until pos('Победитель:', s) = 1;
-        delete(s, 1, 15);
-        rs := Edit2.text;
-        ts := pnexte('=', rs);
-        // https://g1.botva.ru/monster.php?a=monsterpve&do_cmd=log&raid=890557&id=2601998
-        ts := pnexte('=', rs);
-        rs := pnext('&', ts);
-        // showmessage(rs);
-        Assignfile(fo, extractfilepath(OpenDialog1.Filename) + rs + '.txt');
-        Rewrite(fo);
-        Writeln(fo, Edit4.text + ';' + Datetostr(date) + ';' + '-1;' +
-          Edit2.text);
-        modA := strtoint64(rs);
-        Writeln(fo, Edit4.text + ';' + Datetostr(date) + ';' + '-2;' +
-          trim(rs));
-        Writeln(fo, Edit4.text + ';' + Datetostr(date) + ';' + '0;' + trim(s));
-        glava := trim(s);
         ReadLn(fi, s);
-        ReadLn(fi, s);
-        ReadLn(fi, s);
-
-        Writeln(fo, Edit4.text + ';' + Datetostr(date) + ';' + inttostr(1) +
-          ';' + glava);
-        i := 2;
+        delete(s,1,pos('''',s));
+        delete(s,1,pos('=',s));
+        ts:=pnext('''',s);
+        delete(s,1,pos('>',s));
+        delete(s,pos('<',s),length(s));
+        glava:=s;
+        //Edit2.Text:=ts+' '+glava;
+        ReadLn(fi,s);
+        s:=trim(s);
+        i:=0;
         repeat
-            s := trim(s);
-            delete(s, 1, 3);
-            if trim(s) <> glava then
-            begin
-                Writeln(fo, Edit4.text + ';' + Datetostr(date) + ';' +
-                  inttostr(i) + ';' + trim(s));
-                i := i + 1;
-            end;
-            ReadLn(fi, s);
-        until trim(s) = 'Найденные сокровища';
-        i := i - 1;
-        res := modA mod i;
-        Writeln(fo, Edit4.text + ';' + Datetostr(date) + ';' + inttostr(-3) +
-          ';' + inttostr(res));
-        Closefile(fi);
-        Closefile(fo);
-        { внесение в базу данных }
+         s:=trim(s);
+         if pos('<b',s)>0 then
+          begin
+           delete(s,1,pos('>',s));
+           delete(s,1,pos('>',s));
+           s:=trim(s);
+           Stringgrid1.cells[0,i]:=inttostr(i-1);
+           s:=StringReplace(s,'...','%',[rfReplaceAll, rfIgnoreCase]);
+           Stringgrid1.cells[2,i]:=s;
+           QTemp.Close;
+           QTemp.Open('select * from voin where nik like'+Quotedstr(s));
+           Stringgrid1.cells[1,i]:=QTemp.FieldByName('nik').Asstring;
+           Stringgrid1.RowCount:=Stringgrid1.RowCount+1;
+           i:=i+1;
+          end;
+         ReadLn(fi,s);
+         s:=trim(s);
+        until pos('<div class='+Quotedstr('clear')+'>',s)>0;
+        Stringgrid1.cells[2,0]:=glava;
+        Stringgrid1.cells[0,0]:='-1';
+        QTemp.Close;
+        QTemp.Open('select * from voin where nik like'+Quotedstr(glava));
+        Stringgrid1.cells[1,0]:=QTemp.FieldByName('nik').Asstring;
+        ShowMessage('Готово!!!');
 
         Edit4.text := '';
+
     end;
 
 end;
@@ -317,7 +347,6 @@ procedure TForm1.Button3Click(Sender: TObject);
 begin
     act := 1;
     WB.Navigate2(Edit3.text);
-
 end;
 
 procedure TForm1.Button4Click(Sender: TObject);
@@ -341,7 +370,6 @@ begin
  ShowMessage('Данные записаны!');
  FillCombo12;
 end;
-
 
 procedure TForm1.Button5Click(Sender: TObject);
 var
@@ -425,25 +453,20 @@ var
  i:integer;
 begin
  ClearSGR;
- Stringgrid1.colcount:=5;
+ Stringgrid1.colcount:=6;
  Stringgrid1.RowCount:=2;
  Stringgrid1.cells[0,0]:='Ник';
  Stringgrid1.cells[1,0]:='Уров';
  Stringgrid1.cells[2,0]:='БМ';
  Stringgrid1.cells[3,0]:='Слава';
  Stringgrid1.cells[4,0]:='Дата';
+ Stringgrid1.cells[5,0]:='Время';
  s1:=ComboBox1.Text;
- //s2:=ComboBox2.Text;
  delete(s1,pos('-',s1),length(s1));
- //delete(s2,pos('-',s2),length(s2));
  d1:=s1;
- //d2:=s2;
  s1:=ComboBox1.Text;
- //s2:=ComboBox2.Text;
  delete(s1,1,pos('-',s1));
- //delete(s2,1,pos('-',s2));
  t1:=s1;
- //t2:=s2;
 
  QTemp.Close;
  QTemp.SQL.Clear;
@@ -460,6 +483,7 @@ begin
    Stringgrid1.cells[2,i]:=QTemp.FieldByName('bm').AsString;
    Stringgrid1.cells[3,i]:=QTemp.FieldByName('slava').AsVariant;
    Stringgrid1.cells[4,i]:=QTemp.FieldByName('dt').Asstring;
+   Stringgrid1.cells[5,i]:=QTemp.FieldByName('tm').Asstring;
    stringgrid1.Rowcount:=Stringgrid1.Rowcount+1;
    QTemp.Next;
    i:=i+1;
@@ -467,8 +491,16 @@ begin
 
 end;
 
+procedure TForm1.Button8Click(Sender: TObject);
+var
+ s,ts:string;
+begin
+// загрузка подземов в базу
+end;
+
 procedure TForm1.FormCreate(Sender: TObject);
 begin
+    DateTimePicker1.Date:=Date;
     FDC.Params.Database := extractfilepath(Application.Exename) +
       'botva.sqlite';
     FDC.Connected := true;
@@ -482,6 +514,16 @@ begin
     QTemp.SQL.Add('dt    VARCHAR (50)   DEFAULT NULL, ');
     QTemp.SQL.Add('tm    VARCHAR (50))');
     QTEMP.ExecSQL;
+    QTEMP.Close;
+    QTEmp.SQL.Clear;
+    QTemp.SQL.Add('CREATE TABLE IF NOT EXISTS podzem ( ');
+    QTemp.SQL.Add('dt  VARCHAR (50), ');
+    QTemp.SQL.Add('num INTEGER, ');
+    QTemp.SQL.Add('nik VARCHAR2 (50), ');
+    QTemp.SQL.Add('id  INTEGER, ');
+    QTemp.SQL.Add('val VARCHAR2 (1000))');
+    QTEMP.ExecSQL;
+    QTEMP.Close;
 
 
 
@@ -498,10 +540,13 @@ begin
     Doc := WB.Document;
     s := Doc.body.outerHTML;
     Memo1.text := s;
-    // Memo1.lines.SaveToFile('s:\w.txt');
+    ClearSGR;
+     Memo1.lines.SaveToFile('s:\w.txt');
     case act of
         1:
             parseclan;
+        2:
+            parsepodzem;
     end;
 end;
 
