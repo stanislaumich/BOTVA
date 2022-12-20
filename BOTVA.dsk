@@ -1,36 +1,32 @@
 ﻿[Closed Files]
-File_0=TSourceModule,'S:\ZAMER\ZAMER\URH.pas',0,1,194,1,198,0,0,{{125,63}
-File_1=TSourceModule,'S:\ZAMER\ZAMER\Umain.pas',0,1,1,1,1,0,0,,
-File_2=TSourceModule,'S:\ZAMER\ZamerV2\URH.pas',0,1,273,5,299,0,0,{{15,21}
-File_3=TSourceModule,'S:\ZAMER\ZamerV2\Uzv2Main.pas',0,1,326,13,385,0,0,,
-File_4=TSourceModule,'s:\zamer\zamerv2\UHH.pas',0,1,107,1,129,0,0,{{16,24}
-File_5=TSourceModule,'S:\ZAMER\ZamerV2\Unagr.pas',0,1,443,74,464,0,0,,
-File_6=TSourceModule,'S:\ZAMER\ZamerV2\UKZ.pas',0,1,1,1,1,0,0,,
-File_7=TSourceModule,'S:\ZAMER\M45ORIG\SOURCE\Main.cpp',0,1,211,32,357,0,0,{{224,51}
-File_8=TSourceModule,'S:\ZAMER\ZAMER\UMehan.pas',0,1,1,1,1,0,0,,
-File_9=TSourceModule,'S:\ZAMER\ZAMER\UKZam.pas',0,1,318,75,357,0,0,,
-File_10=TSourceModule,'S:\ZAMER\ZAMER\UNagrev.pas',0,1,298,60,324,0,0,,
-File_11=TSourceModule,'S:\ZAMER\SborElspec\UMainSbor.pas',0,1,320,10,327,0,0,,
-File_12=TSourceModule,'S:\ZAMER\ZAMER\UHH.pas',0,1,1,1,1,0,0,,
-File_13=TSourceModule,'S:\ZAMER\ZAMER\USoprot.pas',0,1,96,5,112,0,0,,
+File_0=TSourceModule,'c:\program files (x86)\embarcadero\studio\21.0\SOURCE\RTL\SYS\System.SysUtils.pas',0,1,8423,1,8411,0,0,,
+File_1=TSourceModule,'S:\ZAMER\ZAMER\URH.pas',0,1,194,1,198,0,0,{{125,63}
+File_2=TSourceModule,'S:\ZAMER\ZAMER\Umain.pas',0,1,1,1,1,0,0,,
+File_3=TSourceModule,'S:\ZAMER\ZamerV2\URH.pas',0,1,273,5,299,0,0,{{15,21}
+File_4=TSourceModule,'S:\ZAMER\ZamerV2\Uzv2Main.pas',0,1,326,13,385,0,0,,
+File_5=TSourceModule,'s:\zamer\zamerv2\UHH.pas',0,1,107,1,129,0,0,{{16,24}
+File_6=TSourceModule,'S:\ZAMER\ZamerV2\Unagr.pas',0,1,443,74,464,0,0,,
+File_7=TSourceModule,'S:\ZAMER\ZamerV2\UKZ.pas',0,1,1,1,1,0,0,,
+File_8=TSourceModule,'S:\ZAMER\M45ORIG\SOURCE\Main.cpp',0,1,211,32,357,0,0,{{224,51}
+File_9=TSourceModule,'S:\ZAMER\ZAMER\UMehan.pas',0,1,1,1,1,0,0,,
+File_10=TSourceModule,'S:\ZAMER\ZAMER\UKZam.pas',0,1,318,75,357,0,0,,
+File_11=TSourceModule,'S:\ZAMER\ZAMER\UNagrev.pas',0,1,298,60,324,0,0,,
+File_12=TSourceModule,'S:\ZAMER\SborElspec\UMainSbor.pas',0,1,320,10,327,0,0,,
+File_13=TSourceModule,'S:\ZAMER\ZAMER\UHH.pas',0,1,1,1,1,0,0,,
+File_14=TSourceModule,'S:\ZAMER\ZAMER\USoprot.pas',0,1,96,5,112,0,0,,
 
 [Modules]
 Module0=S:\BOTVA\Unit1.pas
-Module1=c:\program files (x86)\embarcadero\studio\21.0\SOURCE\RTL\SYS\System.SysUtils.pas
-Count=2
+Count=1
 EditWindowCount=1
 
 [S:\BOTVA\Unit1.pas]
 ModuleType=TSourceModule
 
-[c:\program files (x86)\embarcadero\studio\21.0\SOURCE\RTL\SYS\System.SysUtils.pas]
-ModuleType=TSourceModule
-
 [EditWindow0]
-ViewCount=2
+ViewCount=1
 CurrentEditView=S:\BOTVA\Unit1.pas
 View0=0
-View1=1
 PercentageSizes=1
 Create=1
 Visible=1
@@ -63,24 +59,13 @@ BottomMiddelPanelData=0000080001020200000009000000446F636B5369746530100000004772
 [View0]
 CustomEditViewType=TEditView
 Module=S:\BOTVA\Unit1.pas
-CursorX=28
-CursorY=457
-TopLine=424
+CursorX=32
+CursorY=405
+TopLine=380
 LeftCol=1
 Elisions=
 Bookmarks=
 EditViewName=S:\BOTVA\Unit1.pas
-
-[View1]
-CustomEditViewType=TEditView
-Module=c:\program files (x86)\embarcadero\studio\21.0\SOURCE\RTL\SYS\System.SysUtils.pas
-CursorX=1
-CursorY=8411
-TopLine=8423
-LeftCol=1
-Elisions=
-Bookmarks=
-EditViewName=c:\program files (x86)\embarcadero\studio\21.0\SOURCE\RTL\SYS\System.SysUtils.pas
 
 [Watches]
 Count=0
@@ -217,8 +202,8 @@ SplitPos=111
 
 [PropInspDesignerSelection]
 ArrangeBy=Name
-SelectedItem=Align,
-ExpandedItems=Anchors=0,Constraints=0
+SelectedItem=Caption,
+ExpandedItems=LiveBindings=0,"LiveBindings Designer=0",Margins=0,Anchors=0,Constraints=0,Font=0
 
 [frmDesignPreview]
 PercentageSizes=1

@@ -42,6 +42,8 @@ type
     QTemp: TFDQuery;
     Button6: TButton;
     Button7: TButton;
+    CheckBox1: TCheckBox;
+    Label2: TLabel;
         procedure Button1Click(Sender: TObject);
         procedure Button2Click(Sender: TObject);
         procedure Button3Click(Sender: TObject);
@@ -400,7 +402,7 @@ begin
  QTEmp.SQL.Add(' and v2.tm='+Quotedstr(t2));
  QTEmp.SQL.Add(' and v1.dt='+Quotedstr(d1));
  QTEmp.SQL.Add(' and v2.dt='+Quotedstr(d2));
- QTEmp.SQL.Add(' and v2.bm-v1.bm >0');
+ If Not CheckBox1.Checked then QTEmp.SQL.Add(' and v2.bm-v1.bm >0');
  QTemp.Open;
  i:=1;
  While not QTemp.Eof do

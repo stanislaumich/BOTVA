@@ -57,9 +57,16 @@ object Form1: TForm1
   object Label1: TLabel
     Left = 8
     Top = 55
-    Width = 157
+    Width = 115
     Height = 13
-    Caption = #1056#1086#1089#1090' '#1041#1052', '#1076#1072#1090#1072' '#1085#1072#1095#1072#1083#1072' '#1080' '#1082#1086#1085#1094#1072':'
+    Caption = #1056#1086#1089#1090' '#1041#1052', '#1076#1072#1090#1072' '#1085#1072#1095#1072#1083#1072':'
+  end
+  object Label2: TLabel
+    Left = 77
+    Top = 79
+    Width = 46
+    Height = 13
+    Caption = ' '#1080' '#1082#1086#1085#1094#1072':'
   end
   object Button1: TButton
     Left = 569
@@ -182,7 +189,7 @@ object Form1: TForm1
     OnClick = Button5Click
   end
   object ComboBox1: TComboBox
-    Left = 166
+    Left = 125
     Top = 52
     Width = 127
     Height = 21
@@ -190,15 +197,15 @@ object Form1: TForm1
     Text = 'ComboBox1'
   end
   object ComboBox2: TComboBox
-    Left = 299
-    Top = 52
+    Left = 125
+    Top = 77
     Width = 127
     Height = 21
     TabOrder = 13
     Text = 'ComboBox2'
   end
   object Button6: TButton
-    Left = 428
+    Left = 254
     Top = 50
     Width = 138
     Height = 25
@@ -207,13 +214,21 @@ object Form1: TForm1
     OnClick = Button6Click
   end
   object Button7: TButton
-    Left = 569
-    Top = 50
-    Width = 101
+    Left = 254
+    Top = 75
+    Width = 138
     Height = 25
     Caption = #1042#1099#1073#1088#1072#1090#1100' '#1085#1072' '#1076#1072#1090#1091
     TabOrder = 15
     OnClick = Button7Click
+  end
+  object CheckBox1: TCheckBox
+    Left = 394
+    Top = 54
+    Width = 109
+    Height = 17
+    Caption = #1055#1086#1082#1072#1079#1099#1074#1072#1090#1100' '#1085#1091#1083#1080
+    TabOrder = 19
   end
   object OpenDialog1: TOpenDialog
     Left = 64
