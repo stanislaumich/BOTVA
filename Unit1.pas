@@ -319,7 +319,7 @@ begin
            delete(s,1,pos('>',s));
            delete(s,1,pos('>',s));
            s:=trim(s);
-           Stringgrid1.cells[0,i]:=inttostr(i-1);
+           Stringgrid1.cells[0,i]:=inttostr(i);
            s:=StringReplace(s,'...','%',[rfReplaceAll, rfIgnoreCase]);
            Stringgrid1.cells[2,i]:=s;
            QTemp.Close;
