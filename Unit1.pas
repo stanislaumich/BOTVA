@@ -224,6 +224,7 @@ begin
     end;
     // надо вставить в базу данных
     ShowMessage('Обработано ' + inttostr(j) + ' воинов');
+    Button4.Enabled:=true;
 end;
 
 procedure TForm1.Button1Click(Sender: TObject);
@@ -369,6 +370,7 @@ begin
     end;
  ShowMessage('Данные записаны!');
  FillCombo12;
+ Button4.Enabled:=false;
 end;
 
 procedure TForm1.Button5Click(Sender: TObject);
@@ -446,7 +448,7 @@ begin
    QTemp.Next;
    i:=i+1;
   end;
-
+ Button4.Enabled:=false;
 end;
 
 procedure TForm1.Button7Click(Sender: TObject);
@@ -455,14 +457,15 @@ var
  i:integer;
 begin
  ClearSGR;
- Stringgrid1.colcount:=6;
+ Stringgrid1.colcount:=7;
  Stringgrid1.RowCount:=2;
- Stringgrid1.cells[0,0]:='Ник';
- Stringgrid1.cells[1,0]:='Уров';
- Stringgrid1.cells[2,0]:='БМ';
- Stringgrid1.cells[3,0]:='Слава';
- Stringgrid1.cells[4,0]:='Дата';
- Stringgrid1.cells[5,0]:='Время';
+ Stringgrid1.cells[0,0]:='#';
+ Stringgrid1.cells[1,0]:='Ник';
+ Stringgrid1.cells[2,0]:='Уров';
+ Stringgrid1.cells[3,0]:='БМ';
+ Stringgrid1.cells[4,0]:='Слава';
+ Stringgrid1.cells[5,0]:='Дата';
+ Stringgrid1.cells[6,0]:='Время';
  s1:=ComboBox1.Text;
  delete(s1,pos('-',s1),length(s1));
  d1:=s1;
@@ -480,17 +483,18 @@ begin
  i:=1;
  While not QTemp.Eof do
   begin
-   Stringgrid1.cells[0,i]:=QTemp.FieldByName('nik').Asstring;
-   Stringgrid1.cells[1,i]:=QTemp.FieldByName('lev').Asstring;
-   Stringgrid1.cells[2,i]:=QTemp.FieldByName('bm').AsString;
-   Stringgrid1.cells[3,i]:=QTemp.FieldByName('slava').AsVariant;
-   Stringgrid1.cells[4,i]:=QTemp.FieldByName('dt').Asstring;
-   Stringgrid1.cells[5,i]:=QTemp.FieldByName('tm').Asstring;
+   Stringgrid1.cells[0,i]:=inttostr(i);
+   Stringgrid1.cells[1,i]:=QTemp.FieldByName('nik').Asstring;
+   Stringgrid1.cells[2,i]:=QTemp.FieldByName('lev').Asstring;
+   Stringgrid1.cells[3,i]:=QTemp.FieldByName('bm').AsString;
+   Stringgrid1.cells[4,i]:=QTemp.FieldByName('slava').AsVariant;
+   Stringgrid1.cells[5,i]:=QTemp.FieldByName('dt').Asstring;
+   Stringgrid1.cells[6,i]:=QTemp.FieldByName('tm').Asstring;
    stringgrid1.Rowcount:=Stringgrid1.Rowcount+1;
    QTemp.Next;
    i:=i+1;
   end;
-
+ Button4.Enabled:=false;
 end;
 
 procedure TForm1.Button8Click(Sender: TObject);
