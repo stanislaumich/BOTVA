@@ -50,6 +50,10 @@ type
     Label4: TLabel;
     GroupBox1: TGroupBox;
     GroupBox2: TGroupBox;
+    Label7: TLabel;
+    DateTimePicker2: TDateTimePicker;
+    DateTimePicker3: TDateTimePicker;
+    Button9: TButton;
         procedure Button1Click(Sender: TObject);
         procedure Button2Click(Sender: TObject);
         procedure Button3Click(Sender: TObject);
@@ -60,6 +64,7 @@ type
         procedure FormCreate(Sender: TObject);
     procedure Button6Click(Sender: TObject);
     procedure Button7Click(Sender: TObject);
+    procedure Button8Click(Sender: TObject);
 
     private
         { Private declarations }
@@ -313,16 +318,22 @@ begin
            delete(s,1,pos('>',s));
            s:=trim(s);
            Stringgrid1.cells[0,i]:=inttostr(i-1);
-           s:=StringReplace(s,'...','%',[]);
-           Stringgrid1.cells[1,i]:=s;
+           s:=StringReplace(s,'...','%',[rfReplaceAll, rfIgnoreCase]);
+           Stringgrid1.cells[2,i]:=s;
+           QTemp.Close;
+           QTemp.Open('select * from voin where nik like'+Quotedstr(s));
+           Stringgrid1.cells[1,i]:=QTemp.FieldByName('nik').Asstring;
            Stringgrid1.RowCount:=Stringgrid1.RowCount+1;
            i:=i+1;
           end;
          ReadLn(fi,s);
          s:=trim(s);
         until pos('<div class='+Quotedstr('clear')+'>',s)>0;
-        Stringgrid1.cells[1,0]:=glava;
+        Stringgrid1.cells[2,0]:=glava;
         Stringgrid1.cells[0,0]:='-1';
+        QTemp.Close;
+        QTemp.Open('select * from voin where nik like'+Quotedstr(glava));
+        Stringgrid1.cells[1,0]:=QTemp.FieldByName('nik').Asstring;
         ShowMessage('Готово!!!');
 
         Edit4.text := '';
@@ -375,7 +386,7 @@ begin
         for i := 0 to StringGrid1.rowcount - 1 do
         begin
             s := '';
-            for j := 1 to StringGrid1.colcount - 1 do
+            for j := 0 to StringGrid1.colcount - 1 do
             begin
                 s := s + StringGrid1.cells[j, i] + ';';
             end;
@@ -480,6 +491,13 @@ begin
 
 end;
 
+procedure TForm1.Button8Click(Sender: TObject);
+var
+ s,ts:string;
+begin
+// загрузка подземов в базу
+end;
+
 procedure TForm1.FormCreate(Sender: TObject);
 begin
     DateTimePicker1.Date:=Date;
@@ -496,6 +514,16 @@ begin
     QTemp.SQL.Add('dt    VARCHAR (50)   DEFAULT NULL, ');
     QTemp.SQL.Add('tm    VARCHAR (50))');
     QTEMP.ExecSQL;
+    QTEMP.Close;
+    QTEmp.SQL.Clear;
+    QTemp.SQL.Add('CREATE TABLE IF NOT EXISTS podzem ( ');
+    QTemp.SQL.Add('dt  VARCHAR (50), ');
+    QTemp.SQL.Add('num INTEGER, ');
+    QTemp.SQL.Add('nik VARCHAR2 (50), ');
+    QTemp.SQL.Add('id  INTEGER, ');
+    QTemp.SQL.Add('val VARCHAR2 (1000))');
+    QTEMP.ExecSQL;
+    QTEMP.Close;
 
 
 

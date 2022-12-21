@@ -386,7 +386,7 @@ begin
         for i := 0 to StringGrid1.rowcount - 1 do
         begin
             s := '';
-            for j := 1 to StringGrid1.colcount - 1 do
+            for j := 0 to StringGrid1.colcount - 1 do
             begin
                 s := s + StringGrid1.cells[j, i] + ';';
             end;
@@ -402,13 +402,14 @@ var
  i:integer;
 begin
  ClearSGR;
- Stringgrid1.colcount:=5;
+ Stringgrid1.colcount:=6;
  Stringgrid1.RowCount:=2;
- Stringgrid1.cells[0,0]:='Ник';
- Stringgrid1.cells[1,0]:='БМ начало';
- Stringgrid1.cells[2,0]:='БМ конец';
- Stringgrid1.cells[3,0]:='Рост БМ';
- Stringgrid1.cells[4,0]:='Рост %';
+ Stringgrid1.cells[0,0]:='#';
+ Stringgrid1.cells[1,0]:='Ник';
+ Stringgrid1.cells[2,0]:='БМ начало';
+ Stringgrid1.cells[3,0]:='БМ конец';
+ Stringgrid1.cells[4,0]:='Рост БМ';
+ Stringgrid1.cells[5,0]:='Рост %';
  s1:=ComboBox1.Text;
  s2:=ComboBox2.Text;
  delete(s1,pos('-',s1),length(s1));
@@ -435,11 +436,12 @@ begin
  i:=1;
  While not QTemp.Eof do
   begin
-   Stringgrid1.cells[0,i]:=QTemp.FieldByName('nik').Asstring;
-   Stringgrid1.cells[1,i]:=QTemp.FieldByName('bm1').Asstring;
-   Stringgrid1.cells[2,i]:=QTemp.FieldByName('bm2').Asstring;
-   Stringgrid1.cells[3,i]:=QTemp.FieldByName('delta').Asstring;
-   Stringgrid1.cells[4,i]:=QTemp.FieldByName('deltap').Asstring;
+   Stringgrid1.cells[0,i]:=inttostr(i);
+   Stringgrid1.cells[1,i]:=QTemp.FieldByName('nik').Asstring;
+   Stringgrid1.cells[2,i]:=QTemp.FieldByName('bm1').Asstring;
+   Stringgrid1.cells[3,i]:=QTemp.FieldByName('bm2').Asstring;
+   Stringgrid1.cells[4,i]:=QTemp.FieldByName('delta').Asstring;
+   Stringgrid1.cells[5,i]:=QTemp.FieldByName('deltap').Asstring;
    stringgrid1.Rowcount:=Stringgrid1.Rowcount+1;
    QTemp.Next;
    i:=i+1;
