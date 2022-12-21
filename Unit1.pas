@@ -66,6 +66,7 @@ type
     procedure Button6Click(Sender: TObject);
     procedure Button7Click(Sender: TObject);
     procedure BPodzemBaseClick(Sender: TObject);
+    procedure Button9Click(Sender: TObject);
 
     private
         { Private declarations }
@@ -330,14 +331,31 @@ begin
          ReadLn(fi,s);
          s:=trim(s);
         until pos('<div class='+Quotedstr('clear')+'>',s)>0;
+        ModA:=i-1;
         Stringgrid1.cells[2,0]:=glava;
         Stringgrid1.cells[0,0]:='-1';
         QTemp.Close;
         QTemp.Open('select * from voin where nik like'+Quotedstr(glava));
         Stringgrid1.cells[1,0]:=QTemp.FieldByName('nik').Asstring;
+        //https://g1.botva.ru/monster.php?a= monsterpve&do_cmd= log&raid= 890815&id=2602721&key=b67865b9946ead935d8ad45ec2a9973c
+        s:=Edit2.Text;
+        delete(s,1,pos('=',s));
+        delete(s,1,pos('=',s));
+        delete(s,1,pos('=',s));
+        // сейчас raid если раскомментировать нижнюю то id
+        delete(s,1,pos('=',s)); //
+        delete(s,pos('&',s),length(s));
+        Stringgrid1.cells[1,Stringgrid1.rowcount-2]:=s;
+        Stringgrid1.cells[0,Stringgrid1.rowcount-2]:='-4';
+        Stringgrid1.cells[2,Stringgrid1.rowcount-2]:=inttostr(moda);
+
+        i:= strtoint(Stringgrid1.cells[1,Stringgrid1.rowcount-2]) mod moda;
+        Stringgrid1.cells[1,Stringgrid1.rowcount-1]:=inttostr(i);
+        Stringgrid1.cells[2,Stringgrid1.rowcount-1]:=Stringgrid1.cells[1,i+1];
+
         ShowMessage('Готово!!!');
-        BVoinBase.Enabled:=True;
-        Edit4.text := '';
+        BPodzemBase.Enabled:=True;
+
 
     end;
 
@@ -497,6 +515,20 @@ begin
  BVoinBase.Enabled:=false;
 end;
 
+procedure TForm1.Button9Click(Sender: TObject);
+begin
+// select nik,count(nik) from podzem where id>-2 group by nik
+//SELECT * FROM table
+//    WHERE   to_date(column,'dd/MM/yyyy')
+//    BETWEEN to_date('01/11/2010','dd/MM/yyyy')
+//    AND     to_date('30/11/2010','dd/MM/yyyy')
+QTemp.Close;
+QTemp.sql.add('');
+
+QTemp.Open;
+
+end;
+
 procedure TForm1.BPodzemBaseClick(Sender: TObject);
 var
  s,ts:string;
@@ -504,22 +536,20 @@ var
 
 begin
 // загрузка подземов в базу
-{
-   VALUES (:dt,:num,nik,:id,:val
-}
-for i:=0 to Stringgrid1.Rowcount-1 do
+
+for i:=0 to Stringgrid1.Rowcount-3 do
  begin
   QInsPodzem.Close;
   QInsPodzem.ParamByNAme('dt').AsString:=DateToStr(Datetimepicker1.Date);
   QInsPodzem.ParamByNAme('num').AsInteger:=Strtoint(Edit4.Text);
-  QInsPodzem.ParamByNAme('nik').AsString:=Stringgrid1.Cells[1,2];
-  QInsPodzem.ParamByNAme('id').AsInteger:=Strtoint(Stringgrid1.Cells[1,0]);
+  QInsPodzem.ParamByNAme('nik').AsString:=Stringgrid1.Cells[1,i];
+  QInsPodzem.ParamByNAme('id').AsInteger:=Strtoint(Stringgrid1.Cells[0,i]);
   QInsPodzem.ParamByNAme('val').AsString:='0';
   QInsPodzem.ExecSQL;
  end;
  // вставляем записи впомогательные
  // лог боя
- QInsPodzem.Close;
+  QInsPodzem.Close;
   QInsPodzem.ParamByNAme('dt').AsString:=DateToStr(Datetimepicker1.Date);
   QInsPodzem.ParamByNAme('num').AsInteger:=Strtoint(Edit4.Text);
   QInsPodzem.ParamByNAme('nik').AsString:='';
@@ -531,12 +561,14 @@ for i:=0 to Stringgrid1.Rowcount-1 do
   QInsPodzem.Close;
   QInsPodzem.ParamByNAme('dt').AsString:=DateToStr(Datetimepicker1.Date);
   QInsPodzem.ParamByNAme('num').AsInteger:=Strtoint(Edit4.Text);
-  QInsPodzem.ParamByNAme('nik').AsString:=nik;
+  QInsPodzem.ParamByNAme('nik').AsString:=stringgrid1.cells[2,Stringgrid1.Rowcount-1];
   QInsPodzem.ParamByNAme('id').AsInteger:=-3;
-  QInsPodzem.ParamByNAme('val').AsString:='';
+  QInsPodzem.ParamByNAme('val').AsString:=stringgrid1.cells[1,Stringgrid1.Rowcount-2]+' mod '+stringgrid1.cells[2,Stringgrid1.Rowcount-2]+' = '+stringgrid1.cells[1,Stringgrid1.Rowcount-1];
   QInsPodzem.ExecSQL;
  ShowMessage(Done);
- BVoinBase.Enabled:=False;
+ Edit4.text := '';
+ Edit2.text := '';
+ BPodzemBase.Enabled:=False;
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);
@@ -582,7 +614,7 @@ begin
     s := Doc.body.outerHTML;
     Memo1.text := s;
     ClearSGR;
-     Memo1.lines.SaveToFile('s:\w.txt');
+     //Memo1.lines.SaveToFile('s:\w.txt');
     case act of
         1:
             parseclan;

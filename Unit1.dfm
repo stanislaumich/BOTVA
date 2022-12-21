@@ -320,6 +320,7 @@ object Form1: TForm1
     Height = 25
     Caption = #1056#1072#1089#1089#1095#1080#1090#1072#1090#1100
     TabOrder = 22
+    OnClick = Button9Click
   end
   object OpenDialog1: TOpenDialog
     Left = 492
@@ -331,7 +332,8 @@ object Form1: TForm1
   end
   object FDC: TFDConnection
     Params.Strings = (
-      'DriverID=SQLite')
+      'DriverID=SQLite'
+      'LockingMode=Normal')
     LoginPrompt = False
     Left = 392
     Top = 316
@@ -407,14 +409,14 @@ object Form1: TForm1
       '                       dt,'
       '                       num,'
       '                       nik,'
-      '                       numnik,'
+      '                       id,'
       '                       val'
       '                   )'
       '                   VALUES ('
       '                       :dt,'
       '                       :num,'
       '                       :nik,'
-      '                       :numnik,'
+      '                       :id,'
       '                       :val'
       '                   )')
     Left = 444
@@ -433,7 +435,7 @@ object Form1: TForm1
         ParamType = ptInput
       end
       item
-        Name = 'NUMNIK'
+        Name = 'ID'
         ParamType = ptInput
       end
       item
