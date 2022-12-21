@@ -19,11 +19,11 @@ type
     TForm1 = class(TForm)
         Button1: TButton;
         OpenDialog1: TOpenDialog;
-        Button2: TButton;
+    BPodzem: TButton;
         Edit1: TEdit;
         Edit2: TEdit;
         Edit3: TEdit;
-        Button3: TButton;
+    BVoin: TButton;
         Edit4: TEdit;
         Label5: TLabel;
         Label6: TLabel;
@@ -31,7 +31,7 @@ type
         Memo1: TMemo;
         WB: TWebBrowser;
         StringGrid1: TStringGrid;
-        Button4: TButton;
+    BVoinBase: TButton;
         Button5: TButton;
         SaveDialog1: TSaveDialog;
         FDC: TFDConnection;
@@ -44,7 +44,7 @@ type
     Button7: TButton;
     CheckBox1: TCheckBox;
     Label2: TLabel;
-    Button8: TButton;
+    BPodzemBase: TButton;
     Label3: TLabel;
     DateTimePicker1: TDateTimePicker;
     Label4: TLabel;
@@ -54,17 +54,18 @@ type
     DateTimePicker2: TDateTimePicker;
     DateTimePicker3: TDateTimePicker;
     Button9: TButton;
+    QInsPodzem: TFDQuery;
         procedure Button1Click(Sender: TObject);
-        procedure Button2Click(Sender: TObject);
-        procedure Button3Click(Sender: TObject);
+        procedure BPodzemClick(Sender: TObject);
+        procedure BVoinClick(Sender: TObject);
         procedure WBDocumentComplete(ASender: TObject; const pDisp: IDispatch;
           const URL: OleVariant);
         procedure Button5Click(Sender: TObject);
-        procedure Button4Click(Sender: TObject);
+        procedure BVoinBaseClick(Sender: TObject);
         procedure FormCreate(Sender: TObject);
     procedure Button6Click(Sender: TObject);
     procedure Button7Click(Sender: TObject);
-    procedure Button8Click(Sender: TObject);
+    procedure BPodzemBaseClick(Sender: TObject);
 
     private
         { Private declarations }
@@ -83,6 +84,10 @@ type
         slava: int64;
         lev: integer;
     end;
+const
+ Done = 'Данные записаны в базу!';
+
+
 
 var
     Form1: TForm1;
@@ -99,15 +104,7 @@ procedure TForm1.parsepodzem;
  var
   s,ts:string;
  begin
-    StringGrid1.colcount := 8;
-    StringGrid1.rowcount := 2;
-    StringGrid1.cells[1, 0] := 'ИД';
-    StringGrid1.cells[2, 0] := 'Ник';
-    StringGrid1.cells[3, 0] := 'Уров';
-    StringGrid1.cells[4, 0] := 'БМ';
-    StringGrid1.cells[5, 0] := 'Слава';
-    StringGrid1.cells[6, 0] := 'Дата';
-    StringGrid1.cells[7, 0] := 'Время';
+
 
 
 
@@ -224,7 +221,7 @@ begin
     end;
     // надо вставить в базу данных
     ShowMessage('Обработано ' + inttostr(j) + ' воинов');
-    Button4.Enabled:=true;
+    BVoinBase.Enabled:=true;
 end;
 
 procedure TForm1.Button1Click(Sender: TObject);
@@ -276,7 +273,7 @@ begin
     end;
 end;
 
-procedure TForm1.Button2Click(Sender: TObject);
+procedure TForm1.BPodzemClick(Sender: TObject);
 var
     fi, fo: textfile;
     s, ts, rs, glava: string;
@@ -289,11 +286,15 @@ begin
           ('Нужно указать ссылку на лог подзема и указать первый(1), или второй(2) это был поход');
         exit;
     end;
-
-
-
     If OpenDialog1.Execute() then
     begin
+        ClearSGR;
+        StringGrid1.colcount := 3;
+        StringGrid1.rowcount := 2;
+        StringGrid1.cells[1, 0] := 'ИД';
+        StringGrid1.cells[2, 0] := 'Ник в бою';
+        StringGrid1.cells[3, 0] := 'Ник в базе';
+
         Assignfile(fi, OpenDialog1.Filename);
         Reset(fi);
         repeat
@@ -307,7 +308,6 @@ begin
         delete(s,1,pos('>',s));
         delete(s,pos('<',s),length(s));
         glava:=s;
-        //Edit2.Text:=ts+' '+glava;
         ReadLn(fi,s);
         s:=trim(s);
         i:=0;
@@ -336,21 +336,21 @@ begin
         QTemp.Open('select * from voin where nik like'+Quotedstr(glava));
         Stringgrid1.cells[1,0]:=QTemp.FieldByName('nik').Asstring;
         ShowMessage('Готово!!!');
-
+        BVoinBase.Enabled:=True;
         Edit4.text := '';
 
     end;
 
 end;
 
-procedure TForm1.Button3Click(Sender: TObject);
+procedure TForm1.BVoinClick(Sender: TObject);
 
 begin
     act := 1;
     WB.Navigate2(Edit3.text);
 end;
 
-procedure TForm1.Button4Click(Sender: TObject);
+procedure TForm1.BVoinBaseClick(Sender: TObject);
 var
     i: integer;
 begin
@@ -368,9 +368,9 @@ begin
         QinsVoin.ParamByName('tm').Asstring := StringGrid1.cells[7, i];
         QinsVoin.Execsql;
     end;
- ShowMessage('Данные записаны!');
+ ShowMessage(Done);
  FillCombo12;
- Button4.Enabled:=false;
+ BVoinBase.Enabled:=false;
 end;
 
 procedure TForm1.Button5Click(Sender: TObject);
@@ -448,7 +448,7 @@ begin
    QTemp.Next;
    i:=i+1;
   end;
- Button4.Enabled:=false;
+ BVoinBase.Enabled:=false;
 end;
 
 procedure TForm1.Button7Click(Sender: TObject);
@@ -457,14 +457,15 @@ var
  i:integer;
 begin
  ClearSGR;
- Stringgrid1.colcount:=6;
+ Stringgrid1.colcount:=7;
  Stringgrid1.RowCount:=2;
- Stringgrid1.cells[0,0]:='Ник';
- Stringgrid1.cells[1,0]:='Уров';
- Stringgrid1.cells[2,0]:='БМ';
- Stringgrid1.cells[3,0]:='Слава';
- Stringgrid1.cells[4,0]:='Дата';
- Stringgrid1.cells[5,0]:='Время';
+ Stringgrid1.cells[0,0]:='#';
+ Stringgrid1.cells[1,0]:='Ник';
+ Stringgrid1.cells[2,0]:='Уров';
+ Stringgrid1.cells[3,0]:='БМ';
+ Stringgrid1.cells[4,0]:='Слава';
+ Stringgrid1.cells[5,0]:='Дата';
+ Stringgrid1.cells[6,0]:='Время';
  s1:=ComboBox1.Text;
  delete(s1,pos('-',s1),length(s1));
  d1:=s1;
@@ -482,24 +483,43 @@ begin
  i:=1;
  While not QTemp.Eof do
   begin
-   Stringgrid1.cells[0,i]:=QTemp.FieldByName('nik').Asstring;
-   Stringgrid1.cells[1,i]:=QTemp.FieldByName('lev').Asstring;
-   Stringgrid1.cells[2,i]:=QTemp.FieldByName('bm').AsString;
-   Stringgrid1.cells[3,i]:=QTemp.FieldByName('slava').AsVariant;
-   Stringgrid1.cells[4,i]:=QTemp.FieldByName('dt').Asstring;
-   Stringgrid1.cells[5,i]:=QTemp.FieldByName('tm').Asstring;
+   Stringgrid1.cells[0,i]:=inttostr(i);
+   Stringgrid1.cells[1,i]:=QTemp.FieldByName('nik').Asstring;
+   Stringgrid1.cells[2,i]:=QTemp.FieldByName('lev').Asstring;
+   Stringgrid1.cells[3,i]:=QTemp.FieldByName('bm').AsString;
+   Stringgrid1.cells[4,i]:=QTemp.FieldByName('slava').AsVariant;
+   Stringgrid1.cells[5,i]:=QTemp.FieldByName('dt').Asstring;
+   Stringgrid1.cells[6,i]:=QTemp.FieldByName('tm').Asstring;
    stringgrid1.Rowcount:=Stringgrid1.Rowcount+1;
    QTemp.Next;
    i:=i+1;
   end;
- Button4.Enabled:=false;
+ BVoinBase.Enabled:=false;
 end;
 
-procedure TForm1.Button8Click(Sender: TObject);
+procedure TForm1.BPodzemBaseClick(Sender: TObject);
 var
  s,ts:string;
+ i:integer;
+
 begin
 // загрузка подземов в базу
+{
+   VALUES (:dt,:num,nik,:id,:val
+}
+for i:=0 to Stringgrid1.Rowcount-1 do
+ begin
+  QInsPodzem.Close;
+  QInsPodzem.ParamByNAme('dt').AsString:=DateToStr(Datetimepicker1.Date);
+  QInsPodzem.ParamByNAme('num').AsInteger:=Strtoint(Edit4.Text);
+  QInsPodzem.ParamByNAme('nik').AsString:=Stringgrid1.Cells[1,2];
+  QInsPodzem.ParamByNAme('id').AsInteger:=Strtoint(Stringgrid1.Cells[1,0]);
+  QInsPodzem.ParamByNAme('val').AsString:='0';
+  QInsPodzem.ExecSQL;
+ end;
+
+ ShowMessage(Done);
+ BVoinBase.Enabled:=False;
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);

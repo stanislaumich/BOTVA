@@ -20,7 +20,7 @@ object Form1: TForm1
   TextHeight = 13
   object Label5: TLabel
     Left = 536
-    Top = 112
+    Top = 84
     Width = 14
     Height = 13
     Caption = #8470
@@ -32,8 +32,8 @@ object Form1: TForm1
     ParentFont = False
   end
   object Label6: TLabel
-    Left = 4
-    Top = 112
+    Left = 7
+    Top = 84
     Width = 141
     Height = 13
     Caption = #1057#1089#1099#1083#1082#1072' '#1085#1072' '#1083#1086#1075' '#1087#1086#1076#1079#1077#1084#1072':'
@@ -75,14 +75,14 @@ object Form1: TForm1
   end
   object Label3: TLabel
     Left = 5
-    Top = 156
+    Top = 128
     Width = 208
     Height = 13
     Caption = #1059#1082#1072#1078#1080#1090#1077' '#1076#1072#1090#1091' '#1077#1089#1083#1080' '#1083#1086#1075' '#1085#1077' '#1089#1077#1075#1086#1076#1085#1103#1096#1085#1080#1081':'
   end
   object Label4: TLabel
     Left = 394
-    Top = 112
+    Top = 84
     Width = 139
     Height = 13
     Caption = #1059#1082#1072#1078#1080#1090#1077' '#1085#1086#1084#1077#1088' '#1087#1086#1093#1086#1076#1072
@@ -95,14 +95,14 @@ object Form1: TForm1
   end
   object Label7: TLabel
     Left = 323
-    Top = 156
+    Top = 128
     Width = 214
     Height = 13
     Caption = #1056#1072#1089#1089#1095#1080#1090#1072#1090#1100' '#1087#1086#1093#1086#1076#1099' '#1089' '#1080' '#1087#1086' '#1074#1082#1083#1102#1095#1080#1090#1077#1083#1100#1085#1086':'
   end
   object Button1: TButton
-    Left = 687
-    Top = 55
+    Left = 78
+    Top = 159
     Width = 185
     Height = 25
     Anchors = [akTop, akRight]
@@ -113,7 +113,7 @@ object Form1: TForm1
   end
   object Button2: TButton
     Left = 565
-    Top = 126
+    Top = 98
     Width = 189
     Height = 25
     Caption = #1054#1073#1088#1072#1073#1086#1090#1072#1090#1100' '#1083#1086#1075' '#1087#1086#1076#1079#1077#1084#1072
@@ -121,8 +121,8 @@ object Form1: TForm1
     OnClick = Button2Click
   end
   object Edit1: TEdit
-    Left = 612
-    Top = 57
+    Left = 8
+    Top = 161
     Width = 69
     Height = 21
     TabOrder = 2
@@ -131,7 +131,7 @@ object Form1: TForm1
   end
   object Edit2: TEdit
     Left = 4
-    Top = 128
+    Top = 100
     Width = 521
     Height = 21
     TabOrder = 3
@@ -157,7 +157,7 @@ object Form1: TForm1
   end
   object Edit4: TEdit
     Left = 524
-    Top = 128
+    Top = 100
     Width = 38
     Height = 21
     TabOrder = 6
@@ -173,7 +173,6 @@ object Form1: TForm1
     ScrollBars = ssBoth
     TabOrder = 7
     WordWrap = False
-    ExplicitWidth = 911
   end
   object WB: TWebBrowser
     Left = 4
@@ -201,7 +200,6 @@ object Form1: TForm1
     RowCount = 2
     Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goFixedRowDefAlign]
     TabOrder = 9
-    ExplicitWidth = 953
   end
   object Button4: TButton
     Left = 756
@@ -209,19 +207,18 @@ object Form1: TForm1
     Width = 133
     Height = 25
     Caption = #1047#1072#1087#1080#1089#1072#1090#1100' '#1074' '#1073#1072#1079#1091
+    Enabled = False
     TabOrder = 10
     OnClick = Button4Click
   end
   object Button5: TButton
-    Left = 733
-    Top = 206
+    Left = 4
+    Top = 204
     Width = 157
     Height = 25
-    Anchors = [akTop, akRight]
     Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100' '#1090#1072#1073#1083#1080#1094#1091' '#1074' Excel'
     TabOrder = 11
     OnClick = Button5Click
-    ExplicitLeft = 800
   end
   object ComboBox1: TComboBox
     Left = 125
@@ -267,61 +264,61 @@ object Form1: TForm1
   end
   object Button8: TButton
     Left = 756
-    Top = 126
+    Top = 98
     Width = 133
     Height = 25
     Caption = #1047#1072#1087#1080#1089#1072#1090#1100' '#1074' '#1073#1072#1079#1091
-    TabOrder = 20
-    OnClick = Button4Click
+    TabOrder = 17
+    OnClick = Button8Click
   end
   object DateTimePicker1: TDateTimePicker
     Left = 218
-    Top = 152
+    Top = 124
     Width = 95
     Height = 21
     Date = 44915.000000000000000000
     Time = 0.881333263889246200
-    TabOrder = 21
+    TabOrder = 19
   end
   object GroupBox1: TGroupBox
-    Left = 4
-    Top = 179
+    Left = 8
+    Top = 151
     Width = 885
     Height = 8
-    TabOrder = 22
+    TabOrder = 21
   end
   object GroupBox2: TGroupBox
     Left = 4
-    Top = 103
+    Top = 75
     Width = 885
     Height = 8
     TabOrder = 23
   end
   object DateTimePicker2: TDateTimePicker
     Left = 543
-    Top = 152
+    Top = 124
     Width = 93
     Height = 21
     Date = 44915.000000000000000000
     Time = 0.969849317130865500
-    TabOrder = 24
+    TabOrder = 18
   end
   object DateTimePicker3: TDateTimePicker
     Left = 640
-    Top = 152
+    Top = 124
     Width = 93
     Height = 21
     Date = 44915.000000000000000000
     Time = 0.969878599535150000
-    TabOrder = 25
+    TabOrder = 20
   end
   object Button9: TButton
     Left = 734
-    Top = 151
+    Top = 123
     Width = 155
     Height = 25
     Caption = #1056#1072#1089#1089#1095#1080#1090#1072#1090#1100
-    TabOrder = 26
+    TabOrder = 22
   end
   object OpenDialog1: TOpenDialog
     Left = 492
@@ -401,5 +398,46 @@ object Form1: TForm1
     Connection = FDC
     Left = 340
     Top = 316
+  end
+  object QInsPodzem: TFDQuery
+    Connection = FDC
+    SQL.Strings = (
+      'INSERT INTO podzem ('
+      '                       dt,'
+      '                       num,'
+      '                       nik,'
+      '                       numnik,'
+      '                       val'
+      '                   )'
+      '                   VALUES ('
+      '                       :dt,'
+      '                       :num,'
+      '                       :nik,'
+      '                       :numnik,'
+      '                       :val'
+      '                   )')
+    Left = 444
+    Top = 364
+    ParamData = <
+      item
+        Name = 'DT'
+        ParamType = ptInput
+      end
+      item
+        Name = 'NUM'
+        ParamType = ptInput
+      end
+      item
+        Name = 'NIK'
+        ParamType = ptInput
+      end
+      item
+        Name = 'NUMNIK'
+        ParamType = ptInput
+      end
+      item
+        Name = 'VAL'
+        ParamType = ptInput
+      end>
   end
 end

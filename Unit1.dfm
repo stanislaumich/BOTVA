@@ -101,8 +101,8 @@ object Form1: TForm1
     Caption = #1056#1072#1089#1089#1095#1080#1090#1072#1090#1100' '#1087#1086#1093#1086#1076#1099' '#1089' '#1080' '#1087#1086' '#1074#1082#1083#1102#1095#1080#1090#1077#1083#1100#1085#1086':'
   end
   object Button1: TButton
-    Left = 78
-    Top = 159
+    Left = 558
+    Top = 195
     Width = 185
     Height = 25
     Anchors = [akTop, akRight]
@@ -111,18 +111,18 @@ object Form1: TForm1
     Visible = False
     OnClick = Button1Click
   end
-  object Button2: TButton
+  object BPodzem: TButton
     Left = 565
     Top = 98
     Width = 189
     Height = 25
     Caption = #1054#1073#1088#1072#1073#1086#1090#1072#1090#1100' '#1083#1086#1075' '#1087#1086#1076#1079#1077#1084#1072
     TabOrder = 1
-    OnClick = Button2Click
+    OnClick = BPodzemClick
   end
   object Edit1: TEdit
-    Left = 8
-    Top = 161
+    Left = 483
+    Top = 197
     Width = 69
     Height = 21
     TabOrder = 2
@@ -146,14 +146,14 @@ object Form1: TForm1
     Text = 'http://lz42.ru/clan.php'
     Visible = False
   end
-  object Button3: TButton
+  object BVoin: TButton
     Left = 569
     Top = 24
     Width = 185
     Height = 25
     Caption = #1054#1073#1088#1072#1073#1086#1090#1072#1090#1100' '#1074#1086#1080#1085#1086#1074' '#1082#1083#1072#1085#1072
     TabOrder = 5
-    OnClick = Button3Click
+    OnClick = BVoinClick
   end
   object Edit4: TEdit
     Left = 524
@@ -201,7 +201,7 @@ object Form1: TForm1
     Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goFixedRowDefAlign]
     TabOrder = 9
   end
-  object Button4: TButton
+  object BVoinBase: TButton
     Left = 756
     Top = 24
     Width = 133
@@ -209,14 +209,13 @@ object Form1: TForm1
     Caption = #1047#1072#1087#1080#1089#1072#1090#1100' '#1074' '#1073#1072#1079#1091
     Enabled = False
     TabOrder = 10
-    OnClick = Button4Click
+    OnClick = BVoinBaseClick
   end
   object Button5: TButton
     Left = 4
     Top = 204
     Width = 157
     Height = 25
-    Anchors = [akTop, akRight]
     Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100' '#1090#1072#1073#1083#1080#1094#1091' '#1074' Excel'
     TabOrder = 11
     OnClick = Button5Click
@@ -263,14 +262,15 @@ object Form1: TForm1
     Caption = #1055#1086#1082#1072#1079#1099#1074#1072#1090#1100' '#1085#1091#1083#1080
     TabOrder = 16
   end
-  object Button8: TButton
+  object BPodzemBase: TButton
     Left = 756
     Top = 98
     Width = 133
     Height = 25
     Caption = #1047#1072#1087#1080#1089#1072#1090#1100' '#1074' '#1073#1072#1079#1091
+    Enabled = False
     TabOrder = 17
-    OnClick = Button8Click
+    OnClick = BPodzemBaseClick
   end
   object DateTimePicker1: TDateTimePicker
     Left = 218
@@ -399,5 +399,46 @@ object Form1: TForm1
     Connection = FDC
     Left = 340
     Top = 316
+  end
+  object QInsPodzem: TFDQuery
+    Connection = FDC
+    SQL.Strings = (
+      'INSERT INTO podzem ('
+      '                       dt,'
+      '                       num,'
+      '                       nik,'
+      '                       numnik,'
+      '                       val'
+      '                   )'
+      '                   VALUES ('
+      '                       :dt,'
+      '                       :num,'
+      '                       :nik,'
+      '                       :numnik,'
+      '                       :val'
+      '                   )')
+    Left = 444
+    Top = 364
+    ParamData = <
+      item
+        Name = 'DT'
+        ParamType = ptInput
+      end
+      item
+        Name = 'NUM'
+        ParamType = ptInput
+      end
+      item
+        Name = 'NIK'
+        ParamType = ptInput
+      end
+      item
+        Name = 'NUMNIK'
+        ParamType = ptInput
+      end
+      item
+        Name = 'VAL'
+        ParamType = ptInput
+      end>
   end
 end

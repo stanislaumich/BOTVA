@@ -59,11 +59,11 @@ BottomMiddelPanelData=0000080001020200000009000000446F636B5369746530100000004772
 [View0]
 CustomEditViewType=TEditView
 Module=S:\BOTVA\Unit1.pas
-CursorX=32
-CursorY=405
-TopLine=380
+CursorX=45
+CursorY=536
+TopLine=497
 LeftCol=1
-Elisions=
+Elisions={{114,26},{120,4},{''}}{{122,29},{137,4},{''}}{{227,47},{274,3},{''}}{{376,47},{399,3},{''}}{{575,25},{592,3},{''}}
 Bookmarks=
 EditViewName=S:\BOTVA\Unit1.pas
 
@@ -194,7 +194,7 @@ MaxLeft=-1
 MaxTop=-1
 ClientWidth=1896
 ClientHeight=3238
-TBDockHeight=5200
+TBDockHeight=8743
 LRDockWidth=1896
 Dockable=1
 StayOnTop=0
@@ -202,8 +202,8 @@ SplitPos=111
 
 [PropInspDesignerSelection]
 ArrangeBy=Name
-SelectedItem=Caption,
-ExpandedItems=LiveBindings=0,"LiveBindings Designer=0",Margins=0,Anchors=0,Constraints=0,Font=0
+SelectedItem=Enabled,Action
+ExpandedItems=Anchors=1,Constraints=0,Font=0,ImageMargins=0,Margins=0,StyleElements=0,CustomTitleBar=0,GlassFrame=0,LiveBindings=0,BevelEdges=0,"LiveBindings Designer=0",Touch=0,ConnectedStoredUsage=0,FetchOptions=0,FormatOptions=0,Params=0,ResourceOptions=0,TxOptions=0,UpdateOptions=0,DefaultTransaction=0,Options=0,PoolingOptions=0,Attributes=0,FieldOptions=0,FilterChanges=0,FilterOptions=0
 
 [frmDesignPreview]
 PercentageSizes=1
@@ -636,7 +636,7 @@ MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
 ClientHeight=4467
-TBDockHeight=4600
+TBDockHeight=8743
 LRDockWidth=2000
 Dockable=1
 StayOnTop=0
@@ -660,7 +660,7 @@ MaxLeft=-1
 MaxTop=-1
 ClientWidth=1896
 ClientHeight=3438
-TBDockHeight=3552
+TBDockHeight=8743
 LRDockWidth=1896
 Dockable=1
 StayOnTop=0
@@ -684,7 +684,7 @@ MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
 ClientHeight=2210
-TBDockHeight=4152
+TBDockHeight=8743
 LRDockWidth=2000
 Dockable=1
 StayOnTop=0
