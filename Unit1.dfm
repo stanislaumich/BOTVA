@@ -154,11 +154,11 @@ object Form1: TForm1
     Visible = False
   end
   object BVoin: TButton
-    Left = 569
-    Top = 24
-    Width = 185
+    Left = 436
+    Top = 21
+    Width = 316
     Height = 25
-    Caption = #1054#1073#1088#1072#1073#1086#1090#1072#1090#1100' '#1074#1086#1080#1085#1086#1074' '#1082#1083#1072#1085#1072
+    Caption = #1054#1073#1088#1072#1073#1086#1090#1072#1090#1100' '#1074#1086#1080#1085#1086#1074' '#1082#1083#1072#1085#1072' '#1089#1086' '#1089#1090#1088#1072#1085#1080#1094#1099' '#1089#1072#1081#1090#1072' '#1080#1075#1088#1099' '
     TabOrder = 5
     OnClick = BVoinClick
   end
@@ -209,9 +209,9 @@ object Form1: TForm1
     TabOrder = 9
   end
   object BVoinBase: TButton
-    Left = 756
-    Top = 24
-    Width = 133
+    Left = 753
+    Top = 21
+    Width = 136
     Height = 25
     Caption = #1047#1072#1087#1080#1089#1072#1090#1100' '#1074' '#1073#1072#1079#1091
     Enabled = False
@@ -353,7 +353,7 @@ object Form1: TForm1
     Width = 21
     Height = 21
     Caption = '*'
-    TabOrder = 29
+    TabOrder = 26
     OnClick = Button2Click
   end
   object OpenDialog1: TOpenDialog
