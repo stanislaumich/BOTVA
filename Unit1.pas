@@ -55,6 +55,10 @@ type
     DateTimePicker3: TDateTimePicker;
     Button9: TButton;
     QInsPodzem: TFDQuery;
+    Label9: TLabel;
+    DateTimePicker4: TDateTimePicker;
+    BShowPodzemData: TButton;
+    Button2: TButton;
         procedure Button1Click(Sender: TObject);
         procedure BPodzemClick(Sender: TObject);
         procedure BVoinClick(Sender: TObject);
@@ -67,6 +71,8 @@ type
     procedure Button7Click(Sender: TObject);
     procedure BPodzemBaseClick(Sender: TObject);
     procedure Button9Click(Sender: TObject);
+    procedure BShowPodzemDataClick(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
 
     private
         { Private declarations }
@@ -274,6 +280,18 @@ begin
     end;
 end;
 
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+ if Opendialog1.execute then
+  begin
+
+  FDC.Connected:=false;
+  FDC.Params.Database:=Opendialog1.filename;
+  FDC.Connected:=true;
+  fillcombo12;
+  end;
+end;
+
 procedure TForm1.BPodzemClick(Sender: TObject);
 var
     fi, fo: textfile;
@@ -351,7 +369,8 @@ begin
 
         i:= strtoint(Stringgrid1.cells[1,Stringgrid1.rowcount-2]) mod moda;
         Stringgrid1.cells[1,Stringgrid1.rowcount-1]:=inttostr(i);
-        Stringgrid1.cells[2,Stringgrid1.rowcount-1]:=Stringgrid1.cells[1,i+1];
+        if i=0 then Stringgrid1.cells[2,Stringgrid1.rowcount-1]:=Stringgrid1.cells[1,Stringgrid1.rowcount-3]
+         else Stringgrid1.cells[2,Stringgrid1.rowcount-1]:=Stringgrid1.cells[1,i];
 
         ShowMessage('Готово!!!');
         BPodzemBase.Enabled:=True;
@@ -359,6 +378,31 @@ begin
 
     end;
 
+end;
+
+procedure TForm1.BShowPodzemDataClick(Sender: TObject);
+var
+ i:integer;
+begin
+ ClearSGR;
+ Stringgrid1.cells[0,0]:='Ид/Номер';
+ Stringgrid1.cells[1,0]:='Ник';
+ Stringgrid1.cells[2,0]:='Дополн.';
+ Stringgrid1.cells[3,0]:='Поход';
+ QTemp.Close;
+ QTemp.SQL.Clear;
+ QTemp.Open('select * from podzem where dt='+Quotedstr(Datetostr(Datetimepicker4.Date))+' order by num');
+ i:=1;
+ while not Qtemp.eof do
+  begin
+   Stringgrid1.cells[0,i]:=QTemp.FieldByName('id').Asstring;
+   Stringgrid1.cells[1,i]:=QTemp.FieldByName('nik').Asstring;
+   Stringgrid1.cells[2,i]:=QTemp.FieldByName('val').Asstring;
+   Stringgrid1.cells[3,i]:=QTemp.FieldByName('num').Asstring;
+   QTemp.Next;
+   i:=i+1;
+   Stringgrid1.Rowcount:=Stringgrid1.Rowcount+1;
+  end;
 end;
 
 procedure TForm1.BVoinClick(Sender: TObject);
