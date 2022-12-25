@@ -298,6 +298,7 @@ var
     s, ts, rs, glava: string;
     i, res: integer;
     modA: int64;
+    n,tn:string;
 begin
     If (Edit4.text = '') or (Edit2.text = '') then
     begin
@@ -313,7 +314,12 @@ begin
         StringGrid1.cells[1, 0] := 'ИД';
         StringGrid1.cells[2, 0] := 'Ник в бою';
         StringGrid1.cells[3, 0] := 'Ник в базе';
-
+        n:=extractfilename(OpenDialog1.Filename);
+        delete(n,7,length(n));
+        tn:=n[7];
+        insert('.',n,3);
+        insert('.20',n,6);
+        Datetimepicker1.Date:=Strtodate(n);
         Assignfile(fi, OpenDialog1.Filename);
         Reset(fi);
         repeat
