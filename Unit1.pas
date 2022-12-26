@@ -59,6 +59,7 @@ type
     DateTimePicker4: TDateTimePicker;
     BShowPodzemData: TButton;
     Button2: TButton;
+    Label10: TLabel;
         procedure Button1Click(Sender: TObject);
         procedure BPodzemClick(Sender: TObject);
         procedure BVoinClick(Sender: TObject);
@@ -573,8 +574,11 @@ begin
 //    BETWEEN to_date('01/11/2010','dd/MM/yyyy')
 //    AND     to_date('30/11/2010','dd/MM/yyyy')
 QTemp.Close;
-QTemp.sql.add('');
-
+QTemp.SQL.Clear;
+QTemp.sql.add('select nik,count(nik) from podzem where id>-2');
+QTemp.sql.add('and to_date(dt) between');
+QTemp.sql.add('to_date('+Quotedstr(Datetostr(Datetimepicker2.date))+') and to_date('+Quotedstr(Datetostr(Datetimepicker3.date))+')');
+QTemp.sql.add('group by nik');
 QTemp.Open;
 
 end;
@@ -624,6 +628,11 @@ end;
 procedure TForm1.FormCreate(Sender: TObject);
 begin
     DateTimePicker1.Date:=Date;
+    DateTimePicker2.Date:=Date;
+    DateTimePicker3.Date:=Date;
+    DateTimePicker4.Date:=Date;
+
+
     FDC.Params.Database := extractfilepath(Application.Exename) +
       'botva.sqlite';
     FDC.Connected := true;
