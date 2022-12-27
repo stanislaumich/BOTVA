@@ -73,13 +73,6 @@ object Form1: TForm1
     Height = 13
     Caption = ' '#1080' '#1082#1086#1085#1094#1072':'
   end
-  object Label3: TLabel
-    Left = 5
-    Top = 128
-    Width = 208
-    Height = 13
-    Caption = #1059#1082#1072#1078#1080#1090#1077' '#1076#1072#1090#1091' '#1077#1089#1083#1080' '#1083#1086#1075' '#1085#1077' '#1089#1077#1075#1086#1076#1085#1103#1096#1085#1080#1081':'
-  end
   object Label4: TLabel
     Left = 394
     Top = 84
@@ -101,20 +94,20 @@ object Form1: TForm1
     Caption = #1056#1072#1089#1089#1095#1080#1090#1072#1090#1100' '#1087#1086#1093#1086#1076#1099' '#1089' '#1080' '#1087#1086' '#1074#1082#1083#1102#1095#1080#1090#1077#1083#1100#1085#1086':'
   end
   object Label9: TLabel
-    Left = 77
-    Top = 151
+    Left = 4
+    Top = 128
     Width = 136
     Height = 13
     Caption = #1055#1086#1082#1072#1079#1072#1090#1100' '#1087#1086#1093#1086#1076#1099' '#1079#1072' '#1076#1072#1090#1091':'
   end
   object Label10: TLabel
-    Left = 403
-    Top = 151
-    Width = 468
+    Left = 6
+    Top = 157
+    Width = 559
     Height = 13
     Caption = 
-      #1060#1072#1081#1083' '#1089' '#1087#1086#1093#1086#1076#1086#1084' '#1076#1086#1083#1078#1077#1085' '#1080#1084#1077#1090#1100' '#1080#1084#1103' 231222('#1076#1072#1083#1100#1096#1077' '#1095#1090#1086' '#1091#1075#1086#1076#1085#1086') '#1080#1079' '#1085#1077#1075 +
-      #1086' '#1073#1091#1076#1077#1090' '#1073#1088#1072#1090#1100#1089#1103' '#1076#1072#1090#1072
+      #1060#1072#1081#1083' '#1089' '#1087#1086#1093#1086#1076#1086#1084' '#1076#1086#1083#1078#1077#1085' '#1080#1084#1077#1090#1100' '#1080#1084#1103' 2312221('#1076#1072#1083#1100#1096#1077' '#1095#1090#1086' '#1091#1075#1086#1076#1085#1086') '#1080#1079' '#1085#1077 +
+      #1075#1086' '#1073#1091#1076#1077#1090' '#1073#1088#1072#1090#1100#1089#1103' '#1076#1072#1090#1072' '#1080'  '#1085#1086#1084#1077#1088' '#1087#1086#1093#1086#1076#1072
   end
   object Button1: TButton
     Left = 558
@@ -288,28 +281,19 @@ object Form1: TForm1
     TabOrder = 17
     OnClick = BPodzemBaseClick
   end
-  object DateTimePicker1: TDateTimePicker
-    Left = 218
-    Top = 124
-    Width = 95
-    Height = 21
-    Date = 44915.000000000000000000
-    Time = 0.881333263889246200
-    TabOrder = 19
-  end
   object GroupBox1: TGroupBox
     Left = 4
     Top = 175
     Width = 885
     Height = 8
-    TabOrder = 21
+    TabOrder = 20
   end
   object GroupBox2: TGroupBox
     Left = 4
     Top = 75
     Width = 885
     Height = 8
-    TabOrder = 23
+    TabOrder = 22
   end
   object DateTimePicker2: TDateTimePicker
     Left = 543
@@ -327,7 +311,7 @@ object Form1: TForm1
     Height = 21
     Date = 44915.000000000000000000
     Time = 0.969878599535150000
-    TabOrder = 20
+    TabOrder = 19
   end
   object Button9: TButton
     Left = 734
@@ -335,25 +319,25 @@ object Form1: TForm1
     Width = 155
     Height = 22
     Caption = #1056#1072#1089#1089#1095#1080#1090#1072#1090#1100
-    TabOrder = 22
+    TabOrder = 21
     OnClick = Button9Click
   end
   object DateTimePicker4: TDateTimePicker
-    Left = 220
-    Top = 148
+    Left = 146
+    Top = 125
     Width = 93
     Height = 21
     Date = 44917.000000000000000000
     Time = 0.382563206017948700
-    TabOrder = 24
+    TabOrder = 23
   end
   object BShowPodzemData: TButton
-    Left = 319
-    Top = 147
+    Left = 245
+    Top = 124
     Width = 75
     Height = 22
     Caption = #1055#1086#1082#1072#1079#1072#1090#1100
-    TabOrder = 25
+    TabOrder = 24
     OnClick = BShowPodzemDataClick
   end
   object Button2: TButton
@@ -362,8 +346,18 @@ object Form1: TForm1
     Width = 21
     Height = 21
     Caption = '*'
-    TabOrder = 26
+    TabOrder = 25
     OnClick = Button2Click
+  end
+  object DateTimePicker1: TDateTimePicker
+    Left = 791
+    Top = 148
+    Width = 95
+    Height = 21
+    Date = 44915.000000000000000000
+    Time = 0.881333263889246200
+    TabOrder = 29
+    Visible = False
   end
   object OpenDialog1: TOpenDialog
     Left = 492

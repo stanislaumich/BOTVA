@@ -45,8 +45,6 @@ type
     CheckBox1: TCheckBox;
     Label2: TLabel;
     BPodzemBase: TButton;
-    Label3: TLabel;
-    DateTimePicker1: TDateTimePicker;
     Label4: TLabel;
     GroupBox1: TGroupBox;
     GroupBox2: TGroupBox;
@@ -60,6 +58,7 @@ type
     BShowPodzemData: TButton;
     Button2: TButton;
     Label10: TLabel;
+    DateTimePicker1: TDateTimePicker;
         procedure Button1Click(Sender: TObject);
         procedure BPodzemClick(Sender: TObject);
         procedure BVoinClick(Sender: TObject);
@@ -125,6 +124,7 @@ var i,j:integer;
   For i:=0 to stringgrid1.rowcount-1 do
    For j:=0 to stringgrid1.colcount-1 do
     stringgrid1.cells[j,i]:='';
+  Stringgrid1.Rowcount:=2;
  end;
 
 procedure TForm1.fillcombo12;
@@ -392,7 +392,7 @@ procedure TForm1.BShowPodzemDataClick(Sender: TObject);
 var
  i:integer;
 begin
- ClearSGR;
+ ClearSGR;Stringgrid1.Rowcount:=2;
  Stringgrid1.cells[0,0]:='Ид/Номер';
  Stringgrid1.cells[1,0]:='Ник';
  Stringgrid1.cells[2,0]:='Дополн.';
@@ -568,19 +568,57 @@ begin
 end;
 
 procedure TForm1.Button9Click(Sender: TObject);
+var
+ i:integer;
 begin
-// select nik,count(nik) from podzem where id>-2 group by nik
-//SELECT * FROM table
-//    WHERE   to_date(column,'dd/MM/yyyy')
-//    BETWEEN to_date('01/11/2010','dd/MM/yyyy')
-//    AND     to_date('30/11/2010','dd/MM/yyyy')
+{select nik,sum(n) r, sum(p) l, sum(n)+sum(p) b from (
+select nik,Count(nik) n,0 p from podzem
+where id>0 and substr(dt ,7,4) ||substr(dt ,4,2)||substr(dt ,1,2) between
+'20221227' and '20221227'
+group by nik
+union
+select nik,0 n,count(nik)*2 p from podzem where
+id=-1 and substr(dt ,7,4) ||substr(dt ,4,2)||substr(dt ,1,2) between
+'20221227' and '20221227'
+group by nik ) group by nik
+}
+{
+Function parsedatetimeget(s: string; d: tdatetime): string;
+
+}
 QTemp.Close;
 QTemp.SQL.Clear;
-QTemp.sql.add('select nik,count(nik) from podzem where id>-2');
-QTemp.sql.add('and to_date(dt) between');
-QTemp.sql.add('to_date('+Quotedstr(Datetostr(Datetimepicker2.date))+') and to_date('+Quotedstr(Datetostr(Datetimepicker3.date))+')');
-QTemp.sql.add('group by nik');
+
+QTemp.sql.add('select nik,sum(n) r, sum(p) l, sum(n)+sum(p) b from (');
+QTemp.sql.add('select nik,Count(nik) n,0 p from podzem');
+QTemp.sql.add('where id>0 and substr(dt ,7,4) ||substr(dt ,4,2)||substr(dt ,1,2) between');
+QTemp.sql.add(''+Quotedstr(parsedatetimeget('%Y%M%D',Datetimepicker2.date))+' and '+Quotedstr(parsedatetimeget('%Y%M%D',Datetimepicker3.date))+'');
+QTemp.sql.add('group by nik ');
+QTemp.sql.add('union');
+QTemp.sql.add('select nik,0 n,count(nik)*2 p from podzem where');
+QTemp.sql.add('id=-1 and substr(dt ,7,4) ||substr(dt ,4,2)||substr(dt ,1,2) between');
+QTemp.sql.add(''+Quotedstr(parsedatetimeget('%Y%M%D',Datetimepicker2.date))+' and '+Quotedstr(parsedatetimeget('%Y%M%D',Datetimepicker3.date))+'');
+QTemp.sql.add('group by nik ) group by nik');
+
 QTemp.Open;
+
+ClearSGR;
+ Stringgrid1.cells[0,0]:='Ник';
+ Stringgrid1.cells[1,0]:='Поход';
+ Stringgrid1.cells[2,0]:='Лидер.';
+ Stringgrid1.cells[3,0]:='Балл';
+
+ i:=1;
+ while not Qtemp.eof do
+  begin
+   Stringgrid1.cells[0,i]:=QTemp.FieldByName('nik').Asstring;
+   Stringgrid1.cells[1,i]:=QTemp.FieldByName('r').Asstring;
+   Stringgrid1.cells[2,i]:=QTemp.FieldByName('l').Asstring;
+   Stringgrid1.cells[3,i]:=QTemp.FieldByName('b').Asstring;
+   QTemp.Next;
+   i:=i+1;
+   Stringgrid1.Rowcount:=Stringgrid1.Rowcount+1;
+  end;
 
 end;
 
