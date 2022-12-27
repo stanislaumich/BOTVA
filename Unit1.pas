@@ -20,7 +20,6 @@ type
         Button1: TButton;
         OpenDialog1: TOpenDialog;
     BPodzem: TButton;
-        Edit1: TEdit;
         Edit2: TEdit;
         Edit3: TEdit;
     BVoin: TButton;

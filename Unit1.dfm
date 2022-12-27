@@ -129,21 +129,12 @@ object Form1: TForm1
     TabOrder = 1
     OnClick = BPodzemClick
   end
-  object Edit1: TEdit
-    Left = 483
-    Top = 197
-    Width = 69
-    Height = 21
-    TabOrder = 2
-    Text = 'Edit1'
-    Visible = False
-  end
   object Edit2: TEdit
     Left = 4
     Top = 100
     Width = 521
     Height = 21
-    TabOrder = 3
+    TabOrder = 2
   end
   object Edit3: TEdit
     Left = 8
@@ -151,7 +142,7 @@ object Form1: TForm1
     Width = 111
     Height = 21
     Enabled = False
-    TabOrder = 4
+    TabOrder = 3
     Text = 'http://lz42.ru/clan.php'
     Visible = False
   end
@@ -161,7 +152,7 @@ object Form1: TForm1
     Width = 316
     Height = 25
     Caption = #1054#1073#1088#1072#1073#1086#1090#1072#1090#1100' '#1074#1086#1080#1085#1086#1074' '#1082#1083#1072#1085#1072' '#1089#1086' '#1089#1090#1088#1072#1085#1080#1094#1099' '#1089#1072#1081#1090#1072' '#1080#1075#1088#1099' '
-    TabOrder = 5
+    TabOrder = 4
     OnClick = BVoinClick
   end
   object Edit4: TEdit
@@ -169,7 +160,7 @@ object Form1: TForm1
     Top = 100
     Width = 38
     Height = 21
-    TabOrder = 6
+    TabOrder = 5
   end
   object Memo1: TMemo
     Left = 46
@@ -180,7 +171,7 @@ object Form1: TForm1
     Lines.Strings = (
       'Memo1')
     ScrollBars = ssBoth
-    TabOrder = 7
+    TabOrder = 6
     WordWrap = False
   end
   object WB: TWebBrowser
@@ -189,7 +180,7 @@ object Form1: TForm1
     Width = 36
     Height = 83
     Anchors = [akLeft, akTop, akBottom]
-    TabOrder = 8
+    TabOrder = 7
     OnDocumentComplete = WBDocumentComplete
     ControlData = {
       4C000000B9030000940800000000000000000000000000000000000000000000
@@ -208,7 +199,7 @@ object Form1: TForm1
     DefaultColWidth = 120
     RowCount = 2
     Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goFixedRowDefAlign]
-    TabOrder = 9
+    TabOrder = 8
   end
   object BVoinBase: TButton
     Left = 753
@@ -217,7 +208,7 @@ object Form1: TForm1
     Height = 25
     Caption = #1047#1072#1087#1080#1089#1072#1090#1100' '#1074' '#1073#1072#1079#1091
     Enabled = False
-    TabOrder = 10
+    TabOrder = 9
     OnClick = BVoinBaseClick
   end
   object Button5: TButton
@@ -226,7 +217,7 @@ object Form1: TForm1
     Width = 157
     Height = 25
     Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100' '#1090#1072#1073#1083#1080#1094#1091' '#1074' Excel'
-    TabOrder = 11
+    TabOrder = 10
     OnClick = Button5Click
   end
   object ComboBox1: TComboBox
@@ -234,7 +225,7 @@ object Form1: TForm1
     Top = 23
     Width = 127
     Height = 21
-    TabOrder = 12
+    TabOrder = 11
     Text = 'ComboBox1'
   end
   object ComboBox2: TComboBox
@@ -242,7 +233,7 @@ object Form1: TForm1
     Top = 23
     Width = 127
     Height = 21
-    TabOrder = 13
+    TabOrder = 12
     Text = 'ComboBox2'
   end
   object Button6: TButton
@@ -251,7 +242,7 @@ object Form1: TForm1
     Width = 127
     Height = 25
     Caption = #1042#1099#1073#1088#1072#1090#1100' '#1088#1072#1079#1085#1080#1094#1091
-    TabOrder = 14
+    TabOrder = 13
     OnClick = Button6Click
   end
   object Button7: TButton
@@ -260,7 +251,7 @@ object Form1: TForm1
     Width = 127
     Height = 25
     Caption = #1042#1099#1073#1088#1072#1090#1100' '#1085#1072' '#1076#1072#1090#1091
-    TabOrder = 15
+    TabOrder = 14
     OnClick = Button7Click
   end
   object CheckBox1: TCheckBox
@@ -269,7 +260,7 @@ object Form1: TForm1
     Width = 109
     Height = 17
     Caption = #1055#1086#1082#1072#1079#1099#1074#1072#1090#1100' '#1085#1091#1083#1080
-    TabOrder = 16
+    TabOrder = 15
   end
   object BPodzemBase: TButton
     Left = 756
@@ -278,7 +269,7 @@ object Form1: TForm1
     Height = 25
     Caption = #1047#1072#1087#1080#1089#1072#1090#1100' '#1074' '#1073#1072#1079#1091
     Enabled = False
-    TabOrder = 17
+    TabOrder = 16
     OnClick = BPodzemBaseClick
   end
   object GroupBox1: TGroupBox
@@ -286,14 +277,14 @@ object Form1: TForm1
     Top = 175
     Width = 885
     Height = 8
-    TabOrder = 20
+    TabOrder = 19
   end
   object GroupBox2: TGroupBox
     Left = 4
     Top = 75
     Width = 885
     Height = 8
-    TabOrder = 22
+    TabOrder = 21
   end
   object DateTimePicker2: TDateTimePicker
     Left = 543
@@ -302,7 +293,7 @@ object Form1: TForm1
     Height = 21
     Date = 44915.000000000000000000
     Time = 0.969849317130865500
-    TabOrder = 18
+    TabOrder = 17
   end
   object DateTimePicker3: TDateTimePicker
     Left = 640
@@ -311,7 +302,7 @@ object Form1: TForm1
     Height = 21
     Date = 44915.000000000000000000
     Time = 0.969878599535150000
-    TabOrder = 19
+    TabOrder = 18
   end
   object Button9: TButton
     Left = 734
@@ -319,7 +310,7 @@ object Form1: TForm1
     Width = 155
     Height = 22
     Caption = #1056#1072#1089#1089#1095#1080#1090#1072#1090#1100
-    TabOrder = 21
+    TabOrder = 20
     OnClick = Button9Click
   end
   object DateTimePicker4: TDateTimePicker
@@ -329,7 +320,7 @@ object Form1: TForm1
     Height = 21
     Date = 44917.000000000000000000
     Time = 0.382563206017948700
-    TabOrder = 23
+    TabOrder = 22
   end
   object BShowPodzemData: TButton
     Left = 245
@@ -337,7 +328,7 @@ object Form1: TForm1
     Width = 75
     Height = 22
     Caption = #1055#1086#1082#1072#1079#1072#1090#1100
-    TabOrder = 24
+    TabOrder = 23
     OnClick = BShowPodzemDataClick
   end
   object Button2: TButton
@@ -346,7 +337,7 @@ object Form1: TForm1
     Width = 21
     Height = 21
     Caption = '*'
-    TabOrder = 25
+    TabOrder = 24
     OnClick = Button2Click
   end
   object DateTimePicker1: TDateTimePicker
@@ -356,7 +347,7 @@ object Form1: TForm1
     Height = 21
     Date = 44915.000000000000000000
     Time = 0.881333263889246200
-    TabOrder = 29
+    TabOrder = 25
     Visible = False
   end
   object OpenDialog1: TOpenDialog
