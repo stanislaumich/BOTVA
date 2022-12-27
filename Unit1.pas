@@ -301,7 +301,7 @@ var
     modA: int64;
     n,tn:string;
 begin
-    If (Edit4.text = '') or (Edit2.text = '') then
+    If (Edit2.text = '') then
     begin
         ShowMessage
           ('Нужно указать ссылку на лог подзема и указать первый(1), или второй(2) это был поход');
@@ -316,6 +316,7 @@ begin
         StringGrid1.cells[2, 0] := 'Ник в бою';
         StringGrid1.cells[3, 0] := 'Ник в базе';
         n:=extractfilename(OpenDialog1.Filename);
+        Edit4.text := n[7];
         delete(n,7,length(n));
         tn:=n[7];
         insert('.',n,3);

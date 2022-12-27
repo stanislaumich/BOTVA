@@ -59,13 +59,13 @@ BottomMiddelPanelData=0000080001020200000009000000446F636B5369746530100000004772
 [View0]
 CustomEditViewType=TEditView
 Module=S:\BOTVA\Unit1.pas
-CursorX=20
-CursorY=633
-TopLine=628
+CursorX=28
+CursorY=319
+TopLine=296
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=Borland.FormDesignerView
+EditViewName=S:\BOTVA\Unit1.pas
 
 [Watches]
 Count=0
@@ -202,8 +202,8 @@ SplitPos=111
 
 [PropInspDesignerSelection]
 ArrangeBy=Name
-SelectedItem=Caption,CustomHint
-ExpandedItems=Anchors=0,Constraints=0,BorderIcons=0,LiveBindings=0
+SelectedItem=Caption,
+ExpandedItems=Anchors=0,Constraints=0
 
 [frmDesignPreview]
 PercentageSizes=1

@@ -58,6 +58,8 @@ type
     Label9: TLabel;
     DateTimePicker4: TDateTimePicker;
     BShowPodzemData: TButton;
+    Button2: TButton;
+    Label10: TLabel;
         procedure Button1Click(Sender: TObject);
         procedure BPodzemClick(Sender: TObject);
         procedure BVoinClick(Sender: TObject);
@@ -71,6 +73,7 @@ type
     procedure BPodzemBaseClick(Sender: TObject);
     procedure Button9Click(Sender: TObject);
     procedure BShowPodzemDataClick(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
 
     private
         { Private declarations }
@@ -278,12 +281,25 @@ begin
     end;
 end;
 
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+ if Opendialog1.execute then
+  begin
+
+  FDC.Connected:=false;
+  FDC.Params.Database:=Opendialog1.filename;
+  FDC.Connected:=true;
+  fillcombo12;
+  end;
+end;
+
 procedure TForm1.BPodzemClick(Sender: TObject);
 var
     fi, fo: textfile;
     s, ts, rs, glava: string;
     i, res: integer;
     modA: int64;
+    n,tn:string;
 begin
     If (Edit4.text = '') or (Edit2.text = '') then
     begin
@@ -299,7 +315,12 @@ begin
         StringGrid1.cells[1, 0] := 'ИД';
         StringGrid1.cells[2, 0] := 'Ник в бою';
         StringGrid1.cells[3, 0] := 'Ник в базе';
-
+        n:=extractfilename(OpenDialog1.Filename);
+        delete(n,7,length(n));
+        tn:=n[7];
+        insert('.',n,3);
+        insert('.20',n,6);
+        Datetimepicker1.Date:=Strtodate(n);
         Assignfile(fi, OpenDialog1.Filename);
         Reset(fi);
         repeat
@@ -371,6 +392,10 @@ var
  i:integer;
 begin
  ClearSGR;
+ Stringgrid1.cells[0,0]:='Ид/Номер';
+ Stringgrid1.cells[1,0]:='Ник';
+ Stringgrid1.cells[2,0]:='Дополн.';
+ Stringgrid1.cells[3,0]:='Поход';
  QTemp.Close;
  QTemp.SQL.Clear;
  QTemp.Open('select * from podzem where dt='+Quotedstr(Datetostr(Datetimepicker4.Date))+' order by num');
@@ -379,7 +404,8 @@ begin
   begin
    Stringgrid1.cells[0,i]:=QTemp.FieldByName('id').Asstring;
    Stringgrid1.cells[1,i]:=QTemp.FieldByName('nik').Asstring;
-
+   Stringgrid1.cells[2,i]:=QTemp.FieldByName('val').Asstring;
+   Stringgrid1.cells[3,i]:=QTemp.FieldByName('num').Asstring;
    QTemp.Next;
    i:=i+1;
    Stringgrid1.Rowcount:=Stringgrid1.Rowcount+1;
@@ -548,8 +574,11 @@ begin
 //    BETWEEN to_date('01/11/2010','dd/MM/yyyy')
 //    AND     to_date('30/11/2010','dd/MM/yyyy')
 QTemp.Close;
-QTemp.sql.add('');
-
+QTemp.SQL.Clear;
+QTemp.sql.add('select nik,count(nik) from podzem where id>-2');
+QTemp.sql.add('and to_date(dt) between');
+QTemp.sql.add('to_date('+Quotedstr(Datetostr(Datetimepicker2.date))+') and to_date('+Quotedstr(Datetostr(Datetimepicker3.date))+')');
+QTemp.sql.add('group by nik');
 QTemp.Open;
 
 end;
@@ -599,6 +628,11 @@ end;
 procedure TForm1.FormCreate(Sender: TObject);
 begin
     DateTimePicker1.Date:=Date;
+    DateTimePicker2.Date:=Date;
+    DateTimePicker3.Date:=Date;
+    DateTimePicker4.Date:=Date;
+
+
     FDC.Params.Database := extractfilepath(Application.Exename) +
       'botva.sqlite';
     FDC.Connected := true;
