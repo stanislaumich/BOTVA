@@ -180,7 +180,6 @@ object Form1: TForm1
     ScrollBars = ssBoth
     TabOrder = 6
     WordWrap = False
-    ExplicitTop = 486
   end
   object WB: TWebBrowser
     Left = 4
@@ -353,8 +352,8 @@ object Form1: TForm1
     OnClick = Button2Click
   end
   object DateTimePicker1: TDateTimePicker
-    Left = 791
-    Top = 148
+    Left = 111
+    Top = 556
     Width = 95
     Height = 21
     Date = 44915.000000000000000000
@@ -368,8 +367,53 @@ object Form1: TForm1
     Width = 148
     Height = 25
     Caption = #1047#1072#1087#1080#1089#1072#1090#1100' '#1074' '#1073#1072#1079#1091
-    TabOrder = 29
+    TabOrder = 26
     OnClick = BZadanBAseClick
+  end
+  object DateTimePicker5: TDateTimePicker
+    Left = 712
+    Top = 186
+    Width = 82
+    Height = 21
+    Date = 44923.000000000000000000
+    Time = 0.944539270836685300
+    TabOrder = 30
+  end
+  object Button1: TButton
+    Left = 796
+    Top = 184
+    Width = 93
+    Height = 25
+    Caption = #1042#1099#1073#1088#1072#1090#1100' '#1076#1072#1090#1091
+    TabOrder = 31
+    OnClick = Button1Click
+  end
+  object Button3: TButton
+    Left = 747
+    Top = 48
+    Width = 142
+    Height = 25
+    Caption = #1055#1086#1082#1072#1079#1072#1090#1100' '#1076#1072#1090#1099' '#1092#1080#1082#1089#1072#1094#1080#1080
+    TabOrder = 32
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 728
+    Top = 146
+    Width = 161
+    Height = 25
+    Caption = #1055#1086#1082#1072#1079#1072#1090#1100' '#1076#1072#1090#1099' '#1087#1086#1093#1086#1076#1086#1074
+    TabOrder = 33
+    OnClick = Button4Click
+  end
+  object Button8: TButton
+    Left = 728
+    Top = 211
+    Width = 161
+    Height = 25
+    Caption = #1055#1086#1082#1072#1079#1072#1090#1100' '#1076#1072#1090#1099' '#1079#1072#1076#1072#1085#1080#1081
+    TabOrder = 34
+    OnClick = Button8Click
   end
   object OpenDialog1: TOpenDialog
     Left = 492
