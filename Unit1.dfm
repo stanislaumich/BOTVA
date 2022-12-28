@@ -2,7 +2,7 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = #1056#1086#1075#1072#1090#1072#1103' '#1075#1074#1072#1088#1076#1080#1103
-  ClientHeight = 571
+  ClientHeight = 625
   ClientWidth = 894
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -12,10 +12,11 @@ object Form1: TForm1
   Font.Style = []
   OldCreateOrder = False
   Position = poScreenCenter
+  ShowHint = True
   OnCreate = FormCreate
   DesignSize = (
     894
-    571)
+    625)
   PixelsPerInch = 96
   TextHeight = 13
   object Label5: TLabel
@@ -109,16 +110,22 @@ object Form1: TForm1
       #1060#1072#1081#1083' '#1089' '#1087#1086#1093#1086#1076#1086#1084' '#1076#1086#1083#1078#1077#1085' '#1080#1084#1077#1090#1100' '#1080#1084#1103' 2312221('#1076#1072#1083#1100#1096#1077' '#1095#1090#1086' '#1091#1075#1086#1076#1085#1086') '#1080#1079' '#1085#1077 +
       #1075#1086' '#1073#1091#1076#1077#1090' '#1073#1088#1072#1090#1100#1089#1103' '#1076#1072#1090#1072' '#1080'  '#1085#1086#1084#1077#1088' '#1087#1086#1093#1086#1076#1072
   end
-  object Button1: TButton
-    Left = 558
-    Top = 195
+  object Label3: TLabel
+    Left = 348
+    Top = 192
+    Width = 235
+    Height = 13
+    Caption = #1048#1084#1103' '#1092#1072#1081#1083#1072' '#1076#1086#1083#1078#1085#1086' '#1085#1072#1095#1080#1085#1072#1090#1100#1089#1103' '#1089' '#1076#1072#1090#1099' 271222'
+  end
+  object BZAdan: TButton
+    Left = 4
+    Top = 188
     Width = 185
     Height = 25
     Anchors = [akTop, akRight]
     Caption = #1054#1090#1082#1088#1099#1090#1100' '#1082#1083#1072#1085#1086#1074#1099#1077' '#1079#1072#1076#1072#1085#1080#1103
     TabOrder = 0
-    Visible = False
-    OnClick = Button1Click
+    OnClick = BZAdanClick
   end
   object BPodzem: TButton
     Left = 565
@@ -164,7 +171,7 @@ object Form1: TForm1
   end
   object Memo1: TMemo
     Left = 46
-    Top = 486
+    Top = 540
     Width = 844
     Height = 83
     Anchors = [akLeft, akRight, akBottom]
@@ -173,32 +180,34 @@ object Form1: TForm1
     ScrollBars = ssBoth
     TabOrder = 6
     WordWrap = False
+    ExplicitTop = 486
   end
   object WB: TWebBrowser
     Left = 4
     Top = 486
     Width = 36
-    Height = 83
+    Height = 137
     Anchors = [akLeft, akTop, akBottom]
     TabOrder = 7
     OnDocumentComplete = WBDocumentComplete
+    ExplicitHeight = 83
     ControlData = {
-      4C000000B9030000940800000000000000000000000000000000000000000000
+      4C000000B9030000290E00000000000000000000000000000000000000000000
       000000004C000000000000000000000001000000E0D057007335CF11AE690800
       2B2E126208000000000000004C0000000114020000000000C000000000000046
       8000000000000000000000000000000000000000000000000000000000000000
       00000000000000000100000000000000000000000000000000000000}
   end
   object StringGrid1: TStringGrid
-    Left = 4
-    Top = 232
+    Left = 0
+    Top = 242
     Width = 886
-    Height = 249
+    Height = 292
     Anchors = [akLeft, akTop, akRight, akBottom]
     ColCount = 10
     DefaultColWidth = 120
     RowCount = 2
-    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goFixedRowDefAlign]
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goEditing, goFixedRowDefAlign]
     TabOrder = 8
   end
   object BVoinBase: TButton
@@ -213,7 +222,7 @@ object Form1: TForm1
   end
   object Button5: TButton
     Left = 4
-    Top = 204
+    Top = 216
     Width = 157
     Height = 25
     Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100' '#1090#1072#1073#1083#1080#1094#1091' '#1074' Excel'
@@ -336,7 +345,10 @@ object Form1: TForm1
     Top = 0
     Width = 21
     Height = 21
+    Hint = #1042#1099#1073#1088#1072#1090#1100' '#1076#1088#1091#1075#1091#1102' '#1073#1072#1079#1091' '#1076#1072#1085#1085#1099#1093' '#1076#1083#1103' '#1088#1072#1073#1086#1090#1099
     Caption = '*'
+    ParentShowHint = False
+    ShowHint = True
     TabOrder = 24
     OnClick = Button2Click
   end
@@ -349,6 +361,15 @@ object Form1: TForm1
     Time = 0.881333263889246200
     TabOrder = 25
     Visible = False
+  end
+  object BZadanBAse: TButton
+    Left = 193
+    Top = 188
+    Width = 148
+    Height = 25
+    Caption = #1047#1072#1087#1080#1089#1072#1090#1100' '#1074' '#1073#1072#1079#1091
+    TabOrder = 29
+    OnClick = BZadanBAseClick
   end
   object OpenDialog1: TOpenDialog
     Left = 492

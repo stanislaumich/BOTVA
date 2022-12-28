@@ -59,13 +59,13 @@ BottomMiddelPanelData=0000080001020200000009000000446F636B5369746530100000004772
 [View0]
 CustomEditViewType=TEditView
 Module=S:\BOTVA\Unit1.pas
-CursorX=28
-CursorY=319
-TopLine=296
+CursorX=35
+CursorY=243
+TopLine=221
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=S:\BOTVA\Unit1.pas
+EditViewName=Borland.FormDesignerView
 
 [Watches]
 Count=0
@@ -194,7 +194,7 @@ MaxLeft=-1
 MaxTop=-1
 ClientWidth=1896
 ClientHeight=3238
-TBDockHeight=5200
+TBDockHeight=8743
 LRDockWidth=1896
 Dockable=1
 StayOnTop=0
@@ -202,8 +202,8 @@ SplitPos=111
 
 [PropInspDesignerSelection]
 ArrangeBy=Name
-SelectedItem=Caption,
-ExpandedItems=Anchors=0,Constraints=0
+SelectedItem=Caption,Action
+ExpandedItems=Anchors=0,BorderIcons=0,Constraints=0,LiveBindings=0,Font=0,GlassFrame=0,HorzScrollBar=0,ImageMargins=0,"LiveBindings Designer=0",Margins=0,StyleElements=0,Options=1,Touch=0
 
 [frmDesignPreview]
 PercentageSizes=1
@@ -636,7 +636,7 @@ MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
 ClientHeight=4467
-TBDockHeight=4600
+TBDockHeight=8743
 LRDockWidth=2000
 Dockable=1
 StayOnTop=0
@@ -660,7 +660,7 @@ MaxLeft=-1
 MaxTop=-1
 ClientWidth=1896
 ClientHeight=3438
-TBDockHeight=3552
+TBDockHeight=8743
 LRDockWidth=1896
 Dockable=1
 StayOnTop=0
@@ -684,7 +684,7 @@ MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
 ClientHeight=2210
-TBDockHeight=4152
+TBDockHeight=8743
 LRDockWidth=2000
 Dockable=1
 StayOnTop=0
