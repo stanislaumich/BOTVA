@@ -377,7 +377,7 @@ object Form1: TForm1
     Height = 21
     Date = 44923.000000000000000000
     Time = 0.944539270836685300
-    TabOrder = 30
+    TabOrder = 29
   end
   object Button1: TButton
     Left = 796
@@ -394,7 +394,7 @@ object Form1: TForm1
     Width = 142
     Height = 25
     Caption = #1055#1086#1082#1072#1079#1072#1090#1100' '#1076#1072#1090#1099' '#1092#1080#1082#1089#1072#1094#1080#1080
-    TabOrder = 32
+    TabOrder = 27
     OnClick = Button3Click
   end
   object Button4: TButton
@@ -403,7 +403,7 @@ object Form1: TForm1
     Width = 161
     Height = 25
     Caption = #1055#1086#1082#1072#1079#1072#1090#1100' '#1076#1072#1090#1099' '#1087#1086#1093#1086#1076#1086#1074
-    TabOrder = 33
+    TabOrder = 28
     OnClick = Button4Click
   end
   object Button8: TButton
@@ -412,7 +412,7 @@ object Form1: TForm1
     Width = 161
     Height = 25
     Caption = #1055#1086#1082#1072#1079#1072#1090#1100' '#1076#1072#1090#1099' '#1079#1072#1076#1072#1085#1080#1081
-    TabOrder = 34
+    TabOrder = 30
     OnClick = Button8Click
   end
   object OpenDialog1: TOpenDialog

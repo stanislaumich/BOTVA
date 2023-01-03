@@ -288,8 +288,8 @@ begin
         delete(s, 1, pos('>', s));
         delete(s, pos('<', s), length(s));
         StringGrid1.cells[0, 1] := '0';
-        StringGrid1.cells[1, 1] := s;
-        StringGrid1.cells[2, 1] := '0';
+        StringGrid1.cells[1, 1] := datetostr(date);//s;
+        StringGrid1.cells[2, 1] := '100000';
         StringGrid1.cells[3, 1] := dt;
         i                       := 2;
         repeat
@@ -320,7 +320,7 @@ var i:integer;
 begin
 QTemp.Close;
 QTemp.SQL.Clear;
-QTemp.SQL.Add('select * from zad where dt='+Quotedstr(Datetostr(Datetimepicker1.Date))+' order by val desc');
+QTemp.SQL.Add('select * from zad where dt='+Quotedstr(Datetostr(Datetimepicker5.Date))+' order by val desc');
 QTemp.Open;
 ClearSGR;
 StringGrid1.colcount    := 2;
