@@ -208,6 +208,7 @@ object Form1: TForm1
     RowCount = 2
     Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goEditing, goFixedRowDefAlign]
     TabOrder = 8
+    OnClick = StringGrid1Click
   end
   object BVoinBase: TButton
     Left = 753
@@ -414,6 +415,15 @@ object Form1: TForm1
     Caption = #1055#1086#1082#1072#1079#1072#1090#1100' '#1076#1072#1090#1099' '#1079#1072#1076#1072#1085#1080#1081
     TabOrder = 30
     OnClick = Button8Click
+  end
+  object Button10: TButton
+    Left = 504
+    Top = 211
+    Width = 75
+    Height = 25
+    Caption = #1057#1086#1088#1090' '#1087#1086' '#1041#1052
+    TabOrder = 35
+    OnClick = Button10Click
   end
   object OpenDialog1: TOpenDialog
     Left = 492

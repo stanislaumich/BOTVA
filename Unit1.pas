@@ -65,6 +65,7 @@ type
     Button3: TButton;
     Button4: TButton;
     Button8: TButton;
+    Button10: TButton;
         procedure BZAdanClick(Sender: TObject);
         procedure BPodzemClick(Sender: TObject);
         procedure BVoinClick(Sender: TObject);
@@ -84,6 +85,8 @@ type
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
     procedure Button8Click(Sender: TObject);
+    procedure Button10Click(Sender: TObject);
+    procedure StringGrid1Click(Sender: TObject);
 
     private
         { Private declarations }
@@ -122,6 +125,11 @@ var
     s, ts: string;
 begin
 
+end;
+
+procedure TForm1.StringGrid1Click(Sender: TObject);
+begin
+ //if Stringgrid1.row=0 then button10.click;
 end;
 
 procedure TForm1.ClearSGR;
@@ -313,6 +321,147 @@ begin
         until trim(s) = '</table>';
         Closefile(fi);
     end;
+end;
+
+procedure SortGrid(Grid: TStringGrid; Col: integer; sorttype:integer);
+var                     {0  string, 1 number, 2 datetime}
+  {SortType, }i, j, step: integer;
+  buf: string;
+  sBuf1, sBuf2: string;
+  dBuf1, dBuf2: TDateTime;
+  fBuf1, fBuf2: real;
+  flag: boolean;
+begin
+    {buf := Grid.Cells[Col, 0];
+    SortType := 0; // строка
+    if pos(' - ', buf) <> 0 then
+    begin
+      buf := copy(buf, 1, pos(' - ', buf) - 1);
+      if (pos('int', buf) <> 0) or (pos('float', buf) <> 0) or(pos('check', buf) <> 0) then
+        SortType := 1; // число
+      if (pos('dat', buf) <> 0) then
+        SortType := 2; // датавремя
+    end;
+     }
+    if SortType = 0 then
+    begin
+      // сортировка по строковым правилам
+      step := Grid.RowCount div 2;
+      while step > 0 do
+      begin
+        flag := true;
+        while flag do
+        begin
+          flag := false;
+          for i := 1 to Grid.RowCount - step - 1 do
+          begin
+            try
+              sBuf1 := trim(Grid.Cells[Col, i]);
+            except
+              sBuf1 := '';
+            end;
+            try
+              sBuf2 := trim(Grid.Cells[Col, i + step]);
+            except
+              sBuf2 := '';
+            end;
+            Application.ProcessMessages;
+            if sBuf1 > sBuf2 then
+            begin
+              flag := true;
+              for j := 0 to Grid.ColCount do
+              begin
+                buf := Grid.Cells[j, i];
+                Grid.Cells[j, i] := Grid.Cells[j, i + step];
+                Grid.Cells[j, i + step] := buf;
+              end;
+            end;
+          end;
+        end;
+        step := step div 2;
+      end;
+    end;
+    if SortType = 1 then
+    begin
+      // сортировка по числовым правилам
+      step := Grid.RowCount div 2;
+      while step > 0 do
+      begin
+        flag := true;
+        while flag do
+        begin
+          flag := false;
+          for i := 1 to Grid.RowCount - step - 1 do
+          begin
+            try
+              fBuf1 := StrToFloat(Grid.Cells[Col, i]);
+            except
+              fBuf1 := 0;
+            end;
+            try
+              fBuf2 := StrToFloat(Grid.Cells[Col, i + step]);
+            except
+              fBuf2 := 0;
+            end;
+            Application.ProcessMessages;
+            if fBuf1 < fBuf2 then
+            begin
+              flag := true;
+              for j := 0 to Grid.ColCount do
+              begin
+                buf := Grid.Cells[j, i];
+                Grid.Cells[j, i] := Grid.Cells[j, i + step];
+                Grid.Cells[j, i + step] := buf;
+              end;
+            end;
+          end;
+        end;
+        step := step div 2;
+      end;
+    end;
+    if SortType = 2 then
+    begin
+      // сортировка по правилам датывремени
+      step := Grid.RowCount div 2;
+      while step > 0 do
+      begin
+        flag := true;
+        while flag do
+        begin
+          flag := false;
+          for i := 1 to Grid.RowCount - step - 1 do
+          begin
+            try
+              dBuf1 := StrToDateTime(Grid.Cells[Col, i]);
+            except
+              dBuf1 := 0;
+            end;
+            try
+              dBuf2 := StrToDateTime(Grid.Cells[Col, i + step]);
+            except
+              dBuf2 := 0;
+            end;
+            Application.ProcessMessages;
+            if dBuf1 > dBuf2 then
+            begin
+              flag := true;
+              for j := 0 to Grid.ColCount do
+              begin
+                buf := Grid.Cells[j, i];
+                Grid.Cells[j, i] := Grid.Cells[j, i + step];
+                Grid.Cells[j, i + step] := buf;
+              end;
+            end;
+          end;
+        end;
+        step := step div 2;
+      end;
+    end;
+end;
+
+procedure TForm1.Button10Click(Sender: TObject);
+begin
+ SortGrid(StringGrid1,4,1);
 end;
 
 procedure TForm1.Button1Click(Sender: TObject);
