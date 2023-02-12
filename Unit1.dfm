@@ -2,7 +2,7 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = #1056#1086#1075#1072#1090#1072#1103' '#1075#1074#1072#1088#1076#1080#1103
-  ClientHeight = 625
+  ClientHeight = 718
   ClientWidth = 894
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -16,7 +16,7 @@ object Form1: TForm1
   OnCreate = FormCreate
   DesignSize = (
     894
-    625)
+    718)
   PixelsPerInch = 96
   TextHeight = 13
   object Label5: TLabel
@@ -74,19 +74,6 @@ object Form1: TForm1
     Height = 13
     Caption = ' '#1080' '#1082#1086#1085#1094#1072':'
   end
-  object Label4: TLabel
-    Left = 394
-    Top = 84
-    Width = 139
-    Height = 13
-    Caption = #1059#1082#1072#1078#1080#1090#1077' '#1085#1086#1084#1077#1088' '#1087#1086#1093#1086#1076#1072
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clGreen
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
-    ParentFont = False
-  end
   object Label7: TLabel
     Left = 323
     Top = 128
@@ -116,6 +103,40 @@ object Form1: TForm1
     Width = 235
     Height = 13
     Caption = #1048#1084#1103' '#1092#1072#1081#1083#1072' '#1076#1086#1083#1078#1085#1086' '#1085#1072#1095#1080#1085#1072#1090#1100#1089#1103' '#1089' '#1076#1072#1090#1099' 271222'
+  end
+  object Label11: TLabel
+    Left = 8
+    Top = 253
+    Width = 72
+    Height = 13
+    Caption = #1050#1072#1079#1085#1072' '#1082#1083#1072#1085#1072
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 92
+    Top = 253
+    Width = 235
+    Height = 13
+    Caption = #1048#1084#1103' '#1092#1072#1081#1083#1072' '#1076#1086#1083#1078#1085#1086' '#1085#1072#1095#1080#1085#1072#1090#1100#1089#1103' '#1089' '#1076#1072#1090#1099' 271222'
+  end
+  object Label12: TLabel
+    Left = 4
+    Top = 299
+    Width = 69
+    Height = 13
+    Caption = #1044#1072#1090#1072' '#1085#1072#1095#1072#1083#1072':'
+  end
+  object Label13: TLabel
+    Left = 228
+    Top = 299
+    Width = 43
+    Height = 13
+    Caption = #1080' '#1082#1086#1085#1094#1072':'
   end
   object BZAdan: TButton
     Left = 4
@@ -154,8 +175,8 @@ object Form1: TForm1
     Visible = False
   end
   object BVoin: TButton
-    Left = 436
-    Top = 21
+    Left = 438
+    Top = 19
     Width = 316
     Height = 25
     Caption = #1054#1073#1088#1072#1073#1086#1090#1072#1090#1100' '#1074#1086#1080#1085#1086#1074' '#1082#1083#1072#1085#1072' '#1089#1086' '#1089#1090#1088#1072#1085#1080#1094#1099' '#1089#1072#1081#1090#1072' '#1080#1075#1088#1099' '
@@ -171,7 +192,7 @@ object Form1: TForm1
   end
   object Memo1: TMemo
     Left = 46
-    Top = 540
+    Top = 633
     Width = 844
     Height = 83
     Anchors = [akLeft, akRight, akBottom]
@@ -180,18 +201,19 @@ object Form1: TForm1
     ScrollBars = ssBoth
     TabOrder = 6
     WordWrap = False
+    ExplicitTop = 540
   end
   object WB: TWebBrowser
     Left = 4
     Top = 486
     Width = 36
-    Height = 137
+    Height = 230
     Anchors = [akLeft, akTop, akBottom]
     TabOrder = 7
     OnDocumentComplete = WBDocumentComplete
     ExplicitHeight = 83
     ControlData = {
-      4C000000B9030000290E00000000000000000000000000000000000000000000
+      4C000000B9030000C51700000000000000000000000000000000000000000000
       000000004C000000000000000000000001000000E0D057007335CF11AE690800
       2B2E126208000000000000004C0000000114020000000000C000000000000046
       8000000000000000000000000000000000000000000000000000000000000000
@@ -199,9 +221,9 @@ object Form1: TForm1
   end
   object StringGrid1: TStringGrid
     Left = 0
-    Top = 242
+    Top = 356
     Width = 886
-    Height = 292
+    Height = 271
     Anchors = [akLeft, akTop, akRight, akBottom]
     ColCount = 10
     DefaultColWidth = 120
@@ -221,10 +243,11 @@ object Form1: TForm1
     OnClick = BVoinBaseClick
   end
   object Button5: TButton
-    Left = 4
-    Top = 216
+    Left = 729
+    Top = 325
     Width = 157
     Height = 25
+    Anchors = [akTop, akRight]
     Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100' '#1090#1072#1073#1083#1080#1094#1091' '#1074' Excel'
     TabOrder = 10
     OnClick = Button5Click
@@ -286,6 +309,9 @@ object Form1: TForm1
     Top = 175
     Width = 885
     Height = 8
+    Color = clGray
+    ParentBackground = False
+    ParentColor = False
     TabOrder = 19
   end
   object GroupBox2: TGroupBox
@@ -293,6 +319,9 @@ object Form1: TForm1
     Top = 75
     Width = 885
     Height = 8
+    Color = clGray
+    ParentBackground = False
+    ParentColor = False
     TabOrder = 21
   end
   object DateTimePicker2: TDateTimePicker
@@ -353,10 +382,11 @@ object Form1: TForm1
     OnClick = Button2Click
   end
   object DateTimePicker1: TDateTimePicker
-    Left = 111
-    Top = 556
+    Left = 79
+    Top = 668
     Width = 95
     Height = 21
+    Anchors = [akLeft, akBottom]
     Date = 44915.000000000000000000
     Time = 0.881333263889246200
     TabOrder = 25
@@ -422,8 +452,73 @@ object Form1: TForm1
     Width = 75
     Height = 25
     Caption = #1057#1086#1088#1090' '#1087#1086' '#1041#1052
-    TabOrder = 35
+    TabOrder = 32
     OnClick = Button10Click
+  end
+  object GroupBox3: TGroupBox
+    Left = 8
+    Top = 242
+    Width = 882
+    Height = 9
+    Color = clGray
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 36
+  end
+  object BKazna: TButton
+    Left = 8
+    Top = 268
+    Width = 117
+    Height = 25
+    Caption = #1054#1073#1088#1072#1073#1086#1090#1072#1090#1100' '#1092#1072#1081#1083
+    TabOrder = 37
+    OnClick = BKaznaClick
+  end
+  object BKaznaBase: TButton
+    Left = 125
+    Top = 268
+    Width = 134
+    Height = 25
+    Caption = #1047#1072#1087#1080#1089#1072#1090#1100' '#1074' '#1073#1072#1079#1091
+    Enabled = False
+    TabOrder = 38
+    OnClick = BKaznaBaseClick
+  end
+  object ComboBox3: TComboBox
+    Left = 80
+    Top = 296
+    Width = 125
+    Height = 21
+    Enabled = False
+    TabOrder = 39
+    Text = 'ComboBox3'
+  end
+  object ComboBox4: TComboBox
+    Left = 272
+    Top = 296
+    Width = 125
+    Height = 21
+    Enabled = False
+    TabOrder = 40
+    Text = 'ComboBox4'
+  end
+  object Button13: TButton
+    Left = 80
+    Top = 320
+    Width = 125
+    Height = 25
+    Caption = #1042#1099#1073#1088#1072#1090#1100' '#1085#1072' '#1076#1072#1090#1091
+    Enabled = False
+    TabOrder = 41
+  end
+  object Button14: TButton
+    Left = 272
+    Top = 320
+    Width = 125
+    Height = 25
+    Caption = #1042#1099#1073#1088#1072#1090#1100' '#1088#1072#1079#1085#1080#1094#1091
+    Enabled = False
+    TabOrder = 42
   end
   object OpenDialog1: TOpenDialog
     Left = 492
@@ -543,6 +638,47 @@ object Form1: TForm1
       end
       item
         Name = 'VAL'
+        ParamType = ptInput
+      end>
+  end
+  object QInsKazna: TFDQuery
+    Connection = FDC
+    SQL.Strings = (
+      'INSERT INTO kazna ('
+      '                      dt,'
+      '                      nik,'
+      '                      gold,'
+      '                      pirah,'
+      '                      kri'
+      '                  )'
+      '                  VALUES ('
+      '                      :dt,'
+      '                      :nik,'
+      '                      :gold,'
+      '                      :pirah,'
+      '                      :kri'
+      '                  )')
+    Left = 512
+    Top = 360
+    ParamData = <
+      item
+        Name = 'DT'
+        ParamType = ptInput
+      end
+      item
+        Name = 'NIK'
+        ParamType = ptInput
+      end
+      item
+        Name = 'GOLD'
+        ParamType = ptInput
+      end
+      item
+        Name = 'PIRAH'
+        ParamType = ptInput
+      end
+      item
+        Name = 'KRI'
         ParamType = ptInput
       end>
   end

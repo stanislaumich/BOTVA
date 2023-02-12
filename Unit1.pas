@@ -44,7 +44,6 @@ type
         CheckBox1: TCheckBox;
         Label2: TLabel;
         BPodzemBase: TButton;
-        Label4: TLabel;
         GroupBox1: TGroupBox;
         GroupBox2: TGroupBox;
         Label7: TLabel;
@@ -66,6 +65,18 @@ type
     Button4: TButton;
     Button8: TButton;
     Button10: TButton;
+    Label11: TLabel;
+    GroupBox3: TGroupBox;
+    BKazna: TButton;
+    BKaznaBase: TButton;
+    Label4: TLabel;
+    Label12: TLabel;
+    ComboBox3: TComboBox;
+    Label13: TLabel;
+    ComboBox4: TComboBox;
+    Button13: TButton;
+    Button14: TButton;
+    QInsKazna: TFDQuery;
         procedure BZAdanClick(Sender: TObject);
         procedure BPodzemClick(Sender: TObject);
         procedure BVoinClick(Sender: TObject);
@@ -87,6 +98,8 @@ type
     procedure Button8Click(Sender: TObject);
     procedure Button10Click(Sender: TObject);
     procedure StringGrid1Click(Sender: TObject);
+    procedure BKaznaClick(Sender: TObject);
+    procedure BKaznaBaseClick(Sender: TObject);
 
     private
         { Private declarations }
@@ -157,6 +170,19 @@ begin
           QTemp.FieldByNAme('tm').Asstring);
         ComboBox2.Items.Add(QTemp.FieldByNAme('dt').Asstring + '-' +
           QTemp.FieldByNAme('tm').Asstring);
+        QTemp.Next;
+    end;
+
+    ComboBox3.Items.Clear;
+    ComboBox4.Items.Clear;
+    ComboBox3.Text := '';
+    ComboBox4.Text := '';
+    QTemp.Close;
+    QTemp.Open('select distinct dt from kazna order by dt desc');
+    While not QTemp.Eof do
+    begin
+        ComboBox3.Items.Add(QTemp.FieldByNAme('dt').Asstring);
+        ComboBox4.Items.Add(QTemp.FieldByNAme('dt').Asstring);
         QTemp.Next;
     end;
 end;
@@ -332,17 +358,7 @@ var                     {0  string, 1 number, 2 datetime}
   fBuf1, fBuf2: real;
   flag: boolean;
 begin
-    {buf := Grid.Cells[Col, 0];
-    SortType := 0; // строка
-    if pos(' - ', buf) <> 0 then
-    begin
-      buf := copy(buf, 1, pos(' - ', buf) - 1);
-      if (pos('int', buf) <> 0) or (pos('float', buf) <> 0) or(pos('check', buf) <> 0) then
-        SortType := 1; // число
-      if (pos('dat', buf) <> 0) then
-        SortType := 2; // датавремя
-    end;
-     }
+
     if SortType = 0 then
     begin
       // сортировка по строковым правилам
@@ -547,12 +563,7 @@ var
     modA            : int64;
     n, tn           : string;
 begin
-    If (Edit2.Text = '') then
-    begin
-        ShowMessage
-          ('Нужно указать ссылку на лог подзема и указать первый(1), или второй(2) это был поход');
-        exit;
-    end;
+
     If OpenDialog1.Execute() then
     begin
         ClearSGR;
@@ -886,6 +897,116 @@ begin
 
 end;
 
+procedure TForm1.BKaznaBaseClick(Sender: TObject);
+var
+    i: integer;
+begin
+    For i := 1 to StringGrid1.rowcount - 1 do
+    begin
+        QinsKazna.Close;
+        QinsKazna.ParamByName('dt').Asstring := StringGrid1.cells[0, i];
+        QinsKazna.ParamByName('nik').Asstring    := StringGrid1.cells[1, i];
+        QinsKazna.ParamByName('gold').Asstring := StringGrid1.cells[2, i];
+        QinsKazna.ParamByName('pirah').Asstring   := StringGrid1.cells[3, i];
+        QinsKazna.ParamByName('kri').Asstring    := StringGrid1.cells[4, i];
+        QinsKazna.Execsql;
+    end;
+    ShowMessage(Done);
+    fillcombo12;
+    BKaznaBase.Enabled:=False;
+end;
+
+procedure TForm1.BKaznaClick(Sender: TObject);
+var
+    fi, fo          : textfile;
+    s, ts, rs, es: string;
+    i, res          : integer;
+    modA            : int64;
+    n, tn           : string;
+    datTim:tdatetime;
+    dat:string;
+begin
+    {If (Edit2.Text = '') then
+    begin
+        ShowMessage
+          ('Нужно указать ссылку на лог подзема и указать первый(1), или второй(2) это был поход');
+        exit;
+    end;}
+    If OpenDialog1.Execute() then
+    begin
+        ClearSGR;
+        StringGrid1.colcount    := 5;
+        StringGrid1.rowcount    := 2;
+        StringGrid1.cells[1, 0] := 'Ник';
+        StringGrid1.cells[2, 0] := 'Голд';
+        StringGrid1.cells[3, 0] := 'Кристаллы';
+        StringGrid1.cells[4, 0] := 'Пирахи';
+        n                       := extractfilename(OpenDialog1.Filename);
+        //Edit4.Text              := n[7];
+        delete(n, 7, length(n));
+        //tn := n[7];
+        insert('.', n, 3);
+        insert('.20', n, 6);
+        DatTim := Strtodate(n);
+        dat:=n;
+        Assignfile(fi, OpenDialog1.Filename);
+        Reset(fi);
+
+        repeat
+            ReadLn(fi, s);
+            s := trim(s);
+        until pos('p3 bordert borderr', s) <> 0;
+        //Edit1.Text:=s;
+        i:=0;
+        //while i<10 do
+        repeat
+            ReadLn(fi, s);
+            s := trim(s);
+            es:=s;
+            ts:=s;
+            delete(ts,1,pos('"',ts));
+            delete(ts,pos('"',ts),length(ts));
+            StringGrid1.cells[0, StringGrid1.rowcount - 1] := dat;
+            StringGrid1.cells[1, StringGrid1.rowcount - 1] := ts;
+            ReadLn(fi, s);
+            ReadLn(fi, s);
+            ts:=s;
+            delete(ts,1,pos('>',ts));
+            delete(ts,pos('<',ts),length(ts));
+            ts := trim(ts);
+            while (pos('.',ts)<>0) do delete (ts,pos('.',ts),1);
+            StringGrid1.cells[2, StringGrid1.rowcount - 1] := ts;
+            ReadLn(fi, s);
+            ts:=s;
+            delete(ts,1,pos('>',ts));
+            delete(ts,pos('<',ts),length(ts));
+            ts := trim(ts);
+            while (pos('.',ts)<>0) do delete (ts,pos('.',ts),1);
+            StringGrid1.cells[3, StringGrid1.rowcount - 1] := ts;
+            ReadLn(fi, s);
+            ts:=s;
+            delete(ts,1,pos('>',ts));
+            delete(ts,pos('<',ts),length(ts));
+            ts := trim(ts);
+            while (pos('.',ts)<>0) do delete (ts,pos('.',ts),1);
+            StringGrid1.cells[4, StringGrid1.rowcount - 1] := ts;
+            ReadLn(fi, s);
+            ReadLn(fi, s);
+            ReadLn(fi, s);
+            ReadLn(fi, s);
+            ReadLn(fi, s);
+            StringGrid1.rowcount    := StringGrid1.rowcount + 1;
+            i:=i+1;
+        until es='</table>';//(pos('p3 bordert borderr', s) <> 0);
+
+        StringGrid1.rowcount    := StringGrid1.rowcount -3;
+
+        ShowMessage('Готово!!!');
+        BKaznaBase.Enabled := true;
+    end;
+
+end;
+
 procedure TForm1.BPodzemBaseClick(Sender: TObject);
 var
     s, ts: string;
@@ -957,6 +1078,7 @@ begin
     QTemp.Execsql;
     QTemp.Close;
     QTemp.SQL.Clear;
+
     QTemp.SQL.Add('CREATE TABLE IF NOT EXISTS podzem ( ');
     QTemp.SQL.Add('dt  VARCHAR (50), ');
     QTemp.SQL.Add('num INTEGER, ');
@@ -965,6 +1087,7 @@ begin
     QTemp.SQL.Add('val VARCHAR2 (1000))');
     QTemp.Execsql;
     QTemp.Close;
+
     QTemp.SQL.Clear;
     QTemp.SQL.Add('CREATE TABLE  IF NOT EXISTS zad ( ');
     QTemp.SQL.Add('id  INTEGER       PRIMARY KEY AUTOINCREMENT, ');
@@ -974,6 +1097,18 @@ begin
     QTemp.SQL.Add('val INTEGER) ');
     QTemp.Execsql;
     QTemp.Close;
+
+    QTemp.SQL.Clear;
+    QTemp.SQL.Add('CREATE TABLE IF NOT EXISTS kazna ( ');
+    QTemp.SQL.Add('dt    VARCHAR (30),');
+    QTemp.SQL.Add('nik   VARCHAR (100),');
+    QTemp.SQL.Add('gold  VARCHAR (30),');
+    QTemp.SQL.Add('pirah VARCHAR (30), ');
+    QTemp.SQL.Add('kri   VARCHAR (30))');
+    QTemp.Execsql;
+    QTemp.Close;
+
+
 
     fillcombo12;
 end;
