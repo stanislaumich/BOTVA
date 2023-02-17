@@ -100,6 +100,8 @@ type
     procedure StringGrid1Click(Sender: TObject);
     procedure BKaznaClick(Sender: TObject);
     procedure BKaznaBaseClick(Sender: TObject);
+    procedure Button13Click(Sender: TObject);
+    procedure Button14Click(Sender: TObject);
 
     private
         { Private declarations }
@@ -479,6 +481,78 @@ procedure TForm1.Button10Click(Sender: TObject);
 begin
  SortGrid(StringGrid1,4,1);
 end;
+
+procedure TForm1.Button13Click(Sender: TObject);
+var i:integer;
+begin
+ClearSGR;
+    StringGrid1.colcount    := 6;
+    StringGrid1.rowcount    := 2;
+    StringGrid1.cells[0, 0] := '#';
+    StringGrid1.cells[1, 0] := 'Ник';
+    StringGrid1.cells[2, 0] := 'Голд';
+    StringGrid1.cells[3, 0] := 'Пирах';
+    StringGrid1.cells[4, 0] := 'Кри';
+    StringGrid1.cells[5, 0] := 'Дата';
+
+
+QTemp.Close;
+    QTemp.SQL.Clear;
+    QTemp.SQL.Add('select *');
+    QTemp.SQL.Add(' from kazna  where ');
+    QTemp.SQL.Add(' dt=' + Quotedstr(ComboBox3.Text));
+    QTemp.Open;
+    i := 1;
+    While not QTemp.Eof do
+    begin
+        StringGrid1.cells[0, i] := inttostr(i);
+        StringGrid1.cells[1, i] := QTemp.FieldByNAme('nik').Asstring;
+        StringGrid1.cells[2, i] := QTemp.FieldByNAme('gold').Asstring;
+        StringGrid1.cells[3, i] := QTemp.FieldByNAme('pirah').Asstring;
+        StringGrid1.cells[4, i] := QTemp.FieldByNAme('kri').AsVariant;
+        StringGrid1.cells[5, i] := QTemp.FieldByNAme('dt').Asstring;
+        StringGrid1.rowcount    := StringGrid1.rowcount + 1;
+        QTemp.Next;
+        i := i + 1;
+    end;
+end;
+
+procedure TForm1.Button14Click(Sender: TObject);
+var i:integer;
+begin
+ClearSGR;
+    StringGrid1.colcount    := 6;
+    StringGrid1.rowcount    := 2;
+    StringGrid1.cells[0, 0] := '#';
+    StringGrid1.cells[1, 0] := 'Ник';
+    StringGrid1.cells[2, 0] := 'Голд';
+    StringGrid1.cells[3, 0] := 'Пирах';
+    StringGrid1.cells[4, 0] := 'Кри';
+    StringGrid1.cells[5, 0] := 'Дата';
+
+
+QTemp.Close;
+    QTemp.SQL.Clear;
+    QTemp.SQL.Add('select nik, sum(gold) gold, sum(pirah) pirah, sum(kri) kri from( ');
+    QTemp.SQL.Add('select nik, -gold gold, -pirah pirah, -kri kri from kazna where dt='+Quotedstr(ComboBox3.Text));
+    QTemp.SQL.Add(' union select nik, gold, pirah, kri from kazna where dt='+Quotedstr(ComboBox4.Text));
+    QTemp.SQL.Add(') group by nik');
+    QTemp.Open;
+    i := 1;
+    While not QTemp.Eof do
+    begin
+        StringGrid1.cells[0, i] := inttostr(i);
+        StringGrid1.cells[1, i] := QTemp.FieldByNAme('nik').Asstring;
+        StringGrid1.cells[2, i] := QTemp.FieldByNAme('gold').Asstring;
+        StringGrid1.cells[3, i] := QTemp.FieldByNAme('pirah').Asstring;
+        StringGrid1.cells[4, i] := QTemp.FieldByNAme('kri').AsVariant;
+        //StringGrid1.cells[5, i] := QTemp.FieldByNAme('dt').Asstring;
+        StringGrid1.rowcount    := StringGrid1.rowcount + 1;
+        QTemp.Next;
+        i := i + 1;
+    end;
+end;
+
 
 procedure TForm1.Button1Click(Sender: TObject);
 var i:integer;
@@ -994,10 +1068,10 @@ begin
             ReadLn(fi, s);
             ReadLn(fi, s);
             ReadLn(fi, s);
-            ReadLn(fi, s);
+            //ReadLn(fi, s);
             StringGrid1.rowcount    := StringGrid1.rowcount + 1;
             i:=i+1;
-        until es='</table>';//(pos('p3 bordert borderr', s) <> 0);
+        until (es='</table>')or eof(fi);//(pos('p3 bordert borderr', s) <> 0);
 
         StringGrid1.rowcount    := StringGrid1.rowcount -3;
 

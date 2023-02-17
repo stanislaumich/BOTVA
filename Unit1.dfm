@@ -201,7 +201,6 @@ object Form1: TForm1
     ScrollBars = ssBoth
     TabOrder = 6
     WordWrap = False
-    ExplicitTop = 540
   end
   object WB: TWebBrowser
     Left = 4
@@ -463,7 +462,7 @@ object Form1: TForm1
     Color = clGray
     ParentBackground = False
     ParentColor = False
-    TabOrder = 36
+    TabOrder = 33
   end
   object BKazna: TButton
     Left = 8
@@ -471,7 +470,7 @@ object Form1: TForm1
     Width = 117
     Height = 25
     Caption = #1054#1073#1088#1072#1073#1086#1090#1072#1090#1100' '#1092#1072#1081#1083
-    TabOrder = 37
+    TabOrder = 35
     OnClick = BKaznaClick
   end
   object BKaznaBase: TButton
@@ -481,7 +480,7 @@ object Form1: TForm1
     Height = 25
     Caption = #1047#1072#1087#1080#1089#1072#1090#1100' '#1074' '#1073#1072#1079#1091
     Enabled = False
-    TabOrder = 38
+    TabOrder = 37
     OnClick = BKaznaBaseClick
   end
   object ComboBox3: TComboBox
@@ -489,7 +488,6 @@ object Form1: TForm1
     Top = 296
     Width = 125
     Height = 21
-    Enabled = False
     TabOrder = 39
     Text = 'ComboBox3'
   end
@@ -498,8 +496,7 @@ object Form1: TForm1
     Top = 296
     Width = 125
     Height = 21
-    Enabled = False
-    TabOrder = 40
+    TabOrder = 34
     Text = 'ComboBox4'
   end
   object Button13: TButton
@@ -508,8 +505,8 @@ object Form1: TForm1
     Width = 125
     Height = 25
     Caption = #1042#1099#1073#1088#1072#1090#1100' '#1085#1072' '#1076#1072#1090#1091
-    Enabled = False
-    TabOrder = 41
+    TabOrder = 36
+    OnClick = Button13Click
   end
   object Button14: TButton
     Left = 272
@@ -517,8 +514,8 @@ object Form1: TForm1
     Width = 125
     Height = 25
     Caption = #1042#1099#1073#1088#1072#1090#1100' '#1088#1072#1079#1085#1080#1094#1091
-    Enabled = False
-    TabOrder = 42
+    TabOrder = 38
+    OnClick = Button14Click
   end
   object OpenDialog1: TOpenDialog
     Left = 492
