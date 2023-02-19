@@ -77,6 +77,12 @@ type
     Button13: TButton;
     Button14: TButton;
     QInsKazna: TFDQuery;
+    Label14: TLabel;
+    Label15: TLabel;
+    Label16: TLabel;
+    Label17: TLabel;
+    Label18: TLabel;
+    Label19: TLabel;
         procedure BZAdanClick(Sender: TObject);
         procedure BPodzemClick(Sender: TObject);
         procedure BVoinClick(Sender: TObject);
@@ -1130,12 +1136,22 @@ begin
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);
+var
+ s:string;
 begin
     DateTimePicker1.date := date;
     DateTimePicker2.date := date;
     DateTimePicker3.date := date;
     DateTimePicker4.date := date;
     DateTimePicker5.date := date;
+
+    s:=datetostr(date);
+    delete(s,3,1);
+    delete(s,5,3);
+    label14.Caption:=s+'1';
+    label16.Caption:=s+'2';
+    label18.Caption:=s;
+    label19.Caption:=s;
 
     FDC.Params.Database := extractfilepath(Application.Exename) +
       'botva.sqlite';

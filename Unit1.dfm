@@ -91,18 +91,16 @@ object Form1: TForm1
   object Label10: TLabel
     Left = 6
     Top = 157
-    Width = 559
+    Width = 246
     Height = 13
-    Caption = 
-      #1060#1072#1081#1083' '#1089' '#1087#1086#1093#1086#1076#1086#1084' '#1076#1086#1083#1078#1077#1085' '#1080#1084#1077#1090#1100' '#1080#1084#1103' 2312221('#1076#1072#1083#1100#1096#1077' '#1095#1090#1086' '#1091#1075#1086#1076#1085#1086') '#1080#1079' '#1085#1077 +
-      #1075#1086' '#1073#1091#1076#1077#1090' '#1073#1088#1072#1090#1100#1089#1103' '#1076#1072#1090#1072' '#1080'  '#1085#1086#1084#1077#1088' '#1087#1086#1093#1086#1076#1072
+    Caption = #1048#1084#1103' '#1089#1086#1093#1088#1072#1085#1077#1085#1085#1086#1075#1086' '#1092#1072#1081#1083#1072' '#1076#1086#1083#1078#1085#1086' '#1085#1072#1095#1080#1085#1072#1090#1100#1089#1103' '#1089': '
   end
   object Label3: TLabel
     Left = 348
     Top = 192
-    Width = 235
+    Width = 196
     Height = 13
-    Caption = #1048#1084#1103' '#1092#1072#1081#1083#1072' '#1076#1086#1083#1078#1085#1086' '#1085#1072#1095#1080#1085#1072#1090#1100#1089#1103' '#1089' '#1076#1072#1090#1099' 271222'
+    Caption = #1048#1084#1103' '#1092#1072#1081#1083#1072' '#1076#1086#1083#1078#1085#1086' '#1085#1072#1095#1080#1085#1072#1090#1100#1089#1103' '#1089' '#1076#1072#1090#1099
   end
   object Label11: TLabel
     Left = 8
@@ -120,9 +118,9 @@ object Form1: TForm1
   object Label4: TLabel
     Left = 92
     Top = 253
-    Width = 235
+    Width = 196
     Height = 13
-    Caption = #1048#1084#1103' '#1092#1072#1081#1083#1072' '#1076#1086#1083#1078#1085#1086' '#1085#1072#1095#1080#1085#1072#1090#1100#1089#1103' '#1089' '#1076#1072#1090#1099' 271222'
+    Caption = #1048#1084#1103' '#1092#1072#1081#1083#1072' '#1076#1086#1083#1078#1085#1086' '#1085#1072#1095#1080#1085#1072#1090#1100#1089#1103' '#1089' '#1076#1072#1090#1099
   end
   object Label12: TLabel
     Left = 4
@@ -137,6 +135,72 @@ object Form1: TForm1
     Width = 43
     Height = 13
     Caption = #1080' '#1082#1086#1085#1094#1072':'
+  end
+  object Label14: TLabel
+    Left = 258
+    Top = 156
+    Width = 44
+    Height = 13
+    Caption = 'Label14'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label15: TLabel
+    Left = 315
+    Top = 157
+    Width = 103
+    Height = 13
+    Caption = #1076#1083#1103' '#1087#1077#1088#1074#1086#1075#1086' '#1087#1086#1093#1086#1076#1072
+  end
+  object Label16: TLabel
+    Left = 490
+    Top = 157
+    Width = 44
+    Height = 13
+    Caption = 'Label16'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label17: TLabel
+    Left = 548
+    Top = 157
+    Width = 63
+    Height = 13
+    Caption = #1076#1083#1103' '#1074#1090#1086#1088#1086#1075#1086
+  end
+  object Label18: TLabel
+    Left = 305
+    Top = 253
+    Width = 44
+    Height = 13
+    Caption = 'Label18'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label19: TLabel
+    Left = 556
+    Top = 192
+    Width = 44
+    Height = 13
+    Caption = 'Label19'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object BZAdan: TButton
     Left = 4
