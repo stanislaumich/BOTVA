@@ -326,6 +326,10 @@ begin
         Reset(fi);
         repeat
             ReadLn(fi, s);
+        until pos('Клановые задания', trim(s)) <>0;
+        //showmessage('44');
+        repeat
+            ReadLn(fi, s);
         until pos('<div class="mb5">', trim(s)) = 1;
         delete(s, 1, pos('>', s));
         delete(s, pos('<', s), length(s));
@@ -352,7 +356,7 @@ begin
                 i                       := i + 1;
                 StringGrid1.rowcount    := StringGrid1.rowcount + 1;
             end;
-        until trim(s) = '</table>';
+        until (trim(s) = '</table>') or (eof(fi));
         Closefile(fi);
     end;
 end;

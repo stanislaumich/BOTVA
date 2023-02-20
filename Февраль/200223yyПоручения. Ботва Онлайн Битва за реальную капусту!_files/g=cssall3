@@ -1,0 +1,703 @@
+.mega_log{height:150px}.tab.active{cursor:pointer;color:#542F1B}.tab.selected{font-weight:bold}.tab{border:1px
+solid #A28361;padding:5px;color:gray}#megablock{background-image:url(/images/m/class/mega/kar_kar_bg_02.png);background-position:0px 0px;height:570px;margin-left:142px;position:absolute;top:0px;width:810px;z-index:1001}.avatar_block{position:absolute;width:330px;height:85px;left:15px;top:0px;margin-top:-40px}.small_ava{width:80px;height:80px;background-image:url(/images/m/class/mega/fpets_ava_s.png);cursor:pointer;position:relative}.small_ava.ava_12.active{background-position:0px -80px}.small_ava.ava_13.active{background-position:-80px -80px}.small_ava.ava_22.active{background-position:-160px -80px}.small_ava.ava_23.active{background-position:-240px -80px}.small_ava.ava_32.active{background-position:-320px -80px}.small_ava.ava_33.active{background-position:-400px -80px}.small_ava.ava_42.active{background-position:-480px -80px}.small_ava.ava_43.active{background-position:-560px -80px}.small_ava.disabled{cursor:auto}.small_ava.ava_12{background-position:0px -0px}.small_ava.ava_13{background-position:-80px -0px}.small_ava.ava_22{background-position:-160px -0px}.small_ava.ava_23{background-position:-240px -0px}.small_ava.ava_32{background-position:-320px -0px}.small_ava.ava_33{background-position:-400px -0px}.small_ava.ava_42{background-position:-480px -0px}.small_ava.ava_43{background-position:-560px -0px}#megablock
+span.level{display:block;font-size:10px;left:25px;position:absolute;text-align:center;top:61px;width:20px}#megablock
+.mbuttons{width:110px;height:25px;background-image:url(/images/m/class/mega/buttons_karkar.png);display:inline-block;line-height:25px;text-align:center;color:#fff;font-weight:bold;cursor:pointer}#megablock .mbuttons:hover{background-position:-0px -25px}#megablock
+.mbuttons.selected{background-position:-0px -50px;cursor:auto}#megablock
+.paths_block{top:32px;left:410px;position:absolute;width:350px}#megablock
+.submit{display:inline-block;left:307px;position:absolute;top:342px;width:300px}#megablock
+.stage_count{display:inline-block;position:relative;top:3px}#megablock
+.mega_auto{top:35px;position:absolute;color:#fff;cursor:pointer}#megablock
+.nest{width:35px;height:30px;background-image:url(/images/m/class/mega/karkar_points.png);position:absolute;cursor:pointer}#megablock
+.nest.win{background-position:-35px -0px !important}#megablock
+.nest.wait{background-position:-105px -0px}#megablock
+.nest.lose{background-position:-70px -0px}.nest.pos_11{left:37px;top:177px}.nest.pos_11{left:37px;top:177px}.nest.pos_12{left:113px;top:91px}.nest.pos_13{left:208px;top:78px}.nest.pos_14{left:299px;top:157px}.nest.pos_15{left:375px;top:267px}.nest.pos_16{left:447px;top:293px}.nest.pos_17{left:542px;top:243px}.nest.pos_18{left:687px;top:150px}.nest.pos_22{left:146px;top:150px}.nest.pos_23{left:225px;top:181px}.nest.pos_24{left:283px;top:60px}.nest.pos_25{left:379px;top:102px}.nest.pos_26{left:483px;top:180px}.nest.pos_27{left:568px;top:163px}.nest.pos_32{left:131px;top:232px}.nest.pos_33{left:224px;top:288px}.nest.pos_34{left:275px;top:244px}.nest.pos_35{left:391px;top:194px}.nest.pos_36{left:468px;top:80px}.nest.pos_37{left:533px;top:79px}.mpath.p12{background-image:url(/images/m/class/mega/path_12.png)}.mpath{height:300px;left:32px;position:absolute;top:62px;width:750px;background-repeat:no-repeat}.mpath.p13{background-image:url(/images/m/class/mega/path_13.png)}.mpath.p14{background-image:url(/images/m/class/mega/path_14.png)}.mpath.p15{background-image:url(/images/m/class/mega/path_15.png)}.mpath.p16{background-image:url(/images/m/class/mega/path_16.png)}.mpath.p17{background-image:url(/images/m/class/mega/path_17.png)}.mpath.p18{background-image:url(/images/m/class/mega/path_18.png)}.mpath.p22{background-image:url(/images/m/class/mega/path_22.png)}.mpath.p23{background-image:url(/images/m/class/mega/path_23.png)}.mpath.p24{background-image:url(/images/m/class/mega/path_24.png)}.mpath.p25{background-image:url(/images/m/class/mega/path_25.png)}.mpath.p26{background-image:url(/images/m/class/mega/path_26.png)}.mpath.p27{background-image:url(/images/m/class/mega/path_27.png)}.mpath.p28{background-image:url(/images/m/class/mega/path_28.png)}.mpath.p32{background-image:url(/images/m/class/mega/path_32.png)}.mpath.p33{background-image:url(/images/m/class/mega/path_33.png)}.mpath.p34{background-image:url(/images/m/class/mega/path_34.png)}.mpath.p35{background-image:url(/images/m/class/mega/path_35.png)}.mpath.p36{background-image:url(/images/m/class/mega/path_36.png)}.mpath.p37{background-image:url(/images/m/class/mega/path_37.png)}.mpath.p38{background-image:url(/images/m/class/mega/path_38.png)}.close_block{cursor:pointer;height:20px;left:781px;position:absolute;top:8px;width:20px}#megablock
+.description_block{left:18px;position:absolute;top:457px;width:778px;text-align:center}#megablock
+.description{display:inline-block}#megablock
+.mtitle{font-weight:bold;left:16px;position:absolute;top:430px;width:778px}#megablock
+.ava_small_monster{width:80px;height:80px;background-image:url(/images/m/class/mega/fly_monsters.png)}.ava_small_monster.kk_01{background-position:-240px -160px}.ava_small_monster.kk_02{background-position:-320px -160px}.ava_small_monster.kk_03{background-position:-320px -80px}.ava_small_monster.kk_04{background-position:-80px -80px}.ava_small_monster.kk_05{background-position:-400px -160px}.ava_small_monster.kk_06{background-position:-80px -160px}.ava_small_monster.kk_07{background-position:-160px -0px}.ava_small_monster.kk_08{background-position:-80px -0px}.ava_small_monster.kk_09{background-position:-240px -0px}.ava_small_monster.kk_10{background-position:-320px -0px}.ava_small_monster.kk_11{background-position:-0px -0px}.ava_small_monster.kk_12{background-position:-400px -0px}.ava_small_monster.kk_13{background-position:-160px -80px}.ava_small_monster.kk_14{background-position:-0px -80px}.ava_small_monster.kk_15{background-position:-160px -160px}.ava_small_monster.kk_16{background-position:-400px -80px}.ava_small_monster.kk_17{background-position:-0px -160px}.ava_small_monster.kk_18{background-position:-240px -80px}.ava_small_monster.kk_19{background-position:0 -240px}.ava_small_monster.kk_20{background-position:-80px -240px}.ava_small_monster.kk_21{background-position:-160px -240px}.monster_info_block{width:80px;height:95px}.fear_100,.fear_50{width:36px;height:14px;background-image:url(/images/m/class/mega/f_monsters_vstrecha.png);background-position:-0px -0px;margin:0
+auto}.fear_30{width:36px;height:14px;background-image:url(/images/m/class/mega/f_monsters_vstrecha.png);background-position:-0px -14px;margin:0
+auto}.fear_20{width:36px;height:14px;background-image:url(/images/m/class/mega/f_monsters_vstrecha.png);background-position:-0px -28px;margin:0
+auto}.desc_text{margin:0
+auto;padding:20px;text-align:center;line-height:25px}#can_find
+span.xgold{background:#e2cdae;box-shadow:inset 0 0 0 1px #ebdfd1;margin:0
+-4px;height:58px;position:relative;top:1px}.uppercase{text-transform:uppercase}.tabs,.buttons{margin-right:-10px;overflow:hidden}.tabs.green_tabs
+.btn{background-color:#b7d089;color:#037100}.tabs.green_tabs .btn:hover, .tabs.green_tabs
+.btn.open{background-color:#7ba742;color:#fff !important}.tabs .btn, .buttons
+.cmd_all{height:30px !important;line-height:30px !important;padding:0
+7px;background-color:#dbcaac;font-size:10px;font-weight:bold;border-radius:3px;cursor:pointer;width:128px;float:left;position:relative;overflow:hidden;-ms-transition:all 0.2s ease;-webkit-transition:all 0.2s ease;-moz-transition:all 0.2s ease;-o-transition:all 0.2s ease;transition:all 0.2s ease}.tabs.big
+.btn{height:40px !important;line-height:120% !important}.tabs.big .btn
+span{width:inherit;height:40px;line-height:150%;display:table-cell;vertical-align:middle}.tabs .btn:hover,
+.tabs .btn:hover a,
+.tabs .btn.open,
+.tabs .btn a:hover{background-color:#9c8164;color:#fcf6de !important}.tabs .btn.open,
+.tabs .btn.open a,
+.tabs .btn.open a:hover{cursor:default;color:#fcf6de !important}.tabs .btn.unactive,
+.tabs .btn.unactive:hover{background-color:#dbcaac;color:#9c8164 !important;cursor:default}.tabs .btn.no_hover:hover{background-color:#dbcaac;color:#542F1B !important;cursor:default}.tabs .btn
+a{text-decoration:none !important;transition:all 0.2s ease}.tabs .btn b.clan_view,
+.tabs .btn.unactive:hover
+b.clan_view{width:30px;height:30px;position:absolute;left:5px;top:-2px;background-image:url(/images/buttons/clan_rights.png);background-position:-330px 0;opacity:0.7}.tabs .btn:hover b.clan_view,
+.tabs .btn.open
+b.clan_view{background-position:-330px -30px;opacity:1}.tabs .btn b.clan_warriors,
+.tabs .btn.unactive:hover
+b.clan_warriors{width:30px;height:30px;position:absolute;left:5px;top:-2px;background-image:url(/images/buttons/clan_rights.png);background-position:-60px 0;opacity:0.7}.tabs .btn:hover b.clan_warriors,
+.tabs .btn.open
+b.clan_warriors{background-position:-60px -30px;opacity:1}.tabs .btn b.clan_taxes,
+.tabs .btn.unactive:hover
+b.clan_taxes{width:30px;height:30px;position:absolute;left:5px;top:-2px;background-image:url(/images/buttons/clan_rights.png);background-position:-120px 0;opacity:0.7}.tabs .btn:hover b.clan_taxes,
+.tabs .btn.open
+b.clan_taxes{background-position:-120px -30px;opacity:1}.tabs .btn b.clan_statuses,
+.tabs .btn.unactive:hover
+b.clan_statuses{width:30px;height:30px;position:absolute;left:5px;top:-2px;background-image:url(/images/buttons/clan_rights.png);background-position:-150px 0;opacity:0.7}.tabs .btn:hover b.clan_statuses,
+.tabs .btn.open
+b.clan_statuses{background-position:-150px -30px;opacity:1}.tabs .btn b.clan_academy,
+.tabs .btn b.clan_academies,
+.tabs .btn.unactive:hover b.clan_academy,
+.tabs .btn.unactive:hover
+b.clan_academies{width:30px;height:30px;position:absolute;left:5px;top:-2px;background-image:url(/images/buttons/clan_rights.png);background-position:-180px 0;opacity:0.7}.tabs .btn:hover b.clan_academy,
+.tabs .btn.open b.clan_academy,
+.tabs .btn:hover b.clan_academies,
+.tabs .btn.open
+b.clan_academies{background-position:-180px -30px;opacity:1}.tabs .btn b.clan_plac,
+.tabs .btn b.clan_square,
+.tabs .btn.unactive:hover b.clan_plac,
+.tabs .btn.unactive:hover
+b.clan_square{width:30px;height:30px;position:absolute;left:5px;top:-2px;background-image:url(/images/buttons/clan_rights.png);background-position:0 0;opacity:0.7}.tabs .btn:hover b.clan_plac,
+.tabs .btn.open b.clan_plac,
+.tabs .btn:hover b.clan_square,
+.tabs .btn.open
+b.clan_square{background-position:0 -30px;opacity:1}.tab{border:0;padding:0;min-height:0;color:#542F1B !important}.tabs_mini{margin-bottom:3px;overflow:hidden}.tabs_mini.btn2
+.btn{width:96px !important}.tabs_mini.btn2 .btn
+div{margin:0
+auto}.tabs_mini
+.btn{margin:0
+1px 0 0;padding:0;width:38px;height:37px;cursor:pointer;float:left;background-color:#dbcaac}.tabs_mini .btn:first-child{padding-left:2px;width:37px;border-radius:3px 0 0 3px}.tabs_mini .btn:last-child{border-radius:0 3px 3px 0}.tabs_mini .btn:hover,
+.tabs_mini
+.btn.open{background-color:#9c8164}.tabs_mini
+.btn.open{cursor:default}.tabs_mini.btn3
+.btn{width:64px !important}.tabs_mini.btn3 .btn:first-child{width:63px !important}.tabs_mini.btn4
+.btn{width:48px !important}.tabs_mini.btn4 .btn:first-child{width:47px !important}.tabs_mini.btn4 .btn:last-child{margin-right:-3px}.tabs_mini .btn>div{margin:0
+auto}#rmenu2
+.tabs_right{position:absolute;top:53px;right:-8px}.tabs_right
+.btn{margin:0
+0 5px 0;padding:3px
+0 0;width:25px !important;height:23px !important;line-height:25px;text-align:center;cursor:pointer;background-color:#e4caa1;float:none;border-radius:0 3px 3px 0}.tabs_right .btn:hover,
+.tabs_right .btn.open,
+.buttons .cmd_all:hover,
+.buttons
+.cmd_all.cmd_selected{background-color:#9c8164;color:#fcf6de !important}.tabs_right .btn.open, .buttons
+.cmd_all.cmd_selected{cursor:default}.tabs_right .btn
+b{width:20px;height:20px;display:inline-block;background-image:url(/i/ico.png);background-repeat:no-repeat;opacity:0.7}.tabs_right .btn:hover b, .tabs_right .btn.open
+b{opacity:1}.tabs_right .btn
+.right_menu_icon_0{background-position:-300px -160px}.tabs_right .btn:hover .right_menu_icon_0, .tabs_right .btn.open
+.right_menu_icon_0{background-position:-300px -180px}.tabs_right .btn
+.right_menu_icon_1{background-position:-300px -320px}.tabs_right .btn:hover .right_menu_icon_1, .tabs_right .btn.open
+.right_menu_icon_1{background-position:-300px -340px}.tabs_right .btn
+.right_menu_icon_2{background-position:-300px -280px}.tabs_right .btn:hover .right_menu_icon_2, .tabs_right .btn.open
+.right_menu_icon_2{background-position:-300px -300px}.tabs_right .btn
+.right_menu_icon_3{background-position:-300px -80px}.tabs_right .btn:hover .right_menu_icon_3, .tabs_right .btn.open
+.right_menu_icon_3{background-position:-300px -100px}.tabs_right .btn
+.right_menu_icon_4{background-position:-300px -200px}.tabs_right .btn:hover .right_menu_icon_4, .tabs_right .btn.open
+.right_menu_icon_4{background-position:-300px -220px}.tabs_right .btn
+.right_menu_icon_5{background-position:-300px -240px}.tabs_right .btn:hover .right_menu_icon_5, .tabs_right .btn.open
+.right_menu_icon_5{background-position:-300px -260px}.tabs_right .btn
+.right_menu_icon_6{background-position:-300px -120px}.tabs_right .btn:hover .right_menu_icon_6, .tabs_right .btn.open
+.right_menu_icon_6{background-position:-300px -140px}.tabs_right .btn
+.right_menu_icon_7{background-position:-600px -840px}.tabs_right .btn:hover .right_menu_icon_7, .tabs_right .btn.open
+.right_menu_icon_7{background-position:-600px -860px}.tabs
+.btn{margin:0
+1px 0 0;border-radius:0}.tabs .btn:first-child{border-radius:3px 0 0 3px}.tabs .btn:last-child{border-radius:0 3px 3px 0;margin-right:0}.tabs
+.btn.btn1{display:none}.tabs .btn.btn2, .buttons
+.cmd_all.cmd_row2{width:263px}.tabs .btn.btn2 + .btn2, .buttons .cmd_all.cmd_row2+.cmd_row2{width:262px;border-radius:0 3px 3px 0}.tabs .btn.btn3, .buttons
+.cmd_all.cmd_row3{width:170px}.tabs .btn.btn4, .buttons .cmd_all.cmd_row4, .buttons
+.cmd_all.cmd_row2t{width:123px}.buttons .cmd_all.cmd_row2t
+center{margin:0}.buttons .cmd_all.cmd_row2t
+b{display:none}.tabs .btn.btn4:first-child, .buttons .cmd_all.cmd_row4:first-child{width:125px}.tabs .btn.btn4:first-child + .btn + .btn, .buttons .cmd_all.cmd_row4:first-child+.cmd_all+.cmd_all{width:124px}.tabs .btn.btn5, .buttons
+.cmd_all.cmd_row5{width:96px}.tabs .btn.btn6, .buttons
+.cmd_all.cmd_row6{width:77px;text-transform:uppercase}.tabs .btn.btn6:first-child, .buttons .cmd_all.cmd_row6:first-child{width:80px}.tabs .btn.btn7, .buttons
+.cmd_all.cmd_row7{width:64px;text-transform:uppercase}.tabs .btn.btn7:first-child, .buttons .cmd_all.cmd_row7:first-child{width:66px}.tabs .btn.btn8, .buttons
+.cmd_all.cmd_row8{width:54px}.tabs .btn.btn8:first-child, .buttons .cmd_all.cmd_row8:first-child{width:57px}.tabs.multiline
+.btn.btn6{width:169px}.tabs.multiline .btn.btn6:nth-child(1), .tabs.multiline .btn.btn6:nth-child(3), .tabs.multiline .btn.btn6:nth-child(4), .tabs.multiline .btn.btn6:nth-child(6){width:170px}.buttons{margin-top:-2px}.buttons+.buttons{margin-top:-7px;margin-bottom:1px}.buttons + .buttons .cmd_all:first-child{border-radius:0 0 0 3px}.buttons + .buttons .cmd_all:last-child{border-radius:0 0 3px 0}.buttons
+.cmd_all{margin-left:1px;height:auto;line-height:normal;background-image:none;border-radius:0}.buttons .cmd_all:first-child{margin-left:0;border-radius:3px 0 0 3px}.buttons .cmd_all:last-child{border-radius:0 3px 3px 0}.tabs.btn2
+.btn{width:263px}.tabs.btn2 .btn+.btn{width:262px}.tabs.btn3
+.btn{width:170px}.tabs.btn3 .btn,
+.tabs.btn3 .btn+.btn{width:170px}.tabs.btn4
+.btn{width:123px}.tabs.btn4 .btn:first-child{width:125px}.tabs.btn4 .btn:first-child+.btn+.btn{width:124px}.tabs.btn5
+.btn{width:96px}.tabs.btn6
+.btn{width:77px}.tabs.btn6 .btn:first-child{width:80px}.tabs.btn6.multiline
+.btn{width:169px}.tabs.btn6.multiline .btn:nth-child(1), .tabs.btn6.multiline .btn:nth-child(3), .tabs.btn6.multiline .btn:nth-child(4), .tabs.btn6.multiline .btn:nth-child(6){width:170px}.tabs.btn7
+.btn{width:64px}.tabs.btn7 .btn:first-child{width:66px}.tabs.btn8
+.btn{width:54px}.tabs.btn8 .btn:first-child{width:57px}.tabs_carousel{margin:0
+12px;height:29px;overflow:hidden}.tabs_carousel
+ul{margin:0;padding:0;position:relative;list-style-type:none;z-index:1;width:704px;left:0}.tabs_carousel
+li{overflow:hidden;float:left;width:175px;height:28px;margin:0
+0 0 1px;display:block;cursor:pointer}.tabs_controls,.block_controls{left:0;right:0;position:absolute}.block_controls{top:-1px}.tabs_controls .next,
+.tabs_controls .prev,
+.block_controls .next,
+.block_controls
+.prev{position:absolute;top:-23px;cursor:pointer}.tabs_controls .next,
+.block_controls
+.next{background-position:0 -1000px;opacity:0.7;right:5px}.tabs_controls .next:hover,
+.block_controls .next:hover{opacity:1}.tabs_controls .prev,
+.block_controls
+.prev{background-position:-280px -980px;opacity:0.7;left:7px}.tabs_controls .prev:hover,
+.block_controls .prev:hover{opacity:1}.block_controls .next,
+.block_controls
+.prev{opacity:1}.block_controls .next:hover,
+.block_controls .prev:hover{opacity: .8}.tabs_controls .next.disabled,
+.tabs_controls .prev.disabled,
+.block_controls .next.disabled,
+.block_controls .prev.disabled,
+.block_controls .next.disabled:hover,
+.block_controls .prev.disabled:hover{opacity:0.3;cursor:default}.navigation+.tabs{margin-left:76px}.navigation + .tabs .btn:first-child{border-radius:0}.navigation + .tabs.btn2
+.btn{width:224px}.navigation + .tabs.btn3 .btn:first-child{width:146px}.navigation + .tabs.btn3
+.btn{width:144px}.navigation + .tabs.btn4
+.btn{width:98px}.navigation + .tabs.btn5
+.btn{width:81px}.tab.white{color:#fff !important}/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */@font-face{font-family:'FontAwesome';src:url('/images/front/fonts/fontawesome-webfont.eot?v=4.7.0');src:url('/images/front/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),url('/images/front/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),url('/images/front/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),url('/images/front/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),url('/images/front/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');font-weight:normal;font-style:normal}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { @font-face { font-family:'FontAwesome'; src: url('/images/front/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg'); } }
+
+.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.fa-lg{font-size:1.33333333em;line-height:.75em;vertical-align:-15%}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-fw{width:1.28571429em;text-align:center}.fa-ul{padding-left:0;margin-left:2.14285714em;list-style-type:none}.fa-ul>li{position:relative}.fa-li{position:absolute;left:-2.14285714em;width:2.14285714em;top:.14285714em;text-align:center}.fa-li.fa-lg{left:-1.85714286em}.fa-border{padding:.2em .25em .15em;border:solid .08em #eee;border-radius:.1em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left{margin-right:.3em}.fa.fa-pull-right{margin-left:.3em}.pull-right{float:right}.pull-left{float:left}.fa.pull-left{margin-right:.3em}.fa.pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}.fa-rotate-90{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";-webkit-transform:rotate(270deg);-ms-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";-webkit-transform:scale(-1, 1);-ms-transform:scale(-1, 1);transform:scale(-1, 1)}.fa-flip-vertical{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";-webkit-transform:scale(1, -1);-ms-transform:scale(1, -1);transform:scale(1, -1)}:root .fa-rotate-90,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-flip-horizontal,:root .fa-flip-vertical{filter:none}.fa-stack{position:relative;display:inline-block;width:2em;height:2em;line-height:2em;vertical-align:middle}.fa-stack-1x,.fa-stack-2x{position:absolute;left:0;width:100%;text-align:center}.fa-stack-1x{line-height:inherit}.fa-stack-2x{font-size:2em}.fa-inverse{color:#fff}.fa-glass:before{content:"\f000"}.fa-music:before{content:"\f001"}.fa-search:before{content:"\f002"}.fa-envelope-o:before{content:"\f003"}.fa-heart:before{content:"\f004"}.fa-star:before{content:"\f005"}.fa-star-o:before{content:"\f006"}.fa-user:before{content:"\f007"}.fa-film:before{content:"\f008"}.fa-th-large:before{content:"\f009"}.fa-th:before{content:"\f00a"}.fa-th-list:before{content:"\f00b"}.fa-check:before{content:"\f00c"}.fa-remove:before,.fa-close:before,.fa-times:before{content:"\f00d"}.fa-search-plus:before{content:"\f00e"}.fa-search-minus:before{content:"\f010"}.fa-power-off:before{content:"\f011"}.fa-signal:before{content:"\f012"}.fa-gear:before,.fa-cog:before{content:"\f013"}.fa-trash-o:before{content:"\f014"}.fa-home:before{content:"\f015"}.fa-file-o:before{content:"\f016"}.fa-clock-o:before{content:"\f017"}.fa-road:before{content:"\f018"}.fa-download:before{content:"\f019"}.fa-arrow-circle-o-down:before{content:"\f01a"}.fa-arrow-circle-o-up:before{content:"\f01b"}.fa-inbox:before{content:"\f01c"}.fa-play-circle-o:before{content:"\f01d"}.fa-rotate-right:before,.fa-repeat:before{content:"\f01e"}.fa-refresh:before{content:"\f021"}.fa-list-alt:before{content:"\f022"}.fa-lock:before{content:"\f023"}.fa-flag:before{content:"\f024"}.fa-headphones:before{content:"\f025"}.fa-volume-off:before{content:"\f026"}.fa-volume-down:before{content:"\f027"}.fa-volume-up:before{content:"\f028"}.fa-qrcode:before{content:"\f029"}.fa-barcode:before{content:"\f02a"}.fa-tag:before{content:"\f02b"}.fa-tags:before{content:"\f02c"}.fa-book:before{content:"\f02d"}.fa-bookmark:before{content:"\f02e"}.fa-print:before{content:"\f02f"}.fa-camera:before{content:"\f030"}.fa-font:before{content:"\f031"}.fa-bold:before{content:"\f032"}.fa-italic:before{content:"\f033"}.fa-text-height:before{content:"\f034"}.fa-text-width:before{content:"\f035"}.fa-align-left:before{content:"\f036"}.fa-align-center:before{content:"\f037"}.fa-align-right:before{content:"\f038"}.fa-align-justify:before{content:"\f039"}.fa-list:before{content:"\f03a"}.fa-dedent:before,.fa-outdent:before{content:"\f03b"}.fa-indent:before{content:"\f03c"}.fa-video-camera:before{content:"\f03d"}.fa-photo:before,.fa-image:before,.fa-picture-o:before{content:"\f03e"}.fa-pencil:before{content:"\f040"}.fa-map-marker:before{content:"\f041"}.fa-adjust:before{content:"\f042"}.fa-tint:before{content:"\f043"}.fa-edit:before,.fa-pencil-square-o:before{content:"\f044"}.fa-share-square-o:before{content:"\f045"}.fa-check-square-o:before{content:"\f046"}.fa-arrows:before{content:"\f047"}.fa-step-backward:before{content:"\f048"}.fa-fast-backward:before{content:"\f049"}.fa-backward:before{content:"\f04a"}.fa-play:before{content:"\f04b"}.fa-pause:before{content:"\f04c"}.fa-stop:before{content:"\f04d"}.fa-forward:before{content:"\f04e"}.fa-fast-forward:before{content:"\f050"}.fa-step-forward:before{content:"\f051"}.fa-eject:before{content:"\f052"}.fa-chevron-left:before{content:"\f053"}.fa-chevron-right:before{content:"\f054"}.fa-plus-circle:before{content:"\f055"}.fa-minus-circle:before{content:"\f056"}.fa-times-circle:before{content:"\f057"}.fa-check-circle:before{content:"\f058"}.fa-question-circle:before{content:"\f059"}.fa-info-circle:before{content:"\f05a"}.fa-crosshairs:before{content:"\f05b"}.fa-times-circle-o:before{content:"\f05c"}.fa-check-circle-o:before{content:"\f05d"}.fa-ban:before{content:"\f05e"}.fa-arrow-left:before{content:"\f060"}.fa-arrow-right:before{content:"\f061"}.fa-arrow-up:before{content:"\f062"}.fa-arrow-down:before{content:"\f063"}.fa-mail-forward:before,.fa-share:before{content:"\f064"}.fa-expand:before{content:"\f065"}.fa-compress:before{content:"\f066"}.fa-plus:before{content:"\f067"}.fa-minus:before{content:"\f068"}.fa-asterisk:before{content:"\f069"}.fa-exclamation-circle:before{content:"\f06a"}.fa-gift:before{content:"\f06b"}.fa-leaf:before{content:"\f06c"}.fa-fire:before{content:"\f06d"}.fa-eye:before{content:"\f06e"}.fa-eye-slash:before{content:"\f070"}.fa-warning:before,.fa-exclamation-triangle:before{content:"\f071"}.fa-plane:before{content:"\f072"}.fa-calendar:before{content:"\f073"}.fa-random:before{content:"\f074"}.fa-comment:before{content:"\f075"}.fa-magnet:before{content:"\f076"}.fa-chevron-up:before{content:"\f077"}.fa-chevron-down:before{content:"\f078"}.fa-retweet:before{content:"\f079"}.fa-shopping-cart:before{content:"\f07a"}.fa-folder:before{content:"\f07b"}.fa-folder-open:before{content:"\f07c"}.fa-arrows-v:before{content:"\f07d"}.fa-arrows-h:before{content:"\f07e"}.fa-bar-chart-o:before,.fa-bar-chart:before{content:"\f080"}.fa-twitter-square:before{content:"\f081"}.fa-facebook-square:before{content:"\f082"}.fa-camera-retro:before{content:"\f083"}.fa-key:before{content:"\f084"}.fa-gears:before,.fa-cogs:before{content:"\f085"}.fa-comments:before{content:"\f086"}.fa-thumbs-o-up:before{content:"\f087"}.fa-thumbs-o-down:before{content:"\f088"}.fa-star-half:before{content:"\f089"}.fa-heart-o:before{content:"\f08a"}.fa-sign-out:before{content:"\f08b"}.fa-linkedin-square:before{content:"\f08c"}.fa-thumb-tack:before{content:"\f08d"}.fa-external-link:before{content:"\f08e"}.fa-sign-in:before{content:"\f090"}.fa-trophy:before{content:"\f091"}.fa-github-square:before{content:"\f092"}.fa-upload:before{content:"\f093"}.fa-lemon-o:before{content:"\f094"}.fa-phone:before{content:"\f095"}.fa-square-o:before{content:"\f096"}.fa-bookmark-o:before{content:"\f097"}.fa-phone-square:before{content:"\f098"}.fa-twitter:before{content:"\f099"}.fa-facebook-f:before,.fa-facebook:before{content:"\f09a"}.fa-github:before{content:"\f09b"}.fa-unlock:before{content:"\f09c"}.fa-credit-card:before{content:"\f09d"}.fa-feed:before,.fa-rss:before{content:"\f09e"}.fa-hdd-o:before{content:"\f0a0"}.fa-bullhorn:before{content:"\f0a1"}.fa-bell:before{content:"\f0f3"}.fa-certificate:before{content:"\f0a3"}.fa-hand-o-right:before{content:"\f0a4"}.fa-hand-o-left:before{content:"\f0a5"}.fa-hand-o-up:before{content:"\f0a6"}.fa-hand-o-down:before{content:"\f0a7"}.fa-arrow-circle-left:before{content:"\f0a8"}.fa-arrow-circle-right:before{content:"\f0a9"}.fa-arrow-circle-up:before{content:"\f0aa"}.fa-arrow-circle-down:before{content:"\f0ab"}.fa-globe:before{content:"\f0ac"}.fa-wrench:before{content:"\f0ad"}.fa-tasks:before{content:"\f0ae"}.fa-filter:before{content:"\f0b0"}.fa-briefcase:before{content:"\f0b1"}.fa-arrows-alt:before{content:"\f0b2"}.fa-group:before,.fa-users:before{content:"\f0c0"}.fa-chain:before,.fa-link:before{content:"\f0c1"}.fa-cloud:before{content:"\f0c2"}.fa-flask:before{content:"\f0c3"}.fa-cut:before,.fa-scissors:before{content:"\f0c4"}.fa-copy:before,.fa-files-o:before{content:"\f0c5"}.fa-paperclip:before{content:"\f0c6"}.fa-save:before,.fa-floppy-o:before{content:"\f0c7"}.fa-square:before{content:"\f0c8"}.fa-navicon:before,.fa-reorder:before,.fa-bars:before{content:"\f0c9"}.fa-list-ul:before{content:"\f0ca"}.fa-list-ol:before{content:"\f0cb"}.fa-strikethrough:before{content:"\f0cc"}.fa-underline:before{content:"\f0cd"}.fa-table:before{content:"\f0ce"}.fa-magic:before{content:"\f0d0"}.fa-truck:before{content:"\f0d1"}.fa-pinterest:before{content:"\f0d2"}.fa-pinterest-square:before{content:"\f0d3"}.fa-google-plus-square:before{content:"\f0d4"}.fa-google-plus:before{content:"\f0d5"}.fa-money:before{content:"\f0d6"}.fa-caret-down:before{content:"\f0d7"}.fa-caret-up:before{content:"\f0d8"}.fa-caret-left:before{content:"\f0d9"}.fa-caret-right:before{content:"\f0da"}.fa-columns:before{content:"\f0db"}.fa-unsorted:before,.fa-sort:before{content:"\f0dc"}.fa-sort-down:before,.fa-sort-desc:before{content:"\f0dd"}.fa-sort-up:before,.fa-sort-asc:before{content:"\f0de"}.fa-envelope:before{content:"\f0e0"}.fa-linkedin:before{content:"\f0e1"}.fa-rotate-left:before,.fa-undo:before{content:"\f0e2"}.fa-legal:before,.fa-gavel:before{content:"\f0e3"}.fa-dashboard:before,.fa-tachometer:before{content:"\f0e4"}.fa-comment-o:before{content:"\f0e5"}.fa-comments-o:before{content:"\f0e6"}.fa-flash:before,.fa-bolt:before{content:"\f0e7"}.fa-sitemap:before{content:"\f0e8"}.fa-umbrella:before{content:"\f0e9"}.fa-paste:before,.fa-clipboard:before{content:"\f0ea"}.fa-lightbulb-o:before{content:"\f0eb"}.fa-exchange:before{content:"\f0ec"}.fa-cloud-download:before{content:"\f0ed"}.fa-cloud-upload:before{content:"\f0ee"}.fa-user-md:before{content:"\f0f0"}.fa-stethoscope:before{content:"\f0f1"}.fa-suitcase:before{content:"\f0f2"}.fa-bell-o:before{content:"\f0a2"}.fa-coffee:before{content:"\f0f4"}.fa-cutlery:before{content:"\f0f5"}.fa-file-text-o:before{content:"\f0f6"}.fa-building-o:before{content:"\f0f7"}.fa-hospital-o:before{content:"\f0f8"}.fa-ambulance:before{content:"\f0f9"}.fa-medkit:before{content:"\f0fa"}.fa-fighter-jet:before{content:"\f0fb"}.fa-beer:before{content:"\f0fc"}.fa-h-square:before{content:"\f0fd"}.fa-plus-square:before{content:"\f0fe"}.fa-angle-double-left:before{content:"\f100"}.fa-angle-double-right:before{content:"\f101"}.fa-angle-double-up:before{content:"\f102"}.fa-angle-double-down:before{content:"\f103"}.fa-angle-left:before{content:"\f104"}.fa-angle-right:before{content:"\f105"}.fa-angle-up:before{content:"\f106"}.fa-angle-down:before{content:"\f107"}.fa-desktop:before{content:"\f108"}.fa-laptop:before{content:"\f109"}.fa-tablet:before{content:"\f10a"}.fa-mobile-phone:before,.fa-mobile:before{content:"\f10b"}.fa-circle-o:before{content:"\f10c"}.fa-quote-left:before{content:"\f10d"}.fa-quote-right:before{content:"\f10e"}.fa-spinner:before{content:"\f110"}.fa-circle:before{content:"\f111"}.fa-mail-reply:before,.fa-reply:before{content:"\f112"}.fa-github-alt:before{content:"\f113"}.fa-folder-o:before{content:"\f114"}.fa-folder-open-o:before{content:"\f115"}.fa-smile-o:before{content:"\f118"}.fa-frown-o:before{content:"\f119"}.fa-meh-o:before{content:"\f11a"}.fa-gamepad:before{content:"\f11b"}.fa-keyboard-o:before{content:"\f11c"}.fa-flag-o:before{content:"\f11d"}.fa-flag-checkered:before{content:"\f11e"}.fa-terminal:before{content:"\f120"}.fa-code:before{content:"\f121"}.fa-mail-reply-all:before,.fa-reply-all:before{content:"\f122"}.fa-star-half-empty:before,.fa-star-half-full:before,.fa-star-half-o:before{content:"\f123"}.fa-location-arrow:before{content:"\f124"}.fa-crop:before{content:"\f125"}.fa-code-fork:before{content:"\f126"}.fa-unlink:before,.fa-chain-broken:before{content:"\f127"}.fa-question:before{content:"\f128"}.fa-info:before{content:"\f129"}.fa-exclamation:before{content:"\f12a"}.fa-superscript:before{content:"\f12b"}.fa-subscript:before{content:"\f12c"}.fa-eraser:before{content:"\f12d"}.fa-puzzle-piece:before{content:"\f12e"}.fa-microphone:before{content:"\f130"}.fa-microphone-slash:before{content:"\f131"}.fa-shield:before{content:"\f132"}.fa-calendar-o:before{content:"\f133"}.fa-fire-extinguisher:before{content:"\f134"}.fa-rocket:before{content:"\f135"}.fa-maxcdn:before{content:"\f136"}.fa-chevron-circle-left:before{content:"\f137"}.fa-chevron-circle-right:before{content:"\f138"}.fa-chevron-circle-up:before{content:"\f139"}.fa-chevron-circle-down:before{content:"\f13a"}.fa-html5:before{content:"\f13b"}.fa-css3:before{content:"\f13c"}.fa-anchor:before{content:"\f13d"}.fa-unlock-alt:before{content:"\f13e"}.fa-bullseye:before{content:"\f140"}.fa-ellipsis-h:before{content:"\f141"}.fa-ellipsis-v:before{content:"\f142"}.fa-rss-square:before{content:"\f143"}.fa-play-circle:before{content:"\f144"}.fa-ticket:before{content:"\f145"}.fa-minus-square:before{content:"\f146"}.fa-minus-square-o:before{content:"\f147"}.fa-level-up:before{content:"\f148"}.fa-level-down:before{content:"\f149"}.fa-check-square:before{content:"\f14a"}.fa-pencil-square:before{content:"\f14b"}.fa-external-link-square:before{content:"\f14c"}.fa-share-square:before{content:"\f14d"}.fa-compass:before{content:"\f14e"}.fa-toggle-down:before,.fa-caret-square-o-down:before{content:"\f150"}.fa-toggle-up:before,.fa-caret-square-o-up:before{content:"\f151"}.fa-toggle-right:before,.fa-caret-square-o-right:before{content:"\f152"}.fa-euro:before,.fa-eur:before{content:"\f153"}.fa-gbp:before{content:"\f154"}.fa-dollar:before,.fa-usd:before{content:"\f155"}.fa-rupee:before,.fa-inr:before{content:"\f156"}.fa-cny:before,.fa-rmb:before,.fa-yen:before,.fa-jpy:before{content:"\f157"}.fa-ruble:before,.fa-rouble:before,.fa-rub:before{content:"\f158"}.fa-won:before,.fa-krw:before{content:"\f159"}.fa-bitcoin:before,.fa-btc:before{content:"\f15a"}.fa-file:before{content:"\f15b"}.fa-file-text:before{content:"\f15c"}.fa-sort-alpha-asc:before{content:"\f15d"}.fa-sort-alpha-desc:before{content:"\f15e"}.fa-sort-amount-asc:before{content:"\f160"}.fa-sort-amount-desc:before{content:"\f161"}.fa-sort-numeric-asc:before{content:"\f162"}.fa-sort-numeric-desc:before{content:"\f163"}.fa-thumbs-up:before{content:"\f164"}.fa-thumbs-down:before{content:"\f165"}.fa-youtube-square:before{content:"\f166"}.fa-youtube:before{content:"\f167"}.fa-xing:before{content:"\f168"}.fa-xing-square:before{content:"\f169"}.fa-youtube-play:before{content:"\f16a"}.fa-dropbox:before{content:"\f16b"}.fa-stack-overflow:before{content:"\f16c"}.fa-instagram:before{content:"\f16d"}.fa-flickr:before{content:"\f16e"}.fa-adn:before{content:"\f170"}.fa-bitbucket:before{content:"\f171"}.fa-bitbucket-square:before{content:"\f172"}.fa-tumblr:before{content:"\f173"}.fa-tumblr-square:before{content:"\f174"}.fa-long-arrow-down:before{content:"\f175"}.fa-long-arrow-up:before{content:"\f176"}.fa-long-arrow-left:before{content:"\f177"}.fa-long-arrow-right:before{content:"\f178"}.fa-apple:before{content:"\f179"}.fa-windows:before{content:"\f17a"}.fa-android:before{content:"\f17b"}.fa-linux:before{content:"\f17c"}.fa-dribbble:before{content:"\f17d"}.fa-skype:before{content:"\f17e"}.fa-foursquare:before{content:"\f180"}.fa-trello:before{content:"\f181"}.fa-female:before{content:"\f182"}.fa-male:before{content:"\f183"}.fa-gittip:before,.fa-gratipay:before{content:"\f184"}.fa-sun-o:before{content:"\f185"}.fa-moon-o:before{content:"\f186"}.fa-archive:before{content:"\f187"}.fa-bug:before{content:"\f188"}.fa-vk:before{content:"\f189"}.fa-weibo:before{content:"\f18a"}.fa-renren:before{content:"\f18b"}.fa-pagelines:before{content:"\f18c"}.fa-stack-exchange:before{content:"\f18d"}.fa-arrow-circle-o-right:before{content:"\f18e"}.fa-arrow-circle-o-left:before{content:"\f190"}.fa-toggle-left:before,.fa-caret-square-o-left:before{content:"\f191"}.fa-dot-circle-o:before{content:"\f192"}.fa-wheelchair:before{content:"\f193"}.fa-vimeo-square:before{content:"\f194"}.fa-turkish-lira:before,.fa-try:before{content:"\f195"}.fa-plus-square-o:before{content:"\f196"}.fa-space-shuttle:before{content:"\f197"}.fa-slack:before{content:"\f198"}.fa-envelope-square:before{content:"\f199"}.fa-wordpress:before{content:"\f19a"}.fa-openid:before{content:"\f19b"}.fa-institution:before,.fa-bank:before,.fa-university:before{content:"\f19c"}.fa-mortar-board:before,.fa-graduation-cap:before{content:"\f19d"}.fa-yahoo:before{content:"\f19e"}.fa-google:before{content:"\f1a0"}.fa-reddit:before{content:"\f1a1"}.fa-reddit-square:before{content:"\f1a2"}.fa-stumbleupon-circle:before{content:"\f1a3"}.fa-stumbleupon:before{content:"\f1a4"}.fa-delicious:before{content:"\f1a5"}.fa-digg:before{content:"\f1a6"}.fa-pied-piper-pp:before{content:"\f1a7"}.fa-pied-piper-alt:before{content:"\f1a8"}.fa-drupal:before{content:"\f1a9"}.fa-joomla:before{content:"\f1aa"}.fa-language:before{content:"\f1ab"}.fa-fax:before{content:"\f1ac"}.fa-building:before{content:"\f1ad"}.fa-child:before{content:"\f1ae"}.fa-paw:before{content:"\f1b0"}.fa-spoon:before{content:"\f1b1"}.fa-cube:before{content:"\f1b2"}.fa-cubes:before{content:"\f1b3"}.fa-behance:before{content:"\f1b4"}.fa-behance-square:before{content:"\f1b5"}.fa-steam:before{content:"\f1b6"}.fa-steam-square:before{content:"\f1b7"}.fa-recycle:before{content:"\f1b8"}.fa-automobile:before,.fa-car:before{content:"\f1b9"}.fa-cab:before,.fa-taxi:before{content:"\f1ba"}.fa-tree:before{content:"\f1bb"}.fa-spotify:before{content:"\f1bc"}.fa-deviantart:before{content:"\f1bd"}.fa-soundcloud:before{content:"\f1be"}.fa-database:before{content:"\f1c0"}.fa-file-pdf-o:before{content:"\f1c1"}.fa-file-word-o:before{content:"\f1c2"}.fa-file-excel-o:before{content:"\f1c3"}.fa-file-powerpoint-o:before{content:"\f1c4"}.fa-file-photo-o:before,.fa-file-picture-o:before,.fa-file-image-o:before{content:"\f1c5"}.fa-file-zip-o:before,.fa-file-archive-o:before{content:"\f1c6"}.fa-file-sound-o:before,.fa-file-audio-o:before{content:"\f1c7"}.fa-file-movie-o:before,.fa-file-video-o:before{content:"\f1c8"}.fa-file-code-o:before{content:"\f1c9"}.fa-vine:before{content:"\f1ca"}.fa-codepen:before{content:"\f1cb"}.fa-jsfiddle:before{content:"\f1cc"}.fa-life-bouy:before,.fa-life-buoy:before,.fa-life-saver:before,.fa-support:before,.fa-life-ring:before{content:"\f1cd"}.fa-circle-o-notch:before{content:"\f1ce"}.fa-ra:before,.fa-resistance:before,.fa-rebel:before{content:"\f1d0"}.fa-ge:before,.fa-empire:before{content:"\f1d1"}.fa-git-square:before{content:"\f1d2"}.fa-git:before{content:"\f1d3"}.fa-y-combinator-square:before,.fa-yc-square:before,.fa-hacker-news:before{content:"\f1d4"}.fa-tencent-weibo:before{content:"\f1d5"}.fa-qq:before{content:"\f1d6"}.fa-wechat:before,.fa-weixin:before{content:"\f1d7"}.fa-send:before,.fa-paper-plane:before{content:"\f1d8"}.fa-send-o:before,.fa-paper-plane-o:before{content:"\f1d9"}.fa-history:before{content:"\f1da"}.fa-circle-thin:before{content:"\f1db"}.fa-header:before{content:"\f1dc"}.fa-paragraph:before{content:"\f1dd"}.fa-sliders:before{content:"\f1de"}.fa-share-alt:before{content:"\f1e0"}.fa-share-alt-square:before{content:"\f1e1"}.fa-bomb:before{content:"\f1e2"}.fa-soccer-ball-o:before,.fa-futbol-o:before{content:"\f1e3"}.fa-tty:before{content:"\f1e4"}.fa-binoculars:before{content:"\f1e5"}.fa-plug:before{content:"\f1e6"}.fa-slideshare:before{content:"\f1e7"}.fa-twitch:before{content:"\f1e8"}.fa-yelp:before{content:"\f1e9"}.fa-newspaper-o:before{content:"\f1ea"}.fa-wifi:before{content:"\f1eb"}.fa-calculator:before{content:"\f1ec"}.fa-paypal:before{content:"\f1ed"}.fa-google-wallet:before{content:"\f1ee"}.fa-cc-visa:before{content:"\f1f0"}.fa-cc-mastercard:before{content:"\f1f1"}.fa-cc-discover:before{content:"\f1f2"}.fa-cc-amex:before{content:"\f1f3"}.fa-cc-paypal:before{content:"\f1f4"}.fa-cc-stripe:before{content:"\f1f5"}.fa-bell-slash:before{content:"\f1f6"}.fa-bell-slash-o:before{content:"\f1f7"}.fa-trash:before{content:"\f1f8"}.fa-copyright:before{content:"\f1f9"}.fa-at:before{content:"\f1fa"}.fa-eyedropper:before{content:"\f1fb"}.fa-paint-brush:before{content:"\f1fc"}.fa-birthday-cake:before{content:"\f1fd"}.fa-area-chart:before{content:"\f1fe"}.fa-pie-chart:before{content:"\f200"}.fa-line-chart:before{content:"\f201"}.fa-lastfm:before{content:"\f202"}.fa-lastfm-square:before{content:"\f203"}.fa-toggle-off:before{content:"\f204"}.fa-toggle-on:before{content:"\f205"}.fa-bicycle:before{content:"\f206"}.fa-bus:before{content:"\f207"}.fa-ioxhost:before{content:"\f208"}.fa-angellist:before{content:"\f209"}.fa-cc:before{content:"\f20a"}.fa-shekel:before,.fa-sheqel:before,.fa-ils:before{content:"\f20b"}.fa-meanpath:before{content:"\f20c"}.fa-buysellads:before{content:"\f20d"}.fa-connectdevelop:before{content:"\f20e"}.fa-dashcube:before{content:"\f210"}.fa-forumbee:before{content:"\f211"}.fa-leanpub:before{content:"\f212"}.fa-sellsy:before{content:"\f213"}.fa-shirtsinbulk:before{content:"\f214"}.fa-simplybuilt:before{content:"\f215"}.fa-skyatlas:before{content:"\f216"}.fa-cart-plus:before{content:"\f217"}.fa-cart-arrow-down:before{content:"\f218"}.fa-diamond:before{content:"\f219"}.fa-ship:before{content:"\f21a"}.fa-user-secret:before{content:"\f21b"}.fa-motorcycle:before{content:"\f21c"}.fa-street-view:before{content:"\f21d"}.fa-heartbeat:before{content:"\f21e"}.fa-venus:before{content:"\f221"}.fa-mars:before{content:"\f222"}.fa-mercury:before{content:"\f223"}.fa-intersex:before,.fa-transgender:before{content:"\f224"}.fa-transgender-alt:before{content:"\f225"}.fa-venus-double:before{content:"\f226"}.fa-mars-double:before{content:"\f227"}.fa-venus-mars:before{content:"\f228"}.fa-mars-stroke:before{content:"\f229"}.fa-mars-stroke-v:before{content:"\f22a"}.fa-mars-stroke-h:before{content:"\f22b"}.fa-neuter:before{content:"\f22c"}.fa-genderless:before{content:"\f22d"}.fa-facebook-official:before{content:"\f230"}.fa-pinterest-p:before{content:"\f231"}.fa-whatsapp:before{content:"\f232"}.fa-server:before{content:"\f233"}.fa-user-plus:before{content:"\f234"}.fa-user-times:before{content:"\f235"}.fa-hotel:before,.fa-bed:before{content:"\f236"}.fa-viacoin:before{content:"\f237"}.fa-train:before{content:"\f238"}.fa-subway:before{content:"\f239"}.fa-medium:before{content:"\f23a"}.fa-yc:before,.fa-y-combinator:before{content:"\f23b"}.fa-optin-monster:before{content:"\f23c"}.fa-opencart:before{content:"\f23d"}.fa-expeditedssl:before{content:"\f23e"}.fa-battery-4:before,.fa-battery:before,.fa-battery-full:before{content:"\f240"}.fa-battery-3:before,.fa-battery-three-quarters:before{content:"\f241"}.fa-battery-2:before,.fa-battery-half:before{content:"\f242"}.fa-battery-1:before,.fa-battery-quarter:before{content:"\f243"}.fa-battery-0:before,.fa-battery-empty:before{content:"\f244"}.fa-mouse-pointer:before{content:"\f245"}.fa-i-cursor:before{content:"\f246"}.fa-object-group:before{content:"\f247"}.fa-object-ungroup:before{content:"\f248"}.fa-sticky-note:before{content:"\f249"}.fa-sticky-note-o:before{content:"\f24a"}.fa-cc-jcb:before{content:"\f24b"}.fa-cc-diners-club:before{content:"\f24c"}.fa-clone:before{content:"\f24d"}.fa-balance-scale:before{content:"\f24e"}.fa-hourglass-o:before{content:"\f250"}.fa-hourglass-1:before,.fa-hourglass-start:before{content:"\f251"}.fa-hourglass-2:before,.fa-hourglass-half:before{content:"\f252"}.fa-hourglass-3:before,.fa-hourglass-end:before{content:"\f253"}.fa-hourglass:before{content:"\f254"}.fa-hand-grab-o:before,.fa-hand-rock-o:before{content:"\f255"}.fa-hand-stop-o:before,.fa-hand-paper-o:before{content:"\f256"}.fa-hand-scissors-o:before{content:"\f257"}.fa-hand-lizard-o:before{content:"\f258"}.fa-hand-spock-o:before{content:"\f259"}.fa-hand-pointer-o:before{content:"\f25a"}.fa-hand-peace-o:before{content:"\f25b"}.fa-trademark:before{content:"\f25c"}.fa-registered:before{content:"\f25d"}.fa-creative-commons:before{content:"\f25e"}.fa-gg:before{content:"\f260"}.fa-gg-circle:before{content:"\f261"}.fa-tripadvisor:before{content:"\f262"}.fa-odnoklassniki:before{content:"\f263"}.fa-odnoklassniki-square:before{content:"\f264"}.fa-get-pocket:before{content:"\f265"}.fa-wikipedia-w:before{content:"\f266"}.fa-safari:before{content:"\f267"}.fa-chrome:before{content:"\f268"}.fa-firefox:before{content:"\f269"}.fa-opera:before{content:"\f26a"}.fa-internet-explorer:before{content:"\f26b"}.fa-tv:before,.fa-television:before{content:"\f26c"}.fa-contao:before{content:"\f26d"}.fa-500px:before{content:"\f26e"}.fa-amazon:before{content:"\f270"}.fa-calendar-plus-o:before{content:"\f271"}.fa-calendar-minus-o:before{content:"\f272"}.fa-calendar-times-o:before{content:"\f273"}.fa-calendar-check-o:before{content:"\f274"}.fa-industry:before{content:"\f275"}.fa-map-pin:before{content:"\f276"}.fa-map-signs:before{content:"\f277"}.fa-map-o:before{content:"\f278"}.fa-map:before{content:"\f279"}.fa-commenting:before{content:"\f27a"}.fa-commenting-o:before{content:"\f27b"}.fa-houzz:before{content:"\f27c"}.fa-vimeo:before{content:"\f27d"}.fa-black-tie:before{content:"\f27e"}.fa-fonticons:before{content:"\f280"}.fa-reddit-alien:before{content:"\f281"}.fa-edge:before{content:"\f282"}.fa-credit-card-alt:before{content:"\f283"}.fa-codiepie:before{content:"\f284"}.fa-modx:before{content:"\f285"}.fa-fort-awesome:before{content:"\f286"}.fa-usb:before{content:"\f287"}.fa-product-hunt:before{content:"\f288"}.fa-mixcloud:before{content:"\f289"}.fa-scribd:before{content:"\f28a"}.fa-pause-circle:before{content:"\f28b"}.fa-pause-circle-o:before{content:"\f28c"}.fa-stop-circle:before{content:"\f28d"}.fa-stop-circle-o:before{content:"\f28e"}.fa-shopping-bag:before{content:"\f290"}.fa-shopping-basket:before{content:"\f291"}.fa-hashtag:before{content:"\f292"}.fa-bluetooth:before{content:"\f293"}.fa-bluetooth-b:before{content:"\f294"}.fa-percent:before{content:"\f295"}.fa-gitlab:before{content:"\f296"}.fa-wpbeginner:before{content:"\f297"}.fa-wpforms:before{content:"\f298"}.fa-envira:before{content:"\f299"}.fa-universal-access:before{content:"\f29a"}.fa-wheelchair-alt:before{content:"\f29b"}.fa-question-circle-o:before{content:"\f29c"}.fa-blind:before{content:"\f29d"}.fa-audio-description:before{content:"\f29e"}.fa-volume-control-phone:before{content:"\f2a0"}.fa-braille:before{content:"\f2a1"}.fa-assistive-listening-systems:before{content:"\f2a2"}.fa-asl-interpreting:before,.fa-american-sign-language-interpreting:before{content:"\f2a3"}.fa-deafness:before,.fa-hard-of-hearing:before,.fa-deaf:before{content:"\f2a4"}.fa-glide:before{content:"\f2a5"}.fa-glide-g:before{content:"\f2a6"}.fa-signing:before,.fa-sign-language:before{content:"\f2a7"}.fa-low-vision:before{content:"\f2a8"}.fa-viadeo:before{content:"\f2a9"}.fa-viadeo-square:before{content:"\f2aa"}.fa-snapchat:before{content:"\f2ab"}.fa-snapchat-ghost:before{content:"\f2ac"}.fa-snapchat-square:before{content:"\f2ad"}.fa-pied-piper:before{content:"\f2ae"}.fa-first-order:before{content:"\f2b0"}.fa-yoast:before{content:"\f2b1"}.fa-themeisle:before{content:"\f2b2"}.fa-google-plus-circle:before,.fa-google-plus-official:before{content:"\f2b3"}.fa-fa:before,.fa-font-awesome:before{content:"\f2b4"}.fa-handshake-o:before{content:"\f2b5"}.fa-envelope-open:before{content:"\f2b6"}.fa-envelope-open-o:before{content:"\f2b7"}.fa-linode:before{content:"\f2b8"}.fa-address-book:before{content:"\f2b9"}.fa-address-book-o:before{content:"\f2ba"}.fa-vcard:before,.fa-address-card:before{content:"\f2bb"}.fa-vcard-o:before,.fa-address-card-o:before{content:"\f2bc"}.fa-user-circle:before{content:"\f2bd"}.fa-user-circle-o:before{content:"\f2be"}.fa-user-o:before{content:"\f2c0"}.fa-id-badge:before{content:"\f2c1"}.fa-drivers-license:before,.fa-id-card:before{content:"\f2c2"}.fa-drivers-license-o:before,.fa-id-card-o:before{content:"\f2c3"}.fa-quora:before{content:"\f2c4"}.fa-free-code-camp:before{content:"\f2c5"}.fa-telegram:before{content:"\f2c6"}.fa-thermometer-4:before,.fa-thermometer:before,.fa-thermometer-full:before{content:"\f2c7"}.fa-thermometer-3:before,.fa-thermometer-three-quarters:before{content:"\f2c8"}.fa-thermometer-2:before,.fa-thermometer-half:before{content:"\f2c9"}.fa-thermometer-1:before,.fa-thermometer-quarter:before{content:"\f2ca"}.fa-thermometer-0:before,.fa-thermometer-empty:before{content:"\f2cb"}.fa-shower:before{content:"\f2cc"}.fa-bathtub:before,.fa-s15:before,.fa-bath:before{content:"\f2cd"}.fa-podcast:before{content:"\f2ce"}.fa-window-maximize:before{content:"\f2d0"}.fa-window-minimize:before{content:"\f2d1"}.fa-window-restore:before{content:"\f2d2"}.fa-times-rectangle:before,.fa-window-close:before{content:"\f2d3"}.fa-times-rectangle-o:before,.fa-window-close-o:before{content:"\f2d4"}.fa-bandcamp:before{content:"\f2d5"}.fa-grav:before{content:"\f2d6"}.fa-etsy:before{content:"\f2d7"}.fa-imdb:before{content:"\f2d8"}.fa-ravelry:before{content:"\f2d9"}.fa-eercast:before{content:"\f2da"}.fa-microchip:before{content:"\f2db"}.fa-snowflake-o:before{content:"\f2dc"}.fa-superpowers:before{content:"\f2dd"}.fa-wpexplorer:before{content:"\f2de"}.fa-meetup:before{content:"\f2e0"}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}
+.talant{position:relative;overflow:visible;width:0px;height:0px}.talant
+div.talant_border{width:70px;height:70px;background-image:url("/images/m/class/talants/ico_talents.png");background-position:0 0}.talant.passive
+div.talant_border{background-image:url("/images/m/class/talants/ico_talents.png");background-position:0px 0;cursor:pointer}.talant_icon{width:60px;height:60px}.talant
+div.talant_icon{cursor:pointer;position:relative;left:5px;top:5px}#talantTooltipImg
+div.talant_icon{margin:5px}div.t_dop_icon{height:15px;width:20px;background-image:url("/images/m/class/talants/ico_talents.png");display:none;position:relative;left:36px;top:4px;overflow:visible}.talant.wait
+div.talant_icon{cursor:auto}.talant_leads_b{background-image:url("/images/m/class/talants/ico_talents.png");background-position:-233px -23px;height:23px;width:25px;display:none;position:relative}.talant.wait
+div.talant_leads_b{background-image:url("/images/m/class/talants/ico_talents.png");background-position:-233px 0px}.talant.full
+div.talant_leads_b{background-image:url("/images/m/class/talants/ico_talents.png");background-position:-233px -46px}.talant_leads_r{background-image:url("/images/m/class/talants/ico_talents.png");background-position:-84px 0;width:20px;height:15px;display:none}.talant_icon
+span.lvl{display:block;position:absolute;right:-3px;bottom:-3px;padding-top:1px;width:23px;height:12px;font-size:9px;line-height:10px;text-align:center}div.guild_5
+#talant_block{height:410px;background-image:url("/images/m/class/talants/bg_t.png")}div.guild_6
+#talant_block{height:410px;background-image:url("/images/m/class/talants/bg_t.png")}div.guild_7
+#talant_block{height:410px;background-image:url("/images/m/class/talants/bg_t.png")}div.guild_8
+#talant_block{height:410px;background-image:url("/images/m/class/talants/bg_t.png")}div.guild_5
+#talant_block_bg{height:410px;background-image:url("/images/m/class/talants/bg_t.png")}div.guild_6
+#talant_block_bg{height:410px;background-image:url("/images/m/class/talants/bg_t.png")}div.guild_7
+#talant_block_bg{height:410px;background-image:url("/images/m/class/talants/bg_t.png")}div.guild_8
+#talant_block_bg{height:410px;background-image:url("/images/m/class/talants/bg_t.png")}.talant.wait
+span.lvl{background-image:url("/images/m/class/talants/ico_talents.png");background-position:-210px -26px;color:white}.talant.wait{cursor:auto}.talant.start
+span.lvl{background-image:url("/images/m/class/talants/ico_talents.png");background-position:-210px -26px;color:white}.talant.active
+span.lvl{background-image:url("/images/m/class/talants/ico_talents.png");background-position:-210px 0px;color:white}.talant.active
+div.talant_border{background-image:url("/images/m/class/talants/ico_talents.png");background-position:-70px 0}.talant.full
+span.lvl{background-image:url("/images/m/class/talants/ico_talents.png");background-position:-210px -13px;color:white}.talant span.lvl i, .talant span.lvl
+b{font-style:normal;font-weight:normal}.talant.full
+div.talant_border{background-image:url("/images/m/class/talants/ico_talents.png");background-position:-140px 0}.t_icon_501{background-image:url("/images/m/class/talants/talents.jpg");background-position:-360px -360px}.passive
+.t_icon_501{background-position:-360px -420px}.t_icon_502{background-image:url("/images/m/class/talants/talents.jpg");background-position:-420px -360px}.passive
+.t_icon_502{background-position:-420px -420px}.t_icon_503{background-image:url("/images/m/class/talants/talents.jpg");background-position:-480px -360px}.passive
+.t_icon_503{background-position:-480px -420px}.t_icon_504{background-image:url("/images/m/class/talants/talents.jpg");background-position:-0px -480px}.passive
+.t_icon_504{background-position:-0px -540px}.t_icon_505{background-image:url("/images/m/class/talants/talents.jpg");background-position:-60px -480px}.passive
+.t_icon_505{background-position:-60px -540px}.t_icon_506{background-image:url("/images/m/class/talants/talents.jpg");background-position:-120px -480px}.passive
+.t_icon_506{background-position:-120px -540px}.t_icon_507{background-image:url("/images/m/class/talants/talents.jpg");background-position:-180px -480px}.passive
+.t_icon_507{background-position:-180px -540px}.t_icon_510{background-image:url("/images/m/class/talants/talents.jpg");background-position:-240px -480px}.passive
+.t_icon_510{background-position:-240px -540px}.t_icon_509{background-image:url("/images/m/class/talants/talents.jpg");background-position:-300px -480px}.passive
+.t_icon_509{background-position:-300px -540px}.t_icon_508{background-image:url("/images/m/class/talants/talents.jpg");background-position:-360px -480px}.passive
+.t_icon_508{background-position:-360px -540px}.t_icon_511{background-image:url("/images/m/class/talants/talents.jpg");background-position:-420px -480px}.passive
+.t_icon_511{background-position:-420px -540px}.t_icon_514{background-image:url("/images/m/class/talants/talents.jpg");background-position:-480px -480px}.passive
+.t_icon_514{background-position:-480px -540px}.t_icon_513{background-image:url("/images/m/class/talants/talents.jpg");background-position:-0px -600px}.passive
+.t_icon_513{background-position:-0px -660px}.t_icon_512{background-image:url("/images/m/class/talants/talents.jpg");background-position:-60px -600px}.passive
+.t_icon_512{background-position:-60px -660px}.t_icon_515{background-image:url("/images/m/class/talants/talents.jpg");background-position:-0px -0px}.passive
+.t_icon_515{background-position:-0px -60px}.t_icon_615{background-image:url("/images/m/class/talants/talents.jpg");background-position:-0px -0px}.passive
+.t_icon_615{background-position:-0px -60px}.t_icon_615
+div.t_dop_icon{display:block;background-position:-210px -54px;left:41px}.t_icon_516{background-image:url("/images/m/class/talants/talents.jpg");background-position:-60px -0px}.passive
+.t_icon_516{background-position:-60px -60px}.t_icon_616{background-image:url("/images/m/class/talants/talents.jpg");background-position:-60px -0px}.passive
+.t_icon_616{background-position:-60px -60px}.t_icon_616
+div.t_dop_icon{display:block;background-position:-210px -54px;left:41px}.t_icon_517{background-image:url("/images/m/class/talants/talents.jpg");background-position:-120px -0px}.passive
+.t_icon_517{background-position:-120px -60px}.t_icon_617{background-image:url("/images/m/class/talants/talents.jpg");background-position:-120px -0px}.passive
+.t_icon_617{background-position:-120px -60px}.t_icon_617
+div.t_dop_icon{display:block;background-position:-210px -54px;left:41px}.t_icon_518{background-image:url("/images/m/class/talants/talents.jpg");background-position:-180px -0px}.passive
+.t_icon_518{background-position:-180px -60px}.t_icon_618{background-image:url("/images/m/class/talants/talents.jpg");background-position:-180px -0px}.passive
+.t_icon_618{background-position:-180px -60px}.t_icon_618
+div.t_dop_icon{display:block;background-position:-210px -54px;left:41px}.t_icon_519{background-image:url("/images/m/class/talants/talents.jpg");background-position:-240px -0px}.passive
+.t_icon_519{background-position:-240px -60px}.t_icon_619{background-image:url("/images/m/class/talants/talents.jpg");background-position:-240px -0px}.passive
+.t_icon_619{background-position:-240px -60px}.t_icon_619
+div.t_dop_icon{display:block;background-position:-210px -54px;left:41px}.t_icon_719{background-image:url("/images/m/class/talants/talents.jpg");background-position:-240px -0px}.passive
+.t_icon_719{background-position:-240px -60px}.t_icon_719
+div.t_dop_icon{display:block;background-position:-210px -39px}.t_icon_520{background-image:url("/images/m/class/talants/talents.jpg");background-position:-300px -0px}.passive
+.t_icon_520{background-position:-300px -60px}.t_icon_620{background-image:url("/images/m/class/talants/talents.jpg");background-position:-300px -0px}.passive
+.t_icon_620{background-position:-300px -60px}.t_icon_620
+div.t_dop_icon{display:block;background-position:-210px -54px;left:41px}.t_icon_720{background-image:url("/images/m/class/talants/talents.jpg");background-position:-300px -0px}.passive
+.t_icon_720{background-position:-300px -60px}.t_icon_720
+div.t_dop_icon{display:block;background-position:-210px -39px}.t_icon_521{background-image:url("/images/m/class/talants/talents.jpg");background-position:-360px -0px}.passive
+.t_icon_521{background-position:-360px -60px}.t_icon_621{background-image:url("/images/m/class/talants/talents.jpg");background-position:-360px -0px}.passive
+.t_icon_621{background-position:-360px -60px}.t_icon_621
+div.t_dop_icon{display:block;background-position:-210px -54px;left:41px}.t_icon_522{background-image:url("/images/m/class/talants/talents.jpg");background-position:-420px -0px}.passive
+.t_icon_522{background-position:-420px -60px}.t_icon_622{background-image:url("/images/m/class/talants/talents.jpg");background-position:-420px -0px}.passive
+.t_icon_622{background-position:-420px -60px}.t_icon_622
+div.t_dop_icon{display:block;background-position:-210px -54px;left:41px}.t_icon_722{background-image:url("/images/m/class/talants/talents.jpg");background-position:-420px -0px}.passive
+.t_icon_722{background-position:-420px -60px}.t_icon_722
+div.t_dop_icon{display:block;background-position:-210px -39px}.t_icon_523{background-image:url("/images/m/class/talants/talents.jpg");background-position:-480px -0px}.passive
+.t_icon_523{background-position:-480px -60px}.t_icon_623{background-image:url("/images/m/class/talants/talents.jpg");background-position:-480px -0px}.passive
+.t_icon_623{background-position:-480px -60px}.t_icon_623
+div.t_dop_icon{display:block;background-position:-210px -54px;left:41px}.t_icon_723{background-image:url("/images/m/class/talants/talents.jpg");background-position:-480px -0px}.passive
+.t_icon_723{background-position:-480px -60px}.t_icon_723
+div.t_dop_icon{display:block;background-position:-210px -39px}.t_icon_524{background-image:url("/images/m/class/talants/talents.jpg");background-position:-0px -120px}.passive
+.t_icon_524{background-position:-0px -180px}.t_icon_624{background-image:url("/images/m/class/talants/talents.jpg");background-position:-0px -120px}.passive
+.t_icon_624{background-position:-0px -180px}.t_icon_624
+div.t_dop_icon{display:block;background-position:-210px -54px;left:41px}.t_icon_525{background-image:url("/images/m/class/talants/talents.jpg");background-position:-60px -120px}.passive
+.t_icon_525{background-position:-60px -180px}.t_icon_625{background-image:url("/images/m/class/talants/talents.jpg");background-position:-60px -120px}.passive
+.t_icon_625{background-position:-60px -180px}.t_icon_625
+div.t_dop_icon{display:block;background-position:-210px -54px;left:41px}.t_icon_526{background-image:url("/images/m/class/talants/talents.jpg");background-position:-120px -120px}.passive
+.t_icon_526{background-position:-120px -180px}.t_icon_626{background-image:url("/images/m/class/talants/talents.jpg");background-position:-120px -120px}.passive
+.t_icon_626{background-position:-120px -180px}.t_icon_626
+div.t_dop_icon{display:block;background-position:-210px -54px;left:41px}.t_icon_527{background-image:url("/images/m/class/talants/talents.jpg");background-position:-180px -120px}.passive
+.t_icon_527{background-position:-180px -180px}.t_icon_627{background-image:url("/images/m/class/talants/talents.jpg");background-position:-180px -120px}.passive
+.t_icon_627{background-position:-180px -180px}.t_icon_627
+div.t_dop_icon{display:block;background-position:-210px -54px;left:41px}.t_icon_528{background-image:url("/images/m/class/talants/talents.jpg");background-position:-240px -120px}.passive
+.t_icon_528{background-position:-240px -180px}.t_icon_628{background-image:url("/images/m/class/talants/talents.jpg");background-position:-240px -120px}.passive
+.t_icon_628{background-position:-240px -180px}.t_icon_628
+div.t_dop_icon{display:block;background-position:-210px -54px;left:41px}.t_icon_728{background-image:url("/images/m/class/talants/talents.jpg");background-position:-240px -120px}.passive
+.t_icon_728{background-position:-240px -180px}.t_icon_728
+div.t_dop_icon{display:block;background-position:-210px -39px}.t_icon_529{background-image:url("/images/m/class/talants/talents.jpg");background-position:-300px -120px}.passive
+.t_icon_529{background-position:-300px -180px}.t_icon_629{background-image:url("/images/m/class/talants/talents.jpg");background-position:-300px -120px}.passive
+.t_icon_629{background-position:-300px -180px}.t_icon_629
+div.t_dop_icon{display:block;background-position:-210px -54px;left:41px}.t_icon_729{background-image:url("/images/m/class/talants/talents.jpg");background-position:-300px -120px}.passive
+.t_icon_729{background-position:-300px -180px}.t_icon_729
+div.t_dop_icon{display:block;background-position:-210px -39px}.t_icon_530{background-image:url("/images/m/class/talants/talents.jpg");background-position:-360px -120px}.passive
+.t_icon_530{background-position:-360px -180px}.t_icon_630{background-image:url("/images/m/class/talants/talents.jpg");background-position:-360px -120px}.passive
+.t_icon_630{background-position:-360px -180px}.t_icon_630
+div.t_dop_icon{display:block;background-position:-210px -54px;left:41px}.t_icon_531{background-image:url("/images/m/class/talants/talents.jpg");background-position:-420px -120px}.passive
+.t_icon_531{background-position:-420px -180px}.t_icon_631{background-image:url("/images/m/class/talants/talents.jpg");background-position:-420px -120px}.passive
+.t_icon_631{background-position:-420px -180px}.t_icon_631
+div.t_dop_icon{display:block;background-position:-210px -54px;left:41px}.t_icon_731{background-image:url("/images/m/class/talants/talents.jpg");background-position:-420px -120px}.passive
+.t_icon_731{background-position:-420px -180px}.t_icon_731
+div.t_dop_icon{display:block;background-position:-210px -39px}.t_icon_532{background-image:url("/images/m/class/talants/talents.jpg");background-position:-480px -120px}.passive
+.t_icon_532{background-position:-480px -180px}.t_icon_632{background-image:url("/images/m/class/talants/talents.jpg");background-position:-480px -120px}.passive
+.t_icon_632{background-position:-480px -180px}.t_icon_632
+div.t_dop_icon{display:block;background-position:-210px -54px;left:41px}.t_icon_732{background-image:url("/images/m/class/talants/talents.jpg");background-position:-480px -120px}.passive
+.t_icon_732{background-position:-480px -180px}.t_icon_732
+div.t_dop_icon{display:block;background-position:-210px -39px}.t_icon_533{background-image:url("/images/m/class/talants/talents.jpg");background-position:-0px -240px}.passive
+.t_icon_533{background-position:-0px -300px}.t_icon_633{background-image:url("/images/m/class/talants/talents.jpg");background-position:-0px -240px}.passive
+.t_icon_633{background-position:-0px -300px}.t_icon_633
+div.t_dop_icon{display:block;background-position:-210px -54px;left:41px}.t_icon_534{background-image:url("/images/m/class/talants/talents.jpg");background-position:-60px -240px}.passive
+.t_icon_534{background-position:-600px -300px}.t_icon_634{background-image:url("/images/m/class/talants/talents.jpg");background-position:-60px -240px}.passive
+.t_icon_634{background-position:-600px -300px}.t_icon_634
+div.t_dop_icon{display:block;background-position:-210px -54px;left:41px}.t_icon_535{background-image:url("/images/m/class/talants/talents.jpg");background-position:-120px -240px}.passive
+.t_icon_535{background-position:-120px -300px}.t_icon_635{background-image:url("/images/m/class/talants/talents.jpg");background-position:-120px -240px}.passive
+.t_icon_635{background-position:-120px -300px}.t_icon_635
+div.t_dop_icon{display:block;background-position:-210px -54px;left:41px}.t_icon_735{background-image:url("/images/m/class/talants/talents.jpg");background-position:-120px -240px}.passive
+.t_icon_735{background-position:-120px -300px}.t_icon_735
+div.t_dop_icon{display:block;background-position:-210px -39px}.t_icon_536{background-image:url("/images/m/class/talants/talents.jpg");background-position:-180px -240px}.passive
+.t_icon_536{background-position:-180px -300px}.t_icon_636{background-image:url("/images/m/class/talants/talents.jpg");background-position:-180px -240px}.passive
+.t_icon_636{background-position:-180px -300px}.t_icon_636
+div.t_dop_icon{display:block;background-position:-210px -54px;left:41px}.t_icon_736{background-image:url("/images/m/class/talants/talents.jpg");background-position:-180px -240px}.passive
+.t_icon_736{background-position:-180px -300px}.t_icon_736
+div.t_dop_icon{display:block;background-position:-210px -39px}.t_icon_537{background-image:url("/images/m/class/talants/talents.jpg");background-position:-240px -240px}.passive
+.t_icon_537{background-position:-240px -300px}.t_icon_637{background-image:url("/images/m/class/talants/talents.jpg");background-position:-240px -240px}.passive
+.t_icon_637{background-position:-240px -300px}.t_icon_637
+div.t_dop_icon{display:block;background-position:-210px -54px;left:41px}.t_icon_538{background-image:url("/images/m/class/talants/talents.jpg");background-position:-300px -240px}.passive
+.t_icon_538{background-position:-300px -300px}.t_icon_638{background-image:url("/images/m/class/talants/talents.jpg");background-position:-300px -240px}.passive
+.t_icon_638{background-position:-300px -300px}.t_icon_638
+div.t_dop_icon{display:block;background-position:-210px -54px;left:41px}.t_icon_738{background-image:url("/images/m/class/talants/talents.jpg");background-position:-300px -240px}.passive
+.t_icon_738{background-position:-300px -300px}.t_icon_738
+div.t_dop_icon{display:block;background-position:-210px -39px}.t_icon_539{background-image:url("/images/m/class/talants/talents.jpg");background-position:-360px -240px}.passive
+.t_icon_539{background-position:-360px -300px}.t_icon_639{background-image:url("/images/m/class/talants/talents.jpg");background-position:-360px -240px}.passive
+.t_icon_639{background-position:-360px -300px}.t_icon_639
+div.t_dop_icon{display:block;background-position:-210px -54px;left:41px}.t_icon_739{background-image:url("/images/m/class/talants/talents.jpg");background-position:-360px -240px}.passive
+.t_icon_739{background-position:-360px -300px}.t_icon_739
+div.t_dop_icon{display:block;background-position:-210px -39px}.t_icon_540{background-image:url("/images/m/class/talants/talents.jpg");background-position:-0px -360px}.passive
+.t_icon_540{background-position:-0px -420px}.t_icon_640{background-image:url("/images/m/class/talants/talents.jpg");background-position:-0px -360px}.passive
+.t_icon_640{background-position:-0px -420px}.t_icon_640
+div.t_dop_icon{display:block;background-position:-210px -54px;left:41px}.t_icon_541{background-image:url("/images/m/class/talants/talents.jpg");background-position:-60px -360px}.passive
+.t_icon_541{background-position:-60px -420px}.t_icon_641{background-image:url("/images/m/class/talants/talents.jpg");background-position:-60px -360px}.passive
+.t_icon_641{background-position:-60px -420px}.t_icon_641
+div.t_dop_icon{display:block;background-position:-210px -54px;left:41px}.t_icon_542{background-image:url("/images/m/class/talants/talents.jpg");background-position:-120px -360px}.passive
+.t_icon_542{background-position:-120px -420px}.t_icon_642{background-image:url("/images/m/class/talants/talents.jpg");background-position:-120px -360px}.passive
+.t_icon_642{background-position:-120px -420px}.t_icon_642
+div.t_dop_icon{display:block;background-position:-210px -54px;left:41px}.t_icon_742{background-image:url("/images/m/class/talants/talents.jpg");background-position:-120px -360px}.passive
+.t_icon_742{background-position:-120px -420px}.t_icon_742
+div.t_dop_icon{display:block;background-position:-210px -39px}.t_icon_543{background-image:url("/images/m/class/talants/talents.jpg");background-position:-180px -360px}.passive
+.t_icon_543{background-position:-180px -420px}.t_icon_643{background-image:url("/images/m/class/talants/talents.jpg");background-position:-180px -360px}.passive
+.t_icon_643{background-position:-180px -420px}.t_icon_643
+div.t_dop_icon{display:block;background-position:-210px -54px;left:41px}.t_icon_743{background-image:url("/images/m/class/talants/talents.jpg");background-position:-180px -360px}.passive
+.t_icon_743{background-position:-180px -420px}.t_icon_743
+div.t_dop_icon{display:block;background-position:-210px -39px}.t_icon_544{background-image:url("/images/m/class/talants/talents.jpg");background-position:-240px -360px}.passive
+.t_icon_544{background-position:-240px -420px}.t_icon_644{background-image:url("/images/m/class/talants/talents.jpg");background-position:-240px -360px}.passive
+.t_icon_644{background-position:-240px -420px}.t_icon_644
+div.t_dop_icon{display:block;background-position:-210px -54px;left:41px}.t_icon_546{background-image:url("/images/m/class/talants/talents.jpg");background-position:-480px -240px}.passive
+.t_icon_546{background-position:-480px -300px}.t_icon_646{background-image:url("/images/m/class/talants/talents.jpg");background-position:-480px -240px}.passive
+.t_icon_646{background-position:-480px -300px}.t_icon_646
+div.t_dop_icon{display:block;background-position:-210px -54px;left:41px}.t_icon_746{background-image:url("/images/m/class/talants/talents.jpg");background-position:-480px -240px}.passive
+.t_icon_746{background-position:-480px -300px}.t_icon_746
+div.t_dop_icon{display:block;background-position:-210px -39px}.t_icon_547{background-image:url("/images/m/class/talants/talents.jpg");background-position:-420px -240px}.passive
+.t_icon_547{background-position:-420px -300px}.t_icon_647{background-image:url("/images/m/class/talants/talents.jpg");background-position:-420px -240px}.passive
+.t_icon_647{background-position:-420px -300px}.t_icon_647
+div.t_dop_icon{display:block;background-position:-210px -54px;left:41px}.t_icon_747{background-image:url("/images/m/class/talants/talents.jpg");background-position:-420px -240px}.passive
+.t_icon_747{background-position:-420px -300px}.t_icon_747
+div.t_dop_icon{display:block;background-position:-210px -39px}.t_icon_548{background-image:url("/images/m/class/talants/talents.jpg");background-position:-120px -600px}.passive
+.t_icon_548{background-position:-120px -660px}.t_icon_549{background-image:url("/images/m/class/talants/talents.jpg");background-position:-420px -600px}.passive
+.t_icon_549{background-position:-420px -660px}.t_icon_550{background-image:url("/images/m/class/talants/talents.jpg");background-position:-300px -600px}.passive
+.t_icon_549{background-position:-300px -660px}.t_icon_551{background-image:url("/images/m/class/talants/talents.jpg");background-position:-180px -600px}.passive
+.t_icon_549{background-position:-180px -660px}.t_icon_552{background-image:url("/images/m/class/talants/talents.jpg");background-position:-240px -600px}.passive
+.t_icon_552{background-position:-240px -660px}.t_icon_553{background-image:url("/images/m/class/talants/talents.jpg");background-position:-360px -600px}.passive
+.t_icon_553{background-position:-360px -660px}.t_icon_800{background-image:url("/images/m/class/talants/talents.jpg");background-position:-480px -600px}.passive
+.t_icon_800{background-position:-480px -660px}.t_icon_802{background-image:url("/images/m/class/talants/talents.jpg");background-position:-480px -600px}.passive
+.t_icon_802{background-position:-480px -660px}.t_icon_801{background-image:url("/images/m/class/talants/talents.jpg");background-position:-0px -720px}.passive
+.t_icon_801{background-position:-0px -720px}.t_icon_803{background-image:url("/images/m/class/talants/talents.jpg");background-position:-60px -840px}.passive
+.t_icon_801{background-position:-0px -720px}.t_icon_810{background-image:url("/images/m/class/talants/talents.jpg");background-position:-0px -840px}.passive
+.t_icon_801{background-position:-0px -720px}#talantTooltip{display:none;position:absolute;background:none repeat scroll 0 0 #E3D4B7;padding:0;width:300px;z-index:100;border:1px
+solid #a89777;box-shadow:0 1px 3px 0 rgba(0,0,0,0.3);border-radius:3px}#talantTooltipHtml{padding:3px}div.guild_5
+#talant_1{top:10px;left:2px}div.guild_5
+#talant_2{top:90px;left:2px}div.guild_5 #talant_2
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_5
+#talant_3{top:170px;left:2px}div.guild_5 #talant_3
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_5
+#talant_4{top:250px;left:2px}div.guild_5 #talant_4
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_5
+#talant_5{top:330px;left:2px}div.guild_5 #talant_5
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_5
+#talant_6{top:10px;left:82px}div.guild_5
+#talant_7{top:90px;left:82px}div.guild_5
+#talant_8{top:170px;left:82px}div.guild_5 #talant_8
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_5
+#talant_9{top:90px;left:162px}div.guild_5
+#talant_10{top:170px;left:162px}div.guild_5 #talant_10
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_5
+#talant_11{top:250px;left:82px}div.guild_5
+#talant_12{top:330px;left:82px}div.guild_5
+#talant_13{top:250px;left:162px}div.guild_5
+#talant_14{top:330px;left:162px}div.guild_5
+#talant_15{top:250px;left:242px}div.guild_5
+#talant_16{top:330px;left:242px}div.guild_5
+#talant_17{top:10px;left:242px}div.guild_5
+#talant_18{top:90px;left:242px}div.guild_5
+#talant_19{top:170px;left:242px}div.guild_5 #talant_19
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_5
+#talant_20{top:10px;left:322px}div.guild_5
+#talant_21{top:90px;left:322px}div.guild_5
+#talant_22{top:170px;left:322px}div.guild_5 #talant_22
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_5
+#talant_23{top:10px;left:402px}div.guild_5
+#talant_24{top:90px;left:402px}div.guild_5
+#talant_25{top:170px;left:402px}div.guild_5 #talant_25
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_5
+#talant_26{top:10px;left:482px}div.guild_5
+#talant_27{top:90px;left:482px}div.guild_5
+#talant_28{top:170px;left:482px}div.guild_5 #talant_28
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_5
+#talant_29{top:250px;left:322px}div.guild_5
+#talant_30{top:330px;left:322px}div.guild_5 #talant_30
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_5
+#talant_31{top:250px;left:402px}div.guild_5
+#talant_32{top:330px;left:402px}div.guild_5 #talant_32
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_5
+#talant_33{top:250px;left:482px}div.guild_5
+#talant_34{top:330px;left:482px}div.guild_5 #talant_34
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_5
+#talant_35{top:10px;left:162px}div.guild_6
+#talant_1{top:10px;left:2px}div.guild_6
+#talant_2{top:90px;left:2px}div.guild_6 #talant_2
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_6
+#talant_3{top:170px;left:2px}div.guild_6 #talant_3
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_6
+#talant_4{top:250px;left:2px}div.guild_6 #talant_4
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_6
+#talant_5{top:330px;left:2px}div.guild_6 #talant_5
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_6
+#talant_6{top:10px;left:82px}div.guild_6
+#talant_7{top:90px;left:82px}div.guild_6
+#talant_8{top:170px;left:82px}div.guild_6 #talant_8
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_6
+#talant_9{top:90px;left:162px}div.guild_6
+#talant_10{top:170px;left:162px}div.guild_6 #talant_10
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_6
+#talant_11{top:250px;left:82px}div.guild_6
+#talant_12{top:330px;left:82px}div.guild_6
+#talant_13{top:250px;left:162px}div.guild_6
+#talant_14{top:330px;left:162px}div.guild_6
+#talant_15{top:250px;left:242px}div.guild_6
+#talant_16{top:330px;left:242px}div.guild_6
+#talant_17{top:10px;left:242px}div.guild_6
+#talant_18{top:90px;left:242px}div.guild_6
+#talant_19{top:170px;left:242px}div.guild_6 #talant_19
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_6
+#talant_20{top:10px;left:322px}div.guild_6
+#talant_21{top:90px;left:322px}div.guild_6
+#talant_22{top:170px;left:322px}div.guild_6 #talant_22
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_6
+#talant_23{top:10px;left:402px}div.guild_6
+#talant_24{top:90px;left:402px}div.guild_6
+#talant_25{top:170px;left:402px}div.guild_6 #talant_25
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_6
+#talant_26{top:10px;left:482px}div.guild_6
+#talant_27{top:90px;left:482px}div.guild_6
+#talant_28{top:170px;left:482px}div.guild_6 #talant_28
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_6
+#talant_29{top:250px;left:322px}div.guild_6
+#talant_30{top:330px;left:322px}div.guild_6 #talant_30
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_6
+#talant_31{top:250px;left:402px}div.guild_6
+#talant_32{top:330px;left:402px}div.guild_6 #talant_32
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_6
+#talant_33{top:250px;left:482px}div.guild_6
+#talant_34{top:330px;left:482px}div.guild_6 #talant_34
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_6
+#talant_35{top:10px;left:162px}div.guild_7
+#talant_1{top:10px;left:2px}div.guild_7
+#talant_2{top:90px;left:2px}div.guild_7 #talant_2
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_7
+#talant_3{top:170px;left:2px}div.guild_7 #talant_3
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_7
+#talant_4{top:250px;left:2px}div.guild_7 #talant_4
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_7
+#talant_5{top:330px;left:2px}div.guild_7 #talant_5
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_7
+#talant_6{top:10px;left:82px}div.guild_7
+#talant_7{top:90px;left:82px}div.guild_7
+#talant_8{top:170px;left:82px}div.guild_7 #talant_8
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_7
+#talant_9{top:90px;left:162px}div.guild_7
+#talant_10{top:170px;left:162px}div.guild_7 #talant_10
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_7
+#talant_11{top:250px;left:82px}div.guild_7
+#talant_12{top:330px;left:82px}div.guild_7
+#talant_13{top:250px;left:162px}div.guild_7
+#talant_14{top:330px;left:162px}div.guild_7
+#talant_15{top:250px;left:242px}div.guild_7
+#talant_16{top:330px;left:242px}div.guild_7
+#talant_17{top:10px;left:242px}div.guild_7
+#talant_18{top:90px;left:242px}div.guild_7
+#talant_19{top:170px;left:242px}div.guild_7 #talant_19
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_7
+#talant_20{top:10px;left:322px}div.guild_7
+#talant_21{top:90px;left:322px}div.guild_7
+#talant_22{top:170px;left:322px}div.guild_7 #talant_22
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_7
+#talant_23{top:10px;left:402px}div.guild_7
+#talant_24{top:90px;left:402px}div.guild_7
+#talant_25{top:170px;left:402px}div.guild_7 #talant_25
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_7
+#talant_26{top:10px;left:482px}div.guild_7
+#talant_27{top:90px;left:482px}div.guild_7
+#talant_28{top:170px;left:482px}div.guild_7 #talant_28
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_7
+#talant_29{top:250px;left:322px}div.guild_7
+#talant_30{top:330px;left:322px}div.guild_7 #talant_30
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_7
+#talant_31{top:250px;left:402px}div.guild_7
+#talant_32{top:330px;left:402px}div.guild_7 #talant_32
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_7
+#talant_33{top:250px;left:482px}div.guild_7
+#talant_34{top:330px;left:482px}div.guild_7 #talant_34
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_7
+#talant_35{top:10px;left:162px}div.guild_8
+#talant_1{top:10px;left:2px}div.guild_8
+#talant_2{top:90px;left:2px}div.guild_8 #talant_2
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_8
+#talant_3{top:170px;left:2px}div.guild_8 #talant_3
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_8
+#talant_4{top:250px;left:2px}div.guild_8 #talant_4
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_8
+#talant_5{top:330px;left:2px}div.guild_8 #talant_5
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_8
+#talant_6{top:10px;left:82px}div.guild_8
+#talant_7{top:90px;left:82px}div.guild_8
+#talant_8{top:170px;left:82px}div.guild_8 #talant_8
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_8
+#talant_9{top:90px;left:162px}div.guild_8
+#talant_10{top:170px;left:162px}div.guild_8 #talant_10
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_8
+#talant_11{top:250px;left:82px}div.guild_8
+#talant_12{top:330px;left:82px}div.guild_8
+#talant_13{top:250px;left:162px}div.guild_8
+#talant_14{top:330px;left:162px}div.guild_8
+#talant_15{top:250px;left:242px}div.guild_8
+#talant_16{top:330px;left:242px}div.guild_8
+#talant_17{top:10px;left:242px}div.guild_8
+#talant_18{top:90px;left:242px}div.guild_8
+#talant_19{top:170px;left:242px}div.guild_8 #talant_19
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_8
+#talant_20{top:10px;left:322px}div.guild_8
+#talant_21{top:90px;left:322px}div.guild_8
+#talant_22{top:170px;left:322px}div.guild_8 #talant_22
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_8
+#talant_23{top:10px;left:402px}div.guild_8
+#talant_24{top:90px;left:402px}div.guild_8
+#talant_25{top:170px;left:402px}div.guild_8 #talant_25
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_8
+#talant_26{top:10px;left:482px}div.guild_8
+#talant_27{top:90px;left:482px}div.guild_8
+#talant_28{top:170px;left:482px}div.guild_8 #talant_28
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_8
+#talant_29{top:250px;left:322px}div.guild_8
+#talant_30{top:330px;left:322px}div.guild_8 #talant_30
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_8
+#talant_31{top:250px;left:402px}div.guild_8
+#talant_32{top:330px;left:402px}div.guild_8 #talant_32
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_8
+#talant_33{top:250px;left:482px}div.guild_8
+#talant_34{top:330px;left:482px}div.guild_8 #talant_34
+div.talant_leads_b{display:block;top:-83px;left:23px}div.guild_8
+#talant_35{top:10px;left:162px}#flyings{width:570px;height:200px;margin-left:-10px;padding-bottom:10px;margin-bottom:10px;overflow:hidden}#flyings
+div{width:190px;height:210px;float:left}#flyings.count_4{height:160px}#flyings.count_4
+div{width:142px;height:157px}#flyings
+div.active{background-position:0 210px}#flyings.count_4
+div.active{background-position:0 157px}#flyings
+.flying0{background-image:url(/images/items/ink_0.png)}#flyings
+.flying11{background-image:url(/images/items/ink_11.png)}#flyings
+.flying12{background-image:url(/images/items/ink_12.png)}#flyings
+.flying13{background-image:url(/images/items/ink_13.png)}#flyings
+.flying21{background-image:url(/images/items/ink_21.png)}#flyings
+.flying22{background-image:url(/images/items/ink_22.png)}#flyings
+.flying23{background-image:url(/images/items/ink_23.png)}#flyings
+.flying31{background-image:url(/images/items/ink_31.png)}#flyings
+.flying32{background-image:url(/images/items/ink_32.png)}#flyings
+.flying33{background-image:url(/images/items/ink_33.png)}#flyings
+.flying41{background-image:url(/images/items/ink_41.png)}#flyings
+.flying42{background-image:url(/images/items/ink_42.png)}#flyings
+.flying43{background-image:url(/images/items/ink_43.png)}#flyings.count_4
+.flying11{background-image:url(/images/items/ink_11_4.png)}#flyings.count_4
+.flying12{background-image:url(/images/items/ink_12_4.png)}#flyings.count_4
+.flying13{background-image:url(/images/items/ink_13_4.png)}#flyings.count_4
+.flying21{background-image:url(/images/items/ink_21_4.png)}#flyings.count_4
+.flying22{background-image:url(/images/items/ink_22_4.png)}#flyings.count_4
+.flying23{background-image:url(/images/items/ink_23_4.png)}#flyings.count_4
+.flying31{background-image:url(/images/items/ink_31_4.png)}#flyings.count_4
+.flying32{background-image:url(/images/items/ink_32_4.png)}#flyings.count_4
+.flying33{background-image:url(/images/items/ink_33_4.png)}#flyings.count_4
+.flying41{background-image:url(/images/items/ink_41_4.png)}#flyings.count_4
+.flying42{background-image:url(/images/items/ink_42_4.png)}#flyings.count_4
+.flying43{background-image:url(/images/items/ink_43_4.png)}#flyings
+div.active{cursor:pointer;position:relative}#flyings
+div.passive{cursor:default;position:relative}#flyings
+div.active{}#flyings
+div.clear{height:1px !important}#flyings
+div.sleeping{float:right;width:60px;height:30px;background:url('/i/ico_sleep.png') no-repeat}#flyings
+div.gold_bonus{position:absolute;width:60px;height:60px;right:10px;bottom:10px}#flyings div[class^=flying1]  div.gold_bonus{background:url('/images/atlantis/atlantis_drakos.png') no-repeat}#flyings div[class^=flying2]  div.gold_bonus{background:url('/images/atlantis/atlantis_pegass.png') no-repeat}#flyings div[class^=flying3]  div.gold_bonus{background:url('/images/atlantis/atlantis_grifons.png') no-repeat}#flyings div[class^=flying4]  div.gold_bonus{background:url('/images/atlantis/atlantis_mantikors.png') no-repeat}#flying_actions{width:510px;height:50px;padding-left:50px}#flying_actions
+div{width:40px;height:40px;float:left;border:1px
+coral solid;margin-right:5px}#flying_actions
+div.active{border:1px
+green solid}.flying_actions div.selected, .flying_actions div:hover{background:#9c8164}.flying_actions{margin-right:-1px}.flying_actions
+div{margin-left:1px;border-bottom:1px solid #eadec9;background:#dbcbad;height:67px;width:91px;float:left}.flying_actions div:first-child{width:93px;margin-left:0;border-top-left-radius:3px}.flying_actions div:first-child+div{width:92px}.flying_actions div:first-child+div+div{width:92px}.flying_actions div:last-child{border-top-right-radius:3px}.flying_actions div
+span{display:block;background:url(/images/packs/ico_m_pets.png) no-repeat 60px 0;width:60px;height:60px;margin-left:15px;margin-top:5px;cursor:pointer}.flying_actions div.passive
+span{cursor:default}.flying_actions #fa_about.active
+span{background-position:0 0}.flying_actions #fa_about.passive
+span{background-position:0 60px}.flying_actions #fa_heal.active
+span{background-position:-60px 0}.flying_actions #fa_heal.passive
+span{background-position:-60px 60px}.flying_actions #fa_feed.active
+span{background-position:-120px 0}.flying_actions #fa_feed.passive
+span{background-position:-120px 60px}.flying_actions #fa_bonus.active
+span{background-position:-180px 0}.flying_actions #fa_bonus.passive
+span{background-position:-180px 60px}.flying_actions #fa_training.active
+span{background-position:-240px 0}.flying_actions #fa_training.passive
+span{background-position:-240px 60px}.flying_actions #fa_events.active
+span{background-position:-300px 0}.flying_actions #fa_events.passive
+span{background-position:-300px 60px}.egg .flying_actions #fa_heal.active
+span{background-position:-420px 0}.egg .flying_actions #fa_heal.passive
+span{background-position:-420px 60px}.egg .flying_actions #fa_feed.active
+span{background-position:-360px 0}.egg .flying_actions #fa_feed.passive
+span{background-position:-360px 60px}#flying_stats{padding-left:33px}#flying_stats
+div.clear{height:1px}#flying_character{width:220px;height:206px;float:left}#flying_items{width:290px;height:206px;float:left}#flying_items
+div.holders{width:290px}#zoo_all{text-align:center}#zoo_all
+#flyings_all{height:150px;float:left}#zoo_all
+#skills_all{width:256px;height:70px;margin:0
+auto}#can_find
+span{width:60px;height:60px;background-image:url(/images/m/class/flying/items_can_get.jpg);display:inline-block}#can_find
+.fish{background-position:0 0}#can_find
+.gold{background-position:-60px 0}#can_find
+.cry{background-position:-120px 0}#can_find
+.pand2{background-position:-180px 0}#can_find
+.pot11{background-position:-240px 0}#can_find
+.mine_7{background-position:-360px -60px}#can_find
+.farm_1{background-position:-360px 0}#can_find
+.smith_6{background-position:-300px 0}#can_find
+.trade_1{background-position:-300px -60px}#can_find
+.recipe_1{background-position:-420px 0}#can_find
+.recipe_2{background-position:-480px 0}#can_find
+.leathers{background-position:-480px -60px}#can_find
+.salt{background-position:0 -60px}#can_find
+.tear{background-position:-60px -60px}#can_find
+.leaf{background-position:-120px -60px}#can_find
+.ore{background-position:-180px -60px}#can_find
+.res_all{background-position:-240px -60px}#can_find
+.icon_stats_exp_big{background-position:-420px -60px}#zoo_block{top:5px;margin:0
+0 5px;background-image:url(/images/m/class/flying/menu_fpets_01.png);width:150px;height:190px;position:relative;background-repeat:no-repeat}#zoo_block
+div22{width:20px;height:20px;background-image:url(/images/m/class/flying/menu_fpets_01.png);position:absolute}#zoo_block
+.sk4{position:absolute;top:150px;left:41px}#zoo_block
+.sk3{position:absolute;top:58px;left:41px}#zoo_block
+.sk1{position:absolute;top:104px;left:80px}#zoo_block
+.sk2{position:absolute;top:11px;left:80px}#accordion
+.flyings{}#accordion .flyings .timer_here, #accordion .flyings .timer_here
+span{width:60px !important;font-style:normal !important;float:left}#accordion .flyings .timer_center, #accordion .flyings .timer_center
+span{float:none !important;font-style:normal}#accordion .flyings
+.clear{width:10px}#accordion .flyings
+.can_get{height:45px}#accordion .flyings
+.title{background-color:#ecddc0;height:36px;border-bottom:1px solid #bfb18e;border-right:1px solid #bfb18e;float:left;width:20px;padding-top:19px;overflow:hidden}#accordion .flyings .title
+a{text-decoration:none}#accordion .flyings
+.sleeping{width:30px;height:15px;background:url('/i/ico_sleep_s.png') no-repeat;margin:0
+auto}#accordion .flyings
+.content{height:55px;border-bottom:1px solid #bfb18e;padding-top:0;width:157px;float:left}#accordion .flyings .content
+.mb10{}#accordion .flyings .content
+span{width:80px;display:inline-block;padding-left:7px;font-size:11px;line-height:15px;float:left;height:15px}#accordion .flyings .content
+form{display:inline;width:50px}#accordion .flyings .content form input[type="submit"]{}#accordion .flyings .content
+u{font-style:normal;display:block;width:66px;padding:1px
+0 1px 5px;margin:1px;height:18px;border:1px
+solid #C1B092;float:left;text-decoration:none}#accordion .flyings .content
+u.long{width:141px}#accordion .flyings .content
+u.first{margin-left:2px}#accordion .flyings .content
+a{text-decoration:none}#accordion
+.flyings{width:180px;height:377px !important}#accordion .flyings
+.status_control{border:1px
+solid #C1B092;text-align:center;font-size:10px;position:absolute;bottom:1px;left:1px;right:1px}.list_menu
+.td_last{width:127px;text-align:center}.list_menu
+.td_center{padding-right:5px}.select_watch_time{width:170px;text-align:center}#body
+.message{margin:0
+!important}#body
+.overmessage{height:14px;width:514px;display:block;clear:both;margin-left:20px}.mg_prize{display:inline-block;background-color:red;width:60px;height:60px;font-style:normal;color:black}.mg_prize.green{background-color:green}.chest{display:inline-block;background-image:url(/images/m/class/flying/mg_chests.png);width:100px;height:83px;background-position:0 0;position:relative;margin-right:10px}.chest
+u{display:block;position:absolute;top:53px;left:15px;font-style:normal;font-weight:bold;text-decoration:none;width:67px}.chest:hover{background-position:0 -83px}.chest.is_gold{background-position:-200px -83px}.chest.is_gold_show{background-position:-800px -0px}.chest.is_gold_show:hover{background-position:-800px -83px}.chest.opened_1_0{color:#dacaac;background-position:-200px 0}.chest.opened_1_1{background-position:-200px -83px;color:#542F1B}.chest.opened_2_0{color:#dacaac;background-position:-100px 0}.chest.opened_2_1{background-position:-100px -83px;color:#542F1B}.chest.opened_10_0{color:#dacaac;background-position:-300px 0}.chest.opened_10_1{background-position:-300px -83px;color:#542F1B}.bonus{display:inline-block;width:245px;float:left}.bonus.cl_m_charisma{width:265px !important}.zoo_about_bar_bg{width:215px !important;height:40px !important;background:url(/i/buttons.png) no-repeat;background-position:-387px	 -290px;margin-bottom:10px;margin-left:0  !important;text-align:center}.zoo_td{vertical-align:middle;padding:5px
+0}.zoo_about_text1{padding-right:10px;width:300px;float:left}.zoo_stat_1{width:320px;text-align:right}.zoo_event_1{background:url(/images/menus/fly_adv.png) no-repeat;width:100px;height:75px;margin:5px
+0}.zoo_event_2{background:url(/images/menus/fly_adv.png) no-repeat;background-position:0	 -75px;width:100px;height:75px;margin:5px
+0}.zoo_event_3{background:url(/images/menus/fly_adv.png) no-repeat;background-position:0	 -150px;width:100px;height:75px;margin:5px
+0}.flying_working{margin-left:-9px;margin-bottom:10px}.flying_working_top{background:url(/i/inside/bg_block_in.png) no-repeat;height:13px;width:530px;background-position:0 -13px}.flying_working_bottom{background:url(/i/inside/bg_block_in.png) no-repeat;height:13px;width:530px}.flying_working_center{background:url(/i/inside/bg_block_in.png) repeat-y;height:200px;width:530px;background-position:-530px 0}.flying_working_center
+.ico{background:url(/images/buildings/fly_farm.jpg) no-repeat;height:200px;width:504px}.zoo_bar_border_ico{vertical-align:top;width:20px;float:left;margin-left:7px}.zoo_bar_border_bar{margin-left:-8px;padding:0}#bigattack_fight_block{position:relative;height:80px;margin:10px
+0 15px 0}#bigattack_fight_block .flying_ava,
+#bigattack_fight_block
+.monster_ava{width:80px;height:80px;position:absolute}#bigattack_fight_block
+.winner_name{margin:0
+auto;width:320px;padding-top:30px;overflow:hidden}#bigattack_fight_block
+.flying_ava{background-image:url(/images/m/class/mega/fpets_ava_s.png);left:10px}#bigattack_fight_block
+.monster_ava{background-image:url(/images/m/class/mega/fly_monsters.png);right:10px}#bigattack_fight_block .flying_ava span.level,
+#bigattack_fight_block .monster_ava
+span.level{display:block;font-size:10px;left:25px;position:absolute;text-align:center;top:61px;width:20px}#bigattack_fight_block
+.flying_ava.ava_12{background-position:0 -80px}#bigattack_fight_block
+.flying_ava.ava_13{background-position:-80px -80px}#bigattack_fight_block
+.flying_ava.ava_22{background-position:-160px -80px}#bigattack_fight_block
+.flying_ava.ava_23{background-position:-240px -80px}#bigattack_fight_block
+.flying_ava.ava_32{background-position:-320px -80px}#bigattack_fight_block
+.flying_ava.ava_33{background-position:-400px -80px}#bigattack_fight_block
+.flying_ava.ava_42{background-position:-480px -80px}#bigattack_fight_block
+.flying_ava.ava_43{background-position:-560px -80px}#bigattack_fight_block
+.monster_ava.kk_01{background-position:-240px -160px}#bigattack_fight_block
+.monster_ava.kk_02{background-position:-320px -160px}#bigattack_fight_block
+.monster_ava.kk_03{background-position:-320px -80px}#bigattack_fight_block
+.monster_ava.kk_04{background-position:-80px -80px}#bigattack_fight_block
+.monster_ava.kk_05{background-position:-400px -160px}#bigattack_fight_block
+.monster_ava.kk_06{background-position:-80px -160px}#bigattack_fight_block
+.monster_ava.kk_07{background-position:-160px -0px}#bigattack_fight_block
+.monster_ava.kk_08{background-position:-80px -0px}#bigattack_fight_block
+.monster_ava.kk_09{background-position:-240px -0px}#bigattack_fight_block
+.monster_ava.kk_10{background-position:-320px -0px}#bigattack_fight_block
+.monster_ava.kk_11{background-position:-0px -0px}#bigattack_fight_block
+.monster_ava.kk_12{background-position:-400px -0px}#bigattack_fight_block
+.monster_ava.kk_13{background-position:-160px -80px}#bigattack_fight_block
+.monster_ava.kk_14{background-position:-0px -80px}#bigattack_fight_block
+.monster_ava.kk_15{background-position:-160px -160px}#bigattack_fight_block
+.monster_ava.kk_16{background-position:-400px -80px}#bigattack_fight_block
+.monster_ava.kk_17{background-position:-0px -160px}#bigattack_fight_block
+.monster_ava.kk_18{background-position:-240px -80px}#bigattack_fight_block
+.monster_ava.kk_19{background-position:0 -240px}#bigattack_fight_block
+.monster_ava.kk_20{background-position:-80px -240px}#bigattack_fight_block
+.monster_ava.kk_21{background-position:-160px -240px}#pegasus_training_ad_top{background-image:url(/locale/RU/pegas_banner.png);width:504px;height:65px;position:relative;top:-7px;margin-bottom:-7px}#draco_training_ad_top{background-image:url(/locale/RU/draco_banner.png);width:504px;height:65px;position:relative;top:-7px;margin-bottom:-7px}#grifon_training_ad_top{background-image:url(/locale/RU/grifon_banner.png);width:504px;height:65px;position:relative;top:-7px;margin-bottom:-7px}#manticore_training_ad_top{background-image:url(/locale/RU/manticore_banner.png);width:504px;height:65px;position:relative;top:-7px;margin-bottom:-7px}.flying_actions_tabs{margin-right:0}.normal_inputs
+select.select_buy_per_days{width:70px !important}b.skills{width:60px;height:60px;display:inline-block;background:url(/images/packs/skills.jpg) no-repeat;background-position:0 0;vertical-align:middle}b.skill_1_1{background-position:0 0}b.skill_1_2{background-position:-60px 0}b.skill_2_1{background-position:-120px 0}b.skill_2_2{background-position:-180px 0}b.skill_3_1{background-position:-240px 0}b.skill_3_2{background-position:-300px 0}b.skill_4_1{background-position:-360px 0}b.skill_4_2{background-position:-420px 0}b.skill_5_1{background-position:-480px 0}b.skill_5_2{background-position:-540px 0}b.skill_6_1{background-position:-360px -60px}b.skill_6_2{background-position:-420px -60px}b.skill_7_1{background-position:-120px -60px}b.skill_7_2{background-position:-180px -60px}b.skill_8_1{background-position:-240px -60px}b.skill_8_2{background-position:-300px -60px}b.skill_9_1{background-position:0 -60px}b.skill_9_2{background-position:-60px -60px}b.skill_10_1{background-position:-480px -60px}b.skill_10_2{background-position:-540px -60px}b.skill_11_1{background-position:0 -120px}b.skill_11_2{background-position:-60px -120px}b.skill_12_1{background-position:-120px -120px}b.skill_12_2{background-position:-180px -120px}b.skill_13_1{background-position:-240px -120px}b.skill_13_2{background-position:-300px -120px}b.skill_14_1{background-position:-360px -120px}b.skill_14_2{background-position:-420px -120px}b.skill_15_1{background-position:-480px -120px}b.skill_15_2{background-position:-540px -120px}b.skill_16_1{background-position:0  -180px}b.skill_16_2{background-position:-60px  -180px}b.skill_17_1{background-position:-120px -180px}b.skill_17_2{background-position:-180px -180px}b.skill_18_1{background-position:-240px -180px}b.skill_18_2{background-position:-300px -180px}b.skill_19_1{background-position:-360px -180px}b.skill_19_2{background-position:-420px -180px}b.skill_20_1{background-position:-480px -180px}b.skill_20_2{background-position:-540px -180px}div.spec_main{width:504px}div.spec_main
+.spec_group{width:220px;height:90px;float:left;border:1px
+#d4bd97 solid;background-color:#e0d0b5;margin-left:25px}div.spec_main
+.spec_group_ext{width:232px;height:90px;float:left;margin-left:25px}div.spec_main
+.spec_arrow{width:13px;height:90px}div.spec_main .spec_arrow
+b{margin-left:3px;margin-top:24px}div.spec_main
+.spec_80{width:60px;height:82px;margin:2px;position:relative}div.spec_main .spec_80
+.spec{border:2px
+#f9e7bb solid}div.spec_main .spec_80
+.spec_blur{position:absolute;width:63px;height:63px;-moz-opacity:.50;filter:alpha(opacity=50);opacity:.50;background-color:#e0d0b5}div.spec_main .spec_80 b[class^="icon"]{margin-left:22px}div.spec_main .spec_80 .spec,b.spec{width:60px;height:60px;background-image:url('/images/packs/spec.jpg');display:inline-block}div.spec_main .spec_80 .spec_401_1,b.skill_401_1{background-position:0 0}div.spec_main .spec_80 .spec_401_2,b.skill_401_2{background-position:0 -60px}div.spec_main .spec_80 .spec_401_3,b.skill_401_3{background-position:0 -120px}div.spec_main .spec_80 .spec_401_0,b.skill_401_0{background-position:0 -180px}div.spec_main .spec_80 .spec_402_1,b.skill_402_1{background-position:-60px 0}div.spec_main .spec_80 .spec_402_2,b.skill_402_2{background-position:-60px -60px}div.spec_main .spec_80 .spec_402_3,b.skill_402_3{background-position:-60px -120px}div.spec_main .spec_80 .spec_402_0,b.skill_402_0{background-position:-60px -180px}div.spec_main .spec_80 .spec_404_1,b.skill_404_1{background-position:-120px 0}div.spec_main .spec_80 .spec_404_2,b.skill_404_2{background-position:-120px -60px}div.spec_main .spec_80 .spec_404_3,b.skill_404_3{background-position:-120px -120px}div.spec_main .spec_80 .spec_404_0,b.skill_404_0{background-position:-120px -180px}div.spec_main .spec_80 .spec_403_1,b.skill_403_1{background-position:-180px 0}div.spec_main .spec_80 .spec_403_2,b.skill_403_2{background-position:-180px -60px}div.spec_main .spec_80 .spec_403_3,b.skill_403_3{background-position:-180px -120px}div.spec_main .spec_80 .spec_403_0,b.skill_403_0{background-position:-180px -180px}div.spec_main .spec_80 .spec_405_1,b.skill_405_1{background-position:-240px 0}div.spec_main .spec_80 .spec_405_2,b.skill_405_2{background-position:-240px -60px}div.spec_main .spec_80 .spec_405_3,b.skill_405_3{background-position:-240px -120px}div.spec_main .spec_80 .spec_405_0,b.skill_405_0{background-position:-240px -180px}div.spec_main .spec_80 .spec_406_1,b.skill_406_1{background-position:-300px 0}div.spec_main .spec_80 .spec_406_2,b.skill_406_2{background-position:-300px -60px}div.spec_main .spec_80 .spec_406_3,b.skill_406_3{background-position:-300px -120px}div.spec_main .spec_80 .spec_406_0,b.skill_406_0{background-position:-300px -180px}div.spec_main .spec_80 .spec_407_1,b.skill_407_1{background-position:-360px 0}div.spec_main .spec_80 .spec_407_2,b.skill_407_2{background-position:-360px -60px}div.spec_main .spec_80 .spec_407_3,b.skill_407_3{background-position:-360px -120px}div.spec_main .spec_80 .spec_407_0,b.skill_407_0{background-position:-360px -180px}div.spec_main .spec_80 .spec_408_1,b.skill_408_1{background-position:-420px 0}div.spec_main .spec_80 .spec_408_2,b.skill_408_2{background-position:-420px -60px}div.spec_main .spec_80 .spec_408_3,b.skill_408_3{background-position:-420px -120px}div.spec_main .spec_80 .spec_408_0,b.skill_408_0{background-position:-420px -180px}div.spec_main .spec_80 .spec_409_1,b.skill_409_1{background-position:-480px 0}div.spec_main .spec_80 .spec_409_2,b.skill_409_2{background-position:-480px -60px}div.spec_main .spec_80 .spec_409_3,b.skill_409_3{background-position:-480px -120px}div.spec_main .spec_80 .spec_409_0,b.skill_409_0{background-position:-480px -180px}div.spec_main .spec_80 .spec_410_1,b.skill_410_1{background-position:-540px 0}div.spec_main .spec_80 .spec_410_2,b.skill_410_2{background-position:-540px -60px}div.spec_main .spec_80 .spec_410_3,b.skill_410_3{background-position:-540px -120px}div.spec_main .spec_80 .spec_410_0,b.skill_410_0{background-position:-540px -180px}div.spec_main .spec_80 .spec_411_1,b.skill_411_1{background-position:-600px 0}div.spec_main .spec_80 .spec_411_2,b.skill_411_2{background-position:-600px -60px}div.spec_main .spec_80 .spec_411_3,b.skill_411_3{background-position:-600px -120px}div.spec_main .spec_80 .spec_411_0,b.skill_411_0{background-position:-600px -180px}div.spec_main .spec_80 .spec_412_1,b.skill_412_1{background-position:-660px 0}div.spec_main .spec_80 .spec_412_2,b.skill_412_2{background-position:-660px -60px}div.spec_main .spec_80 .spec_412_3,b.skill_412_3{background-position:-660px -120px}div.spec_main .spec_80 .spec_412_0,b.skill_412_0{background-position:-660px -180px}div.spec_main .spec_80 .spec_414_1,b.skill_414_1{background-position:-720px 0}div.spec_main .spec_80 .spec_414_2,b.skill_414_2{background-position:-720px -60px}div.spec_main .spec_80 .spec_414_3,b.skill_414_3{background-position:-720px -120px}div.spec_main .spec_80 .spec_414_0,b.skill_414_0{background-position:-720px -180px}div.spec_main .spec_80 .spec_415_1,b.skill_415_1{background-position:-780px 0}div.spec_main .spec_80 .spec_415_2,b.skill_415_2{background-position:-780px -60px}div.spec_main .spec_80 .spec_415_3,b.skill_415_3{background-position:-780px -120px}div.spec_main .spec_80 .spec_415_0,b.skill_415_0{background-position:-780px -180px}div.spec_main .spec_80 .spec_416_1,b.skill_416_1{background-position:-840px 0}div.spec_main .spec_80 .spec_416_2,b.skill_416_2{background-position:-840px -60px}div.spec_main .spec_80 .spec_416_3,b.skill_416_3{background-position:-840px -120px}div.spec_main .spec_80 .spec_416_0,b.skill_416_0{background-position:-840px -180px}div.spec_main .spec_80 .spec_417_1,b.skill_417_1{background-position:-900px 0}div.spec_main .spec_80 .spec_417_2,b.skill_417_2{background-position:-900px -60px}div.spec_main .spec_80 .spec_417_3,b.skill_417_3{background-position:-900px -120px}div.spec_main .spec_80 .spec_417_0,b.skill_417_0{background-position:-900px -180px}div.spec_main .spec_80 .spec_418_1,b.skill_418_1{background-position:-960px 0}div.spec_main .spec_80 .spec_418_2,b.skill_418_2{background-position:-960px -60px}div.spec_main .spec_80 .spec_418_3,b.skill_418_3{background-position:-960px -120px}div.spec_main .spec_80 .spec_418_0,b.skill_418_0{background-position:-960px -180px}div.spec_main .spec_80 .spec_419_1,b.skill_419_1{background-position:-1020px 0}div.spec_main .spec_80 .spec_419_2,b.skill_419_2{background-position:-1020px -60px}div.spec_main .spec_80 .spec_419_3,b.skill_419_3{background-position:-1020px -120px}div.spec_main .spec_80 .spec_419_0,b.skill_419_0{background-position:-1020px -180px}div.spec_main .spec_80 .spec_420_1,b.skill_420_1{background-position:-1080px 0}div.spec_main .spec_80 .spec_420_2,b.skill_420_2{background-position:-1080px -60px}div.spec_main .spec_80 .spec_420_3,b.skill_420_3{background-position:-1080px -120px}div.spec_main .spec_80 .spec_420_0,b.skill_420_0{background-position:-1080px -180px}div.spec_main .spec_80 .spec_421_1,b.skill_421_1{background-position:-1140px 0}div.spec_main .spec_80 .spec_421_2,b.skill_421_2{background-position:-1140px -60px}div.spec_main .spec_80 .spec_421_3,b.skill_421_3{background-position:-1140px -120px}div.spec_main .spec_80 .spec_421_0,b.skill_421_0{background-position:-1140px -180px}div.spec_main .spec_80 .spec_422_1,b.skill_422_1{background-position:-1200px 0}div.spec_main .spec_80 .spec_422_2,b.skill_422_2{background-position:-1200px -60px}div.spec_main .spec_80 .spec_422_3,b.skill_422_3{background-position:-1200px -120px}div.spec_main .spec_80 .spec_422_0,b.skill_422_0{background-position:-1200px -180px}div.spec_main .spec_80 .spec_423_1,b.skill_423_1{background-position:-1260px 0}div.spec_main .spec_80 .spec_423_2,b.skill_423_2{background-position:-1260px -60px}div.spec_main .spec_80 .spec_423_3,b.skill_423_3{background-position:-1260px -120px}div.spec_main .spec_80 .spec_423_0,b.skill_423_0{background-position:-1260px -180px}div.spec_main .spec_80 .spec_424_1,b.skill_424_1{background-position:-1320px 0}div.spec_main .spec_80 .spec_424_2,b.skill_424_2{background-position:-1320px -60px}div.spec_main .spec_80 .spec_424_3,b.skill_424_3{background-position:-1320px -120px}div.spec_main .spec_80 .spec_424_0,b.skill_424_0{background-position:-1320px -180px}div.spec_main .spec_80 .spec_425_1,b.skill_425_1{background-position:-1380px 0}div.spec_main .spec_80 .spec_425_2,b.skill_425_2{background-position:-1380px -60px}div.spec_main .spec_80 .spec_425_3,b.skill_425_3{background-position:-1380px -120px}div.spec_main .spec_80 .spec_425_0,b.skill_425_0{background-position:-1380px -180px}div.spec_main .spec_80 .spec_426_1,b.skill_426_1{background-position:-1320px 0}div.spec_main .spec_80 .spec_426_2,b.skill_426_2{background-position:-1320px -60px}div.spec_main .spec_80 .spec_426_3,b.skill_426_3{background-position:-1320px -120px}div.spec_main .spec_80 .spec_426_0,b.skill_426_0{background-position:-1320px -180px}div.spec_main .spec_80 .spec_433_1,b.skill_433_1{background-position:-1560px 0}div.spec_main .spec_80 .spec_433_2,b.skill_433_2{background-position:-1560px -60px}div.spec_main .spec_80 .spec_433_3,b.skill_433_3{background-position:-1560px -120px}div.spec_main .spec_80 .spec_433_0,b.skill_433_0{background-position:-1560px -180px}div.spec_main .spec_80 .spec_434_1,b.skill_434_1{background-position:-1500px 0}div.spec_main .spec_80 .spec_434_2,b.skill_434_2{background-position:-1500px -60px}div.spec_main .spec_80 .spec_434_3,b.skill_434_3{background-position:-1500px -120px}div.spec_main .spec_80 .spec_434_0,b.skill_434_0{background-position:-1500px -180px}div.spec_main .spec_80 .spec_435_1,b.skill_435_1{background-position:-1620px 0}div.spec_main .spec_80 .spec_435_2,b.skill_435_2{background-position:-1620px -60px}div.spec_main .spec_80 .spec_435_3,b.skill_435_3{background-position:-1620px -120px}div.spec_main .spec_80 .spec_435_0,b.skill_435_0{background-position:-1620px -180px}div.spec_main .spec_80 .spec_438_1,b.skill_438_1{background-position:-1380px 0}div.spec_main .spec_80 .spec_438_2,b.skill_438_2{background-position:-1380px -60px}div.spec_main .spec_80 .spec_438_3,b.skill_438_3{background-position:-1380px -120px}div.spec_main .spec_80 .spec_438_0,b.skill_438_0{background-position:-1380px -180px}div.spec_main .spec_80 .spec_439_1,b.skill_439_1{background-position:-1680px 0}div.spec_main .spec_80 .spec_439_2,b.skill_439_2{background-position:-1680px -60px}div.spec_main .spec_80 .spec_439_3,b.skill_439_3{background-position:-1680px -120px}div.spec_main .spec_80 .spec_439_0,b.skill_439_0{background-position:-1680px -180px}div.spec_main .spec_80 .spec_440_1,b.skill_440_1{background-position:-1740px 0}div.spec_main .spec_80 .spec_440_2,b.skill_440_2{background-position:-1740px -60px}div.spec_main .spec_80 .spec_440_3,b.skill_440_3{background-position:-1740px -120px}div.spec_main .spec_80 .spec_440_0,b.skill_440_0{background-position:-1740px -180px}div.spec_main .spec_80 .spec_441_1,b.skill_441_1{background-position:-1800px 0}div.spec_main .spec_80 .spec_441_2,b.skill_441_2{background-position:-1800px -60px}div.spec_main .spec_80 .spec_441_3,b.skill_441_3{background-position:-1800px -120px}div.spec_main .spec_80 .spec_441_0,b.skill_441_0{background-position:-1800px -180px}div.spec_main .spec_80 .spec_442_1,b.skill_442_1{background-position:-1440px 0}div.spec_main .spec_80 .spec_442_2,b.skill_442_2{background-position:-1440px -60px}div.spec_main .spec_80 .spec_442_3,b.skill_442_3{background-position:-1440px -120px}div.spec_main .spec_80 .spec_442_0,b.skill_442_0{background-position:-1440px -180px}div.spec_main .spec_80 .spec_451_1,b.skill_451_1{background-position:-1920px 0}div.spec_main .spec_80 .spec_451_2,b.skill_451_2{background-position:-1920px -60px}div.spec_main .spec_80 .spec_451_3,b.skill_451_3{background-position:-1920px -120px}div.spec_main .spec_80 .spec_451_0,b.skill_451_0{background-position:-1920px -180px}div.spec_main .spec_80 .spec_453_1,b.skill_453_1{background-position:-1860px 0}div.spec_main .spec_80 .spec_453_2,b.skill_453_2{background-position:-1860px -60px}div.spec_main .spec_80 .spec_453_3,b.skill_453_3{background-position:-1860px -120px}div.spec_main .spec_80 .spec_453_0,b.skill_453_0{background-position:-1860px -180px}div.spec_main .spec_80 .spec_456_1,b.skill_456_1{background-position:-1980px 0}div.spec_main .spec_80 .spec_456_2,b.skill_456_2{background-position:-1980px -60px}div.spec_main .spec_80 .spec_456_3,b.skill_456_3{background-position:-1980px -120px}div.spec_main .spec_80 .spec_456_0,b.skill_456_0{background-position:-1980px -180px}b.skill_501_1{background-image:url(/images/m/class/flying/fpets_talents.jpg);background-position:0 0}b.skill_502_1{background-image:url(/images/m/class/flying/fpets_talents.jpg);background-position:-60px 0}b.skill_503_1{background-image:url(/images/m/class/flying/fpets_talents.jpg);background-position:-120px 0}b.skill_504_1{background-image:url(/images/m/class/flying/fpets_talents.jpg);background-position:-180px 0}b.skill_505_1{background-image:url(/images/m/class/flying/fpets_talents.jpg);background-position:-240px 0}b.skill_506_1{background-image:url(/images/m/class/flying/fpets_talents.jpg);background-position:-300px 0}b.skill_507_1{background-image:url(/images/m/class/flying/fpets_talents.jpg);background-position:-360px 0}b.skill_508_1{background-image:url(/images/m/class/flying/fpets_talents.jpg);background-position:-420px 0}b.skill_501_1s{background-image:url(/images/m/class/flying/menu_fpets_01.png);width:30px;height:30px;display:block;background-position:-150px -190px}b.skill_502_1s{background-image:url(/images/m/class/flying/menu_fpets_01.png);width:30px;height:30px;display:block;background-position:-60px 0;background-position:-180px -190px}b.skill_503_1s{background-image:url(/images/m/class/flying/menu_fpets_01.png);width:30px;height:30px;display:block;background-position:-120px 0;background-position:-210px -190px}b.skill_504_1s{background-image:url(/images/m/class/flying/menu_fpets_01.png);width:30px;height:30px;display:block;background-position:-180px 0;background-position:-240px -190px}b.skill_505_1s{background-image:url(/images/m/class/flying/menu_fpets_01.png);width:30px;height:30px;display:block;background-position:-240px 0;background-position:-150px -220px}b.skill_506_1s{background-image:url(/images/m/class/flying/menu_fpets_01.png);width:30px;height:30px;display:block;background-position:-300px 0;background-position:-180px -220px}b.skill_507_1s{background-image:url(/images/m/class/flying/menu_fpets_01.png);width:30px;height:30px;display:block;background-position:-300px 0;background-position:-210px -220px}b.skill_508_1s{background-image:url(/images/m/class/flying/menu_fpets_01.png);width:30px;height:30px;display:block;background-position:-300px 0;background-position:-240px -220px}b[class*=skill_541]{background-image:url("/images/m/class/talants/talents.jpg");background-position:-60px -720px}b.skill_541_0{background-image:url("/images/m/class/talants/talents.jpg");background-position:-60px -780px}b[class*=skill_542]{background-image:url("/images/m/class/talants/talents.jpg");background-position:-120px -720px}b.skill_542_0{background-image:url("/images/m/class/talants/talents.jpg");background-position:-120px -780px}b[class*=skill_543]{background-image:url("/images/m/class/talants/talents.jpg");background-position:-180px -720px}b.skill_543_0{background-image:url("/images/m/class/talants/talents.jpg");background-position:-180px -780px}b[class*=skill_544]{background-image:url("/images/m/class/talants/talents.jpg");background-position:-240px -720px}b.skill_544_0{background-image:url("/images/m/class/talants/talents.jpg");background-position:-240px -780px}b[class*=skill_545]{background-image:url("/images/m/class/talants/talents.jpg");background-position:-300px -720px}b.skill_545_0{background-image:url("/images/m/class/talants/talents.jpg");background-position:-300px -780px}b[class*=skill_546]{background-image:url("/images/m/class/talants/talents.jpg");background-position:-360px -720px}b.skill_546_0{background-image:url("/images/m/class/talants/talents.jpg");background-position:-360px -780px}b[class*=skill_547]{background-image:url("/images/m/class/talants/talents.jpg");background-position:-480px -720px}b.skill_547_0{background-image:url("/images/m/class/talants/talents.jpg");background-position:-480px -780px}b[class*=skill_548]{background-image:url("/images/m/class/talants/talents.jpg");background-position:-420px -720px}b.skill_548_0{background-image:url("/images/m/class/talants/talents.jpg");background-position:-420px -780px}.battlefield_skill{width:60px;height:60px;background-image:url("/images/m/class/talants/talents.jpg");display:block;z-index:5;position:relative}.battlefield_skill_0,.battlefield_skill_100,.battlefield_skill_101{background-position:-60px -840px}.battlefield_skill_1{background-position:-180px -360px}.battlefield_skill_2,.battlefield_skill_17{background-position:-300px -240px}.battlefield_skill_3,.battlefield_skill_15{background-position:0 -360px}.battlefield_skill_4{background-position:-120px -240px}.battlefield_skill_5,.battlefield_skill_23{background-position:-240px -360px}.battlefield_skill_6{background-position:-360px -240px}.battlefield_skill_7{background-position:-120px -360px}.battlefield_skill_8{background-position:-180px -240px}.battlefield_skill_11{background-position:-300px 0}.battlefield_skill_12{background-position:-240px 0}.battlefield_skill_13{background-position:-180px -120px}.battlefield_skill_14{background-position:-120px -120px}.battlefield_skill_16{background-position:-420px -240px}.battlefield_skill_18{background-position:-420px -600px}.battlefield_skill_19{background-position:-120px -360px}.battlefield_skill_20{background-position:-420px 0}.battlefield_skill_21{background-position:-180px -840px}.battlefield_skill_22{background-position:-240px -120px}.battlefield_skill_24{background-position:-120px 0}.battlefield_skill_152{background-position:-240px -840px}.battlefield_skill_153{background-position:-480px -840px}.battlefield_skill_154{background-position:0 -960px}.battlefield_skill_156{background-position:-240px -840px}.battlefield_skill_159{background-position:-480px -840px}.battlefield_skill_160{background-position:-360px -840px}.battlefield_skill_161{background-position:-240px -840px}.battlefield_skill_164{background-position:-300px -840px}.battlefield_effect_153,.battlefield_effect_159{background-position:-360px -220px}.battlefield_effect_154{background-position:-360px -280px}.battlefield_effect{background-image:url("/images/m/class/talants/icons.jpg")}.battlefield_effect_damage_10{background-position:-120px -160px}.battlefield_effect_protect{background-position:-120px -220px;width:40px !important;height:20px}.pvpbattle
+.battlefield_effect_protect{width:30px !important}.battlefield_effect_4{background-position:-80px -160px}.battlefield_effect_5{background-position:-160px -220px}.battlefield_effect_7,.battlefield_effect_protect_25,.battlefield_effect_protect_50{background-position:-80px -220px}.battlefield_effect_hidden{background:#dbcaac}.battlefield_effect_11{background-position:-200px -40px}.battlefield_effect_12{background-position:-160px -40px}.battlefield_effect_13,.battlefield_effect_protect3{background-position:-120px -100px}.battlefield_effect_14{background-position:-80px -100px}.battlefield_effect_20{background-position:-280px -40px}.battlefield_effect_21{background-position:-320px -460px}.battlefield_effect_22{background-position:-160px -100px}.battlefield_effect_23{background-position:-160px -220px}.skills.empty{background-image:none;background-color:#dac9ab}.spec_unactive{background-image:url("/images/packs/unactive_bg.png");position:absolute;width:63px;height:63px}.item_box.h20.battlefield_effect{width:40px !important}.pvpbattle
+.item_box.h20.battlefield_effect{width:30px !important}.battlefield_effect_timer_x2{background-position:-360px -160px}.battlefield_effect_protect2{background-position:-360px -40px}.battlefield_effect_no_damage{background-position:-360px -100px}.battlefield_skill_class_1,.battlefield_skill_class_2{position:relative}.battlefield_skill_class_1:after,.battlefield_skill_class_2:after{content:'';width:60px;height:60px;display:block;position:absolute;left:0;top:0}.battlefield_skill_class_1:after{background-image:url(/images/m/battlefield/battlefield_class_1.png)}.battlefield_skill_class_2:after{background-image:url(/images/m/battlefield/battlefield_class_2.png)}

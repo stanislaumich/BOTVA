@@ -1,0 +1,24 @@
+body
+.fortress_map{background-image:url(/images/m/fortress/snow/bg_castle.jpg)}body
+#fortress_map_water{display:none}body
+#fortress_map_bird{display:none}body
+.fortress_place{background-image:url(/images/m/fortress/snow/img_buildings.png)}body .fortress_place.cleared:hover{background:none}body .fortress_place.type_1
+.fortress_place_image{background-image:url(/images/m/fortress/snow/1.png)}body .fortress_place.type_2
+.fortress_place_image{background-image:url(/images/m/fortress/snow/2.png)}body .fortress_place.type_3
+.fortress_place_image{background-image:url(/images/m/fortress/snow/3.png)}body .fortress_place.type_4
+.fortress_place_image{background-image:url(/images/m/fortress/snow/4.png)}body .fortress_place.type_5
+.fortress_place_image{background-image:url(/images/m/fortress/snow/5.png)}body .fortress_place.type_6
+.fortress_place_image{background-image:url(/images/m/fortress/snow/6.png)}body .fortress_place.type_7
+.fortress_place_image{background-image:url(/images/m/fortress/snow/7.png)}body .fortress_place.type_8
+.fortress_place_image{background-image:url(/images/m/fortress/snow/8.png)}body .fortress_place.type_9
+.fortress_place_image{background-image:url(/images/m/fortress/snow/9.png)}body .fortress_place.type_10
+.fortress_place_image{background-image:url(/images/m/fortress/snow/10.png)}body .fortress_place.type_11
+.fortress_place_image{background-image:url(/images/m/fortress/snow/11.png)}body .fortress_place.type_12
+.fortress_place_image{background-image:url(/images/m/fortress/snow/12.png)}body .fortress_place.type_13
+.fortress_place_image{background-image:url(/images/m/fortress/snow/13.png)}body .fortress_place.type_14
+.fortress_place_image{background-image:url(/images/m/fortress/snow/14.png)}body .fortress_place.type_15
+.fortress_place_image{background-image:url(/images/m/fortress/snow/15.png)}body .fortress_place.type_16
+.fortress_place_image{background-image:url(/images/m/fortress/snow/16.png)}body .fortress_place.type_17
+.fortress_place_image{background-image:url(/images/m/fortress/snow/17.png)}body .fortress_place.type_18
+.fortress_place_image{background-image:url(/images/m/fortress/snow/18.png)}body
+.fortress_statue{background-image:url(/images/m/fortress/statue.png)}

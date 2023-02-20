@@ -1,0 +1,16 @@
+.bgmain{min-width:1080px;width:100%;min-height:1250px;position:absolute}.bgmain2,.bgmain3,.bgmain4{bottom:0;left:0;right:0;top:0;position:absolute}.bgmain4{max-width:2048px;margin:0
+auto;overflow:hidden}.bgmain4 .bgmain_left, .bgmain4
+.bgmain_right{width:500px;height:600px;bottom:0;position:absolute}.bgmain4
+.bgmain_left{left:0}.bgmain4
+.bgmain_right{right:0}.bgmain_right_smoke{width:60px;height:100px;position:absolute;background-image:url(/i/global/anim_smoke.png);right:154px;bottom:310px;display:block;opacity:0.5;animation:smoke 1s steps(10) infinite}@keyframes
+smoke{0%{background-position:0 0}100%{background-position:-600px 0}}.day{background:#b8deff !important}.day
+.bgmain.bgmain_day{opacity:1;display:block\0/}.day
+.bgmain.bgmain_night{opacity:0;display:none\0/}.ny_bg .bgmain2, .ny_bgday
+.bgmain2{background:url(/i/global/bg_main_NY.jpg) repeat-x top center}.ny_bg .bgmain3, .ny_bgday
+.bgmain3{background:url(/i/global/bg_bottom_NY.jpg) repeat-x bottom center}.ny_bg .bgmain4 .bgmain_left, .ny_bgday .bgmain4
+.bgmain_left{background:url(/i/global/bgmain_left_NY.png) no-repeat}.ny_bg .bgmain4 .bgmain_right, .ny_bgday .bgmain4
+.bgmain_right{background:url(/i/global/bgmain_right_NY.png) no-repeat}#top_menu
+.logo{background-image:url(/locale/RU/m/NY/inside/inlogo.png)}#top_menu
+.logo2{background-image:url(/locale/RU/m/NY/inside/inlogo_2.png)}#top_menu,
+#top_menu .char_stat,
+#top_menu .char_stat_small,DIV#online:after{background-image:url(/images/m/NY/inside/inside_NY.png)}

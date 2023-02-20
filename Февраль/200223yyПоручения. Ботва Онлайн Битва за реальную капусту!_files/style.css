@@ -1,0 +1,4 @@
+#childrens_day_anvil, #childrens_day_anvil
+.wings{background-image:url(/images/m/childrens_day/anvil.png)}#childrens_day_anvil{width:240px;height:210px;position:absolute;z-index:10;display:none;background-position:0 -210px;cursor:pointer}#childrens_day_anvil
+.wings{width:240px;height:210px;background-position:0 0}#childrens_day_anvil
+img{position:absolute;left:100px;top:50px;width:0;height:0;display:block}

@@ -1,0 +1,12 @@
+function anvilHandler(){var t={block:'<div id="childrens_day_anvil"><div class="wings"></div><img src="'+IMG_URL+'/images/m/childrens_day/click.png" alt="" /></div>',id:'#childrens_day_anvil',width:240,height:210,anvil_frame:1,anvil_interval:null};t.init=function(need_time,time_accepted){$('#child2014_shop .item_box').off('click').click(function(event){event.preventDefault();var target=$(event.target);var box=target.hasClass('item_box')?target:target.closest('.item_box');var data={item:box.attr('rel'),k:getInputKey()};SENDER.send(t,'buy','/event.php?a=child2014&m=buy',data,'POST');});var diff=need_time-TIME;var starttime=0;if(diff>0){starttime=diff;}
+setTimeout(function(){start();},starttime*1000);setTimeout(function(){stop();},(starttime+time_accepted)*1000);return t;};t.processResponse=function(action,data,extra){switch(action){case'buy':if('amount'in data){$('#child2014_total_sparks').html(data.amount);}
+if('message'in data){bOk(data.message);}
+break;case'get':log(data);if('message'in data){bOk(data.message);}
+break;}};function start(){$('body').append(t.block);$(t.id).css({left:mt_rand(0,$(window).width()-t.width),top:$(window).height()}).fadeIn('fast',function(){start_animate();});$(t.id).on('click',function(){var data={k:getInputKey()};SENDER.send(t,'get','/event.php?a=child2014&m=get',data,'POST');stop();});}
+function start_animate(){t.time=new Date().getTime();t.is_working=false;t.allow_work=true;t.time_last=new Date().getTime();t.anvil_interval=window.setInterval(function(){if(!t.allow_work){return;}
+var now=new Date().getTime();var diff=(now-t.time)%750;var frame=Math.round(diff/75);var pos=-240*frame;$(t.id+' .wings').css(is_ie?{backgroundPositionX:pos}:{'background-position':pos+'px 0'});if(frame==0&&!t.is_working){var top=intval($(t.id).css('top'));var left=intval($(t.id).css('left'));$(t.id).animate({top:top-150},300,function(){$(t.id).animate({top:top-90},450,function(){t.time=new Date().getTime();t.allow_work=true;});});t.is_working=true;}
+if(frame==1){t.is_working=false;}
+if(frame>=9){t.allow_work=false;}},16);}
+function stop(){$(t.id+' img').animate({width:350,height:350,left:-50,top:-100},150,'easeOutCirc',function(){$(this).fadeOut(150)});$(t.id).fadeOut(300,function(){clearInterval(t.anvil_interval);$(t.id).remove();})}
+return t;}
+var ANVIL=anvilHandler();
